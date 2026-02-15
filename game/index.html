@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Shift - Horror Bus Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/retro-effects.css">
+</head>
+<body>
+    <!-- Main Game Container -->
+    <div id="game-container">
+        <!-- VHS/CRT Overlay Effects -->
+        <div class="vhs-overlay"></div>
+        <div class="scanlines"></div>
+        <div class="vignette"></div>
+        
+        <!-- Main Canvas -->
+        <canvas id="gameCanvas"></canvas>
+        
+        <!-- UI Overlays -->
+        <div id="ui-container">
+            <!-- Center Message -->
+            <div id="center-message" class="message-box">
+                <p class="glitch-text">Stay on the road...</p>
+            </div>
+            
+            <!-- Dashboard Panel (Left) -->
+            <div id="dashboard" class="panel left-panel">
+                <div class="gauge" id="speed-gauge">
+                    <div class="gauge-label">SPEED</div>
+                    <div class="gauge-value">0 km/h</div>
+                </div>
+                <div class="gauge" id="fuel-gauge">
+                    <div class="gauge-label">FUEL</div>
+                    <div class="gauge-progress">
+                        <div class="gauge-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div class="warning-lights">
+                    <div class="warning-light" id="engine-light">ENGINE</div>
+                    <div class="warning-light" id="brake-light">BRAKE</div>
+                </div>
+            </div>
+            
+            <!-- Document/Map Panel (Right) -->
+            <div id="document-panel" class="panel right-panel">
+                <div class="document-header">ROUTE MAP</div>
+                <div class="document-content">
+                    <div class="route-info">
+                        <p><strong>Route:</strong> 66-B</p>
+                        <p><strong>Destination:</strong> ???</p>
+                        <p><strong>Distance:</strong> Unknown</p>
+                    </div>
+                    <div class="document-notes">
+                        <p class="note-text">Keep driving. Don't look back.</p>
+                        <p class="note-text faded">Something is following...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Game State Messages -->
+            <div id="game-state-message" class="state-message hidden"></div>
+        </div>
+        
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="screen">
+            <div class="loading-content">
+                <h1 class="glitch-text">BUS SHIFT</h1>
+                <p>Press SPACE to start</p>
+                <div class="controls-hint">
+                    <p>Controls:</p>
+                    <p>← → or A/D - Steer</p>
+                    <p>↑ or W - Accelerate</p>
+                    <p>↓ or S - Brake</p>
+                    <p>ESC - Pause</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pause Screen -->
+        <div id="pause-screen" class="screen hidden">
+            <div class="pause-content">
+                <h2>PAUSED</h2>
+                <p>Press ESC to continue</p>
+            </div>
+        </div>
+        
+        <!-- Game Over Screen -->
+        <div id="gameover-screen" class="screen hidden">
+            <div class="gameover-content">
+                <h2 class="glitch-text">YOU LEFT THE ROAD</h2>
+                <p id="gameover-message"></p>
+                <p>Press SPACE to restart</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Game Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="js/renderer.js"></script>
+    <script src="js/horror.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
