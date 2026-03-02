@@ -110,6 +110,8 @@ namespace BusShift.Ghosts
         /// Adjusts Marcus's difficulty based on the current day (1-based).
         /// Row advance interval decreases by <see cref="_difficultyReductionPerDay"/> seconds per day.
         /// Attack interval also shrinks so he reappears more often.
+        /// Observation time scales up progressively so higher-day players must stare longer:
+        /// days 1–2 = 3 s  |  days 3–4 = 5 s  |  day 5+ = 6 s.
         /// </summary>
         public void SetDayDifficulty(int day)
         {
@@ -118,6 +120,35 @@ namespace BusShift.Ghosts
                 _minRowAdvanceInterval,
                 _baseRowAdvanceInterval - (dayIndex * _difficultyReductionPerDay));
             AttackInterval = Mathf.Max(10f, _baseAttackInterval - (dayIndex * 2f));
+
+            // Observation scaling: looking at Marcus must be sustained longer on harder days.
+            if (day >= 5)
+                observationTimeToVanish = 6f;  // base 3 s + day-3 bonus 2 s + day-5 bonus 1 s
+            else if (day >= 3)
+                observationTimeToVanish = 5f;  // base 3 s + day-3 bonus 2 s
+            else
+                observationTimeToVanish = 3f;  // base
+        }
+
+        // ── Observation ───────────────────────────────────────────────────────
+        /// <summary>
+        /// Called by <see cref="GhostVisibilityChecker"/> once the player has sustained
+        /// observation for <see cref="GhostBase.observationTimeToVanish"/> seconds.
+        /// Marcus retreats immediately and awards a small sanity recovery.
+        /// </summary>
+        /// <remarks>
+        /// Sanity gain: 0.05 (equivalent to +5 points on a 0–100 scale normalised to 0–1).
+        /// Uses <see cref="BusShift.Core.SanitySystem.ReduceTension"/> so the value is
+        /// safely clamped by the system.
+        /// </remarks>
+        protected override void OnObservationComplete()
+        {
+            _observationTimer = 0f;
+            _isBeingObserved  = false;
+
+            Despawn();
+
+            BusShift.Core.GameManager.Instance?.SanitySystem?.ReduceTension(0.05f);
         }
     }
 }

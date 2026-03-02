@@ -79,6 +79,16 @@ namespace BusShift.Bus
         /// </summary>
         public static event Action<int> OnPassengerCountChanged;
 
+        /// <summary>
+        /// Fired when the bus doors open at a stop, signalling that passenger
+        /// boarding and alighting should be processed.
+        /// Parameter: the waypoint index of the current stop, as tracked by
+        /// <see cref="RouteManager"/>.
+        /// Consumed by <see cref="PassengerManager"/> to trigger config-driven
+        /// boarding/alighting via <see cref="StopPassengerConfig"/>.
+        /// </summary>
+        public static event Action<int> OnStopReached;
+
         // ── Private ───────────────────────────────────────────────────────────
 
         /// <summary>Counts down to auto-close while doors are open.</summary>
@@ -89,6 +99,13 @@ namespace BusShift.Bus
 
         /// <summary>The stop-waypoint index last penalised, to avoid double-penalising.</summary>
         private int _lastPenalisedStopIndex = -1;
+
+        /// <summary>
+        /// Waypoint index of the stop the bus is currently approaching,
+        /// captured from <see cref="HandleApproachingStop"/> and forwarded to
+        /// <see cref="OnStopReached"/> when the doors open.
+        /// </summary>
+        private int _currentApproachStopIndex = -1;
 
         private SanitySystem _sanitySystem;
 
@@ -160,7 +177,9 @@ namespace BusShift.Bus
 
         /// <summary>
         /// Opens the doors, resets the auto-close timer, marks that this stop
-        /// was serviced, and triggers passenger exchange.
+        /// was serviced, triggers passenger exchange, and fires
+        /// <see cref="OnStopReached"/> so that <see cref="PassengerManager"/>
+        /// can process config-driven boarding and alighting.
         /// </summary>
         private void OpenDoor()
         {
@@ -173,6 +192,11 @@ namespace BusShift.Bus
             _doorOpenedAtCurrentStop = true;
 
             OnDoorOpened?.Invoke();
+
+            // Notify PassengerManager (and any other subscriber) that the bus
+            // has serviced this stop so config-driven boarding can be processed.
+            if (_currentApproachStopIndex >= 0)
+                OnStopReached?.Invoke(_currentApproachStopIndex);
 
             HandlePassengerExchange();
         }
@@ -218,12 +242,14 @@ namespace BusShift.Bus
         // ── Route event handlers ──────────────────────────────────────────────
 
         /// <summary>
-        /// Resets the door-opened flag when the bus approaches a new stop,
-        /// so we can detect whether it was skipped.
+        /// Resets the door-opened flag and records the current stop index when
+        /// the bus approaches a new stop, so we can detect whether it was
+        /// skipped and forward the index to <see cref="OnStopReached"/>.
         /// </summary>
         private void HandleApproachingStop(int stopIndex, string stopName)
         {
-            _doorOpenedAtCurrentStop = false;
+            _doorOpenedAtCurrentStop   = false;
+            _currentApproachStopIndex  = stopIndex;
         }
 
         /// <summary>

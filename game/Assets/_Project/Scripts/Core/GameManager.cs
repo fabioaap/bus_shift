@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 namespace BusShift.Core
 {
-    public enum GameState { MainMenu, Playing, Paused, GameOver }
+    public enum GameState { MainMenu, Loading, Playing, Paused, GameOver, Victory }
 
     public class GameManager : MonoBehaviour
     {

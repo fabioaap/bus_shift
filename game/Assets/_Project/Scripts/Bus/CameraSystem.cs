@@ -1,6 +1,8 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using Unity.Cinemachine;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -87,6 +89,18 @@ namespace BusShift.Bus
         [Tooltip("Frames per second at which static frames are cycled.")]
         public float StaticAnimFPS = 12f;
 
+        // ── Camera Shake (Cinemachine) ─────────────────────────────────────────
+
+        [Header("Camera Shake (Cinemachine)")]
+        [Tooltip("Active CinemachineCamera used for noise-based shake. Auto-found if not assigned.")]
+        [SerializeField] private CinemachineCamera _virtualCam;
+
+        [Tooltip("TensionAudioManager whose OnCameraShakeRequested is listened to. Auto-found if not assigned.")]
+        [SerializeField] private TensionAudioManager _tensionAudioManager;
+
+        [Tooltip("Duration in seconds the camera shake lasts before amplitude resets to zero.")]
+        [SerializeField] private float _shakeDuration = 0.5f;
+
         // ─────────────────────────────────────────────────────────────────────
         //  Public state
         // ─────────────────────────────────────────────────────────────────────
@@ -132,6 +146,9 @@ namespace BusShift.Bus
         /// <summary>Accumulator for static animation timing.</summary>
         private float _staticFrameTimer;
 
+        /// <summary>Running shake coroutine, or null when idle.</summary>
+        private Coroutine _shakeCoroutine;
+
         // ─────────────────────────────────────────────────────────────────────
         //  Unity lifecycle
         // ─────────────────────────────────────────────────────────────────────
@@ -153,6 +170,33 @@ namespace BusShift.Bus
 
             // Start with static visible (camera is dirty)
             SetStaticVisible(true);
+
+            // Cinemachine shake — auto-find if not wired in the Inspector
+            if (_virtualCam == null)
+                _virtualCam = FindAnyObjectByType<CinemachineCamera>();
+
+            if (_tensionAudioManager == null)
+                _tensionAudioManager = FindAnyObjectByType<TensionAudioManager>();
+        }
+
+        private void OnEnable()
+        {
+            // OnCameraShakeRequested is a static event on TensionAudioManager;
+            // no instance reference is required to subscribe.
+            TensionAudioManager.OnCameraShakeRequested += TriggerCameraShake;
+        }
+
+        private void OnDisable()
+        {
+            TensionAudioManager.OnCameraShakeRequested -= TriggerCameraShake;
+
+            // Stop any in-progress shake so noise is not left non-zero.
+            if (_shakeCoroutine != null)
+            {
+                StopCoroutine(_shakeCoroutine);
+                ResetShakeAmplitude();
+                _shakeCoroutine = null;
+            }
         }
 
         private void Update()
@@ -332,6 +376,69 @@ namespace BusShift.Bus
             }
         }
 
+        // ─────────────────────────────────────────────────────────────────────
+        //  Camera shake (Cinemachine noise)
+        // ─────────────────────────────────────────────────────────────────────
+
+        /// <summary>
+        /// Applies a Cinemachine noise shake of <paramref name="intensity"/> amplitude
+        /// to <see cref="_virtualCam"/> for <see cref="_shakeDuration"/> seconds,
+        /// then resets <see cref="CinemachineBasicMultiChannelPerlin.AmplitudeGain"/> to zero.
+        /// Called automatically when <see cref="TensionAudioManager.OnCameraShakeRequested"/> fires.
+        /// </summary>
+        /// <param name="intensity">Noise amplitude gain passed to the Cinemachine noise component.</param>
+        private void TriggerCameraShake(float intensity)
+        {
+            if (_shakeCoroutine != null)
+            {
+                StopCoroutine(_shakeCoroutine);
+                _shakeCoroutine = null;
+            }
+
+            _shakeCoroutine = StartCoroutine(ShakeRoutine(intensity));
+        }
+
+        private IEnumerator ShakeRoutine(float intensity)
+        {
+            if (_virtualCam == null)
+            {
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+                Debug.LogWarning("[CameraSystem] No CinemachineCamera assigned — shake skipped.");
+#endif
+                yield break;
+            }
+
+            var noise = _virtualCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+            if (noise == null)
+            {
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+                Debug.LogWarning("[CameraSystem] CinemachineBasicMultiChannelPerlin not found on " +
+                                 $"'{_virtualCam.name}' — shake skipped.");
+#endif
+                yield break;
+            }
+
+            noise.AmplitudeGain = intensity;
+
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+            Debug.Log($"[CameraSystem] Camera shake → amplitude {intensity} for {_shakeDuration}s.");
+#endif
+
+            yield return new WaitForSeconds(_shakeDuration);
+
+            noise.AmplitudeGain = 0f;
+            _shakeCoroutine     = null;
+        }
+
+        /// <summary>Resets noise amplitude to zero (called when component is disabled mid-shake).</summary>
+        private void ResetShakeAmplitude()
+        {
+            if (_virtualCam == null) return;
+            var noise = _virtualCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+            if (noise != null)
+                noise.AmplitudeGain = 0f;
+        }
+
 #if UNITY_EDITOR
         // ─────────────────────────────────────────────────────────────────────
         //  Editor helpers
@@ -342,6 +449,7 @@ namespace BusShift.Bus
             StaticClearDuration  = Mathf.Max(0.1f, StaticClearDuration);
             StaticClearCooldown  = Mathf.Max(0.1f, StaticClearCooldown);
             StaticAnimFPS        = Mathf.Max(1f,   StaticAnimFPS);
+            _shakeDuration       = Mathf.Max(0.05f, _shakeDuration);
         }
 #endif
     }
