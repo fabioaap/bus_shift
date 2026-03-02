@@ -1,742 +1,755 @@
 # Bus Shift - Narrativa Completa
 
-## Premissa
-
-Você assume o papel de um motorista em sua primeira semana de trabalho na **Ravenswood Elementary School**. O ônibus escolar 104 foi recentemente "reformado" após um incidente com o motorista anterior. O que começa como um trabalho simples rapidamente se transforma em pesadelo quando você descobre que não está sozinho no veículo.
+> **STATUS:** 🟡 Em Progresso — Dias 2–5 expandidos em 01/03/2026
+> **CANÔNICO:** Ver `NARRATIVE_DECISIONS.md` para todas as decisões definitivas
 
 ---
 
-## DIA 1 - Primeira Jornada
+## Mundo: Ravenswood, Pennsylvania
 
-### Manhã - A Introdução
+**Pop. 4.847.** Once a coal town. Now a town that forgot it used to be something.
 
-**Cenário:** Estacionamento da escola. Céu cinza, ar pesado.
+Ravenswood smells like iron water from old pipes, the sweetness of woodsmoke in October, and the diesel that never quite leaves the air near the bus depot on Coalfield Road. The AM radio station — 1050 WRVN, *"Your Mountain Voice"* — plays classic country and gospel six days a week, interrupted only by severe weather alerts from the National Weather Service. The seventh day it plays nothing at all.
 
-**Personagens:** Diretor Siqueira, o protagonista (jogador)
+Main Street has a Subway, a diner called Patsy's that's been open since 1971, a Dollar General where the Ben Franklin used to be, and three churches within two blocks. The Moose Lodge on Birch Ave still has its 1987 Christmas lights up. Nobody says anything about it anymore.
+
+The Appalachian ridge sits just east of town. On foggy mornings — and most October mornings are foggy — it disappears entirely. It feels like the world ends at the tree line.
+
+**Ravenswood Elementary School** was built in 1952. Red brick gone dark with decades of weather. The flag out front hasn't been replaced since the seam split in 2021. It hangs at something less than half-mast. Nobody's scheduled the repair.
+
+---
+
+## Premissa
+
+You take the wheel of Bus 104 for your first week driving the morning and afternoon routes for Ravenswood Elementary. The bus was recently "repaired" after an incident with the previous driver. What starts as just a job — and God knows you need the job — turns into something else when you realize you're not alone on the route.
+
+---
+
+## PROTAGONISTA — Dale Mercer
+
+**41 anos. Pittsburgh, PA.**
+
+Dale drove long-haul out of Pittsburgh for eleven years. Good pay, good benefits, knew every truck stop on the I-76 corridor. Then February 2025: black ice on the I-376 overpass, a jackknife, and a Civic that got clipped. Nobody died. Nobody even went to the hospital. But the liability claim, the CDL suspension pending review, the company needing a scapegoat — all of it moved fast. His union rep said give it six months. It's been eight.
+
+His daughter Kaylee (14) lives with her mother in Harrisburg. Child support is three months behind. His ex, Carol, hasn't threatened court yet, but the silence is worse than threats. Dale took the Ravenswood job because it was the only one that called back.
+
+He's not a bad man. He's a tired man. There's a difference, and he knows it, and some days that's the only thing keeping him level.
+
+**Arco Emocional por Dia:**
+
+| Dia | Estado | Frase-âncora |
+|-----|--------|--------------|
+| 1 | Negação pragmática | *"It's just an old bus. Old buses make noises."* |
+| 2 | Curiosidade ansiosa | *"Five names. I know those faces now."* |
+| 3 | Reconhecimento doloroso | *"They didn't deserve what happened to them."* |
+| 4 | Identificação perigosa | *"I understand you, Victor. That's the problem."* |
+| 5 | Escolha existencial | *"Kaylee needs her dad to come home."* |
+
+---
+
+## DIA 1 — First Shift
+
+### Manhã — The Introduction
+
+**Cenário:** Ravenswood Elementary bus depot. 6:47 AM. Céu cor de concreto, geada no asfalto.
+
+**Personagens:** Principal Harrison Stone, Dale Mercer
 
 **Diálogo:**
 
-> — *Olha, é simples,* — diz Siqueira, empurrando um mapa amassado contra seu peito.
-> 
-> — *A rota está marcada em vermelho. Horário de entrada: 07:00. Saída: 18:00. Não atrase. Os pais... eles não toleram atrasos por aqui. Especialmente depois do que aconteceu com o último motorista... digo, com a última gestão.*
+> — *"Mr. Mercer. Good, you're early."*
 
-Siqueira aponta para o **Ônibus 104** no fundo do pátio.
+Stone doesn't extend his hand. He pushes a laminated route card across the hood of a Crown Vic and taps it twice.
 
-> — *É aquele ali. Ele passou por um reparo completo recentemente e o mecânico me disse que está tudo em ordem, mas ele é antigo. Tem suas manias. Só traga as crianças em segurança e não faça perguntas. Boa sorte. Nunca se sabe né?*
+> — *"Route's straightforward. Morning pickup starts at Elm and Depot, ends here. Afternoon reverse. You've got the radio channel for dispatch — channel four. Don't use channel two."*
 
-**Ação:** Siqueira joga as chaves nas suas mãos e se afasta apressado.
+He pauses. Adjusts his coat.
+
+> — *"Now. The bus — it's older. Had some... maintenance work done after the last driver's... situation. Earl will tell you it's road-ready, and it is. It just has its quirks. Don't let them rattle you."*
+
+> — *"What kind of situation?"*
+
+Stone looks at Dale the way men look at things they've already decided to bury.
+
+> — *"Bus went out of service. Nothing mechanical. Just... time to retire it and bring it back. That's all. Keep the kids safe, keep to schedule. Parents here notice when you're late."*
+
+He walks back toward the school without waiting for a response.
 
 ---
 
 **O Ônibus:**
 
-Ao se aproximar, o ar fica mais frio. A pintura amarela está descascando, revelando ferrugem - feridas não cicatrizadas.
+Bus 104. 1989 International AmTran. The yellow has oxidized to something closer to old mustard. The rear bumper has a dent nobody bothered to pound out. At the door, a faded sticker: **PRECIOUS CARGO ON BOARD.**
 
 **Detalhes sensoriais:**
-- **Cheiro:** Vinil velho, poeira, odor metálico (sangue seco/cobre)
-- **Som:** Banco do motorista range ao sentar
-- **Visual:** Mancha no retrovisor que distorce o reflexo dos bancos
+- **Smell:** Vinyl seat foam, old oil, something metallic underneath — like a handful of pennies left in the rain
+- **Sound:** The driver's seat creaks with a sound like a question being asked
+- **Visual:** The rearview mirror has a smear on the lower left corner that distorts the reflection of the middle rows — faces look stretched, wrong
 
-Você gira a chave. O motor ruge - não com potência, mas com som gutural, cansado. O rádio liga sozinho em estática pura antes de você desligá-lo.
+Dale turns the key. The engine catches on the second try, rougher than it should be. The radio crackles on by itself — pure static on channel two — before he slaps it to channel four.
 
-> — *Bem, está tudo "funcionando".* — você diz com voz cansada mas conformada.
+> — *"Alright then."* — he says to no one. *"Let's go to work."*
+
+---
 
 **Primeiro Evento Paranormal:**
 
-Durante a rota matinal, enquanto as crianças embarcam, você ouve:
+Second stop on the morning route. Kids boarding, backpacks, loud voices. Pulling away from the curb on Birch Ave.
 
-*Hihihi.*
+*hihihi.*
 
-Uma risadinha aguda. Não vem do fundo do ônibus, mas de dentro da parede atrás da sua cabeça. Você ajusta o retrovisor. Todas as crianças estão em seus lugares. Ninguém está rindo.
+High-pitched. Not from the back. From the wall behind his head, just behind his left ear. Dale adjusts the mirror. Every kid is in their seat. Nobody is laughing.
 
-Calafrio na base da nuca, como ar gelado sendo soprado. 
+The cold comes down the back of his neck like someone opened a window. There are no open windows.
 
-> — *É o cansaço. Só preciso de café.* — você suspira.
-
-**Conclusão:** Você deixa as crianças na escola. O silêncio que fica no ônibus vazio é pesado, antinatural. A risada ecoa em sua mente durante o intervalo.
+> — *"Long night. That's all."*
 
 ---
 
-### Tarde - O Primeiro Encontro
+### Tarde — First Contact
 
-**Cenário:** Sol da tarde bate no vidro, reflexos alaranjados ofuscam a visão.
+**Cenário:** 3:18 PM. Afternoon light cutting orange through the windshield.
 
-O trajeto de volta começa. O rádio chia baixinho.
+The radio hisses low on channel four. Weather alert: *"Dense fog advisory, Ridgemont County through 8 PM tonight..."*
 
-A risada volta. *Hihihi.* Mais alta. Mais debochada.
+*hihihi.*
 
-Você olha pelo retrovisor. Crianças cansadas, nada anormal. A risada continua, agora do seu lado direito.
-
-Irritado, você vira bruscamente para dar bronca.
+Louder. Close. Dale's jaw tightens. He checks the mirror — tired kids, a girl doing a worksheet, two boys arguing. Nobody laughing. The laugh moves. Now it's directly to his right. He turns fast —
 
 ---
 
-**JUMPSCARE - Primeiro Contato:**
+**JUMPSCARE — First Contact:**
 
-**Visual:** Em pé, gélido e imóvel, está um menino pálido. Roupas levemente úmidas e datadas (anos 90). Ele sorri, estendendo a mão pálida em direção ao painel de controle.
+A boy. Standing. Still as furniture. Pale as paper left in rain. Clothes from another decade — a Starter jacket, acid-wash jeans, sneakers with a velcro strap. Slightly damp, like he walked in out of weather that isn't happening outside.
 
-**Diálogo:**
-> *"Botão vermelho,"* — o menino sussurra, dedo a centímetros de abrir a porta em movimento.
+He's smiling. His hand reaches toward the control panel.
+
+> *"Red button,"* — he whispers. Finger hovering a centimeter from the door release.
 
 ---
 
-**QTE - Reação Rápida:**
+**QTE:**
 
-Você solta uma mão do volante e dá um tapa na mão da criança, cobrindo os botões:
+Dale's right hand leaves the wheel and covers the panel buttons.
 
-> *"NÃO MEXE AÍ! SENTA LÁ AGORA!"*
+> *"DON'T TOUCH THAT. SIT DOWN. NOW."*
 
-O menino não se assusta. Alarga o sorriso, solta mais uma risadinha *hihihi* e desaparece num piscar de olhos.
+The boy doesn't flinch. The smile gets wider. One more *hihihi,* and he's gone — not like he walked away. Like a channel changing.
 
-**Silêncio absoluto.**
+**Silêncio absoluto.** Every live kid on the bus has stopped. They're all looking at Dale.
 
-Todas as crianças vivas pararam. Olham para você.
-
-**Diálogo das Crianças:**
-> Menina: — *Com quem ele tá falando?*
+> Girl in row three: — *"Who's he yelling at?"*
 > 
-> Colega (girando dedo na têmpora): — *O motorista é maluco. Minha mãe disse que eles contratam qualquer um hoje em dia.*
+> Boy behind her, twirling a finger at his temple: — *"My mom said they hire anybody for this job now."*
 
-Você percebe que sua mão ainda protege os botões... protegendo-os de nada. Murmura desculpa esfarrapada e volta os olhos para a estrada.
+Dale's hand is still pressed over the buttons. He pulls it back slowly. Clears his throat.
+
+> — *"Eyes front. We're almost there."*
 
 **FIM DO DIA 1**
 
 ---
 
-## DIA 2 - Revelações Fragmentadas
+## DIA 2 — Fractured Evidence
 
-### Manhã - A Investigação
+### Manhã — What Earl Knows
 
-**Cenário:** Sala de descanso dos funcionários, Ravenswood Elementary School. 06h45 — meia hora antes do embarque. Luz fluorescente piscando no teto.
+**Cenário:** 6:15 AM. Bus depot garage. Luz fluorescente, óleo de motor e café queimado.
 
-Você não dormiu direito. A imagem do menino pálido, o dedo a centímetros do painel, o sorriso de quem não tem nada a perder — ficou gravada na retina até as três da manhã.
+**Earl Pruitt** (63, Ravenswood born and raised, blue coveralls with a name patch ironed on in 1998) is doing the pre-route check on Bus 104. He has a Styrofoam cup of coffee he never seems to finish.
 
-Você chegou mais cedo de propósito.
+> — *"Mr. Pruitt?"*
 
-No quadro de informações da sala de descanso: fotos desbotadas de eventos escolares, horários de reunião, avisos sobre o estacionamento. E, no canto inferior esquerdo, quase coberto por um cronograma novo, uma folha amarelada, frágil como pergaminho:
+Earl looks up. Takes a sip. Goes back to the wheel well.
 
-> **RAVENSWOOD COURIER — 14 de Março de 1998**
-> *"TRAGÉDIA MARCA FIM DO ANO LETIVO: ÔNIBUS ESCOLAR CAI EM RAVENSWOOD GORGE"*
-> *Cinco alunos da Ravenswood Elementary School e o motorista Victor Graves, 44, morreram após o veículo escolar de matrícula 104 perder o controle na Ravenswood Gorge Road. As causas do acidente ainda são investigadas pela polícia local. O corpo do motorista não foi localizado.*
+> — *"Earl's fine."*
 
-Você lê e relê. O número do ônibus: **104**. O mesmo em que você passou a manhã inteira de ontem.
+> — *"I wanted to ask about the bus. Some things happened yesterday that I can't—"*
 
-Você dobra o recorte e vai até o escritório de Harrison Siqueira Stone. A secretária diz que ele está em reunião. Você insiste. Stone aparece na porta — terno escuro, expressão de alguém que já antecipou essa conversa.
+> — *"Bus is mechanically sound."* — The way he says it has too many layers. Like a man reading from a card he memorized. *"Brakes are good. Engine's good. You got a full tank."*
 
-> — *Posso ajudar?*
+A folded newspaper falls out of Earl's back pocket. He doesn't pick it up. Just keeps working.
 
-> — *O ônibus 104. Seis pessoas morreram nele. Em 1998.*
-
-Stone não pisca. Há uma pausa longa demais para ser casual.
-
-> — *Isso foi há muito tempo. O veículo passou por revisão completa. Se não há mais perguntas...*
-
-> — *Cinco crianças, Stone. Crianças desta escola.*
-
-Ele fecha a porta devagar. O clique da fechadura soa como um ponto final de parágrafo.
+Dale picks it up. **Ravenswood Gazette. March 15, 2023.**
 
 ---
 
-Você sobe no ônibus às 07h00. O dia começa normalmente: crianças barulhentas, mochilas batendo nos bancos, o calor preguiçoso da manhã. Nada fora do comum.
+**[ARTEFATO — Ravenswood Gazette, 15 de março de 2023]**
 
-Até a terceira fileira.
+```
+RAVENSWOOD GAZETTE
+Friday, March 15, 2023 | Vol. 84, No. 11
 
-Um sussurro. Suave, articulado, quase gentil — a voz de uma criança que sabe contar histórias:
+BUS CRASH KILLS DRIVER AND FIVE RAVENSWOOD ELEMENTARY STUDENTS
+Tragedy at Ridgemont Bridge leaves community in shock
 
-> *"Era uma vez cinco crianças que não chegaram em casa..."*
+Five students from Ravenswood Elementary School and the school district bus
+driver were killed Wednesday morning when Bus 104 veered off Ridgemont Bridge
+on Route 33, plummeting approximately 60 feet into the gorge below.
 
-Você olha pelo retrovisor. Nenhuma criança está falando. Todos olham para celulares ou conversam entre si. O sussurro continua, vindo do ar, de lugar nenhum específico:
+The victims: driver Victor Graves, 58, of Ravenswood, and students Marcus Reid,
+10; Emma Lynch, 10; Thomas Sanders, 11; Grace Harper, 10; and Oliver Crane, 10
+— all fifth-graders at Ravenswood Elementary.
 
-> *"...e o motorista que as levou para longe de tudo..."*
+Emergency responders recovered the bodies of all five children. The body of
+Mr. Graves has not been located. Search operations continue.
 
-Você liga o rádio. Volume no máximo. O sussurro para.
+Principal Harrison Stone: "Our hearts are with the families of these children."
 
-Mas a estática que sobra soa, perturbadoramente, como respiração.
+An investigation into the cause of the crash is ongoing.
+```
 
----
+Dale stares at the names. Reads them twice.
 
-### Tarde - As Cinco Presenças
+Earl straightens up, picks up his coffee, looks at Dale, looks at the paper.
 
-**Cenário:** 17h20. Rota de volta. Sol baixo, sombras compridas projetadas no asfalto quente.
+> — *"Found that in the glove box. When we did the repairs. Thought I threw it away."*
 
-O ônibus está quase cheio. Crianças vivas, cansadas, saindo da escola — mochilas pesadas, conversas sobre nada, o barulho normal de uma tarde qualquer.
-
-Você está a três quarteirões quando a temperatura cai. Não gradualmente — de um segundo para o outro, como porta de câmara fria abrindo na sua nuca.
-
-Da sétima fileira: uma risada. *Hihihi.* Emma.
-
-Você aciona a trava do painel sem olhar. A risada para por dois segundos, exatos, cronometrados — e recomeça mais baixa, quase decepcionada, como se o jogo tivesse se tornado menos interessante.
-
-Da última fileira, o som de algo riscando vidro. No espelho, Oliver Crane está agachado no banco, desenhando na janela com o dedo. O traço deixa uma marca branca e gelada que não some quando ele levanta a mão.
-
-O desenho: uma estrada em curva. Um precipício. Um ônibus em queda livre.
-
-Você engole seco e não desvia os olhos da estrada.
-
-Marcus Reid surge de pé na décima fileira. Não aparece — surge, como se sempre tivesse estado lá e você só não tivesse notado. Olha para você com expressão de curiosidade impaciente, a de uma criança que encontrou uma porta trancada e precisa saber o que tem do outro lado.
-
-> *"Você vai me deixar entrar,"* — Marcus diz. Voz plana, sem inflexão. *"O outro motorista deixou. No final."*
-
-Você fala no microfone, voz controlada:
-
-> *"Senta. Agora."*
-
-Marcus para. Sorri. Senta — mas na oitava fileira. Avançou duas posições em relação a onde estava.
-
-No retrovisor: Grace Harper está parada no corredor central, de pé, olhando diretamente para a câmera. Seus olhos não piscam. Você precisa desviar o olhar dela para ver a estrada à frente — e a Ravenswood Gorge Road está a dois quarteirões.
-
-Thomas está na quinta fileira, de olhos fechados, lábios se movendo sem som audível.
-
-Todos os cinco. Ao mesmo tempo. Pela primeira vez.
-
-A menina viva no banco dianteiro puxa a mochila para o colo e murmurar, quase para si mesma:
-
-> — *Tá frio aqui dentro de repente...*
-
-> — *É o ar-condicionado,* — você responde. Sua voz sai mais firme do que você sente.
-
-Você termina a rota. Deixa a última criança viva. Fecha a porta.
-
-No espelho, por um segundo antes de o ônibus esfriar: todos os cinco sentados em seus lugares. Olhando para você. Imóveis.
-
-Depois — nada.
-
-**FIM DO DIA 2**
+He goes back inside without another word.
 
 ---
 
-## DIA 3 - A Verdade Enterrada
+### Rota Matinal — As Primeiras Presenças
 
-### Manhã - Os Documentos
+Thomas Sanders aparece primeiro.
 
-**Cenário:** 06h30. Escola Ravenswood Elementary. Corredor administrativo. As luzes de emergência ainda estão acesas — o pessoal administrativo não chegou.
+Ônibus vazio, antes de embarcar as crianças. O rádio vai para estática por um segundo — e numa frequência abaixo do audível, algo que parece palavras. Dale aumenta o volume. Nada. Estática.
 
-Você tinha um plano.
+Depois, uma voz de criança. Sussurrando:
 
-A porta do escritório de Harrison Siqueira Stone tem fechadura convencional — não eletrônica. Cinco minutos de paciência com um clipe de papel e você está dentro. (Ou talvez tenha encontrado a chave reserva pendurada sem etiqueta na sala de descanso, onde Stone a deixa por confiar que ninguém procuraria.)
+> *"...and the bus came to the bridge, and the driver wasn't scared anymore, he was something past scared, past where scared lives..."*
 
-A escrivaninha está impecável. Tudo no lugar, tudo perfeitamente organizado — o escritório de alguém que passou décadas mantendo as aparências. Mas o arquivo de aço no canto... a gaveta do fundo cede com um rangido.
-
-Uma pasta bege, desgastada nas bordas, etiqueta manuscrita:
-
-> **INCIDENTE 104 — CONFIDENCIAL**
-
-Dentro: relatório policial de duas páginas. Laudos de identificação das vítimas. Uma foto de identidade de Victor Graves — rosto angulado, olheiras fundas, expressão de alguém que há muito tempo parou de sorrir. E uma lista em papel timbrado da escola:
-
-> **PASSAGEIROS — ÔNIBUS 104 — ROTA ESPECIAL — 13 MARÇO 1998**
-
-Cinco nomes, cada um com uma anotação à margem escrita a caneta vermelha:
-
-- **Marcus Reid** — *"comportamento disruptivo, múltiplas suspensões"*
-- **Emma Lynch** — *"bullying recorrente, incidentes com colegas"*
-- **Thomas Sanders** — *"perturbação de classe, influência negativa sobre os demais"*
-- **Grace Harper** — *"comportamento retraído, pais relataram episódios perturbadores"*
-- **Oliver Crane** — *"expressões artísticas perturbadoras, encaminhado para avaliação psicológica"*
-
-Cada nome tem um carimbo manuscrito no canto: *"Realocado — conf. sol. V.G."*
-
-Você lê e relê. *Realocado conforme solicitação de Victor Graves.*
-
-Victor escolheu essas crianças. Pediu que fossem separadas dos demais e colocadas no Ônibus 104, naquele dia específico. E Harrison Siqueira Stone assinou.
-
-Você fecha a pasta. Coloca de volta exatamente onde estava. Sai antes de qualquer funcionário chegar.
-
-Mas a lista não sai da sua cabeça.
+Dale bate no rádio. Estática. Para. Crianças embarcam. Normal.
 
 ---
 
-No embarque matinal, Oliver Crane já está sentado na última fileira quando as crianças vivas sobem. Suas mãos se movem em espasmos rítmicos sobre o vidro — dedos desenhando sem giz, mas deixando marcas brancas e geladas que não evaporam com o calor da manhã.
+Cinco minutos depois, Grace Harper aparece no retrovisor. Banco 7, lado direito. Roupas dos anos 90, cabelo em duas tranças. Olhando diretamente para o espelho — não para o ônibus, não para a estrada. Para Dale.
 
-O desenho desta vez é diferente dos anteriores.
+Ele olha para trás. Banco vazio. Olha pro espelho de novo. Ela está lá.
 
-Um homem sentado no banco do motorista. Mãos no volante. Cinco crianças atrás. A estrada virando curva fechada. O guardrail se quebrando como graveto.
-
-E abaixo, em letras tortas de criança que aprendeu a escrever sem nunca ter tido paciência para caligrafia:
-
-> *ELE SABIA*
-
-Você olha para Oliver pelo espelho. Ele olha de volta, expressão completamente neutra.
-
-> *"ELE SABIA,"* — Thomas confirma da quinta fileira, voz vibrando levemente, como se estivesse recitando algo de memória. *"Victor sabia o que ia acontecer. Sabia e foi mesmo assim. Sabia e não disse nada para nós."*
-
-Você aciona o rádio. O sussurro para — mas o desenho permanece na janela, imutável, durante toda a rota.
+Ela não pisca. Ela não se move. Ela só olha.
 
 ---
 
-### Tarde - O Flashback
+### Tarde — Os Outros Três
 
-**Cenário:** 17h10. Rota de volta. Luz quase horizontal, dourada e pesada, cortando o interior do ônibus em tiras de sombra e brilho.
+Emma Lynch chega na quarta parada. A risada começa antes de ela aparecer. *Hihihi* — mais grave, mais deliberada. Dale a vê no corredor, dois assentos atrás da cabine. Olhos vivos e cruéis. Some antes que ele reaja.
 
-Thomas começa na terceira fileira hoje — mais próximo do que ontem, mais próximo do que deveria ser possível tão cedo na tarde.
+Marcus Reid aparece por um segundo — fileira doze, olhando para a janela. Desaparece quando Dale vira. O banco está molhado.
 
-O sussurro começa suave, quase uma lullaby:
+Fim da tarde, ônibus vazio. Dale varre o corredor. Banco 9 — um desenho a lápis no estofamento. Detalhado demais para ter sido feito em movimento:
 
-> *"Era 13 de março de 1998. Uma tarde fria, como esta. O Ônibus 104 saiu da escola às 17h15..."*
-
-Você aciona o rádio. A música cobre o sussurro por um momento — mas a voz de Thomas penetra por baixo da melodia, como se viesse de dentro do seu próprio crânio, não do ônibus:
-
-> *"...Victor Graves não disse nada quando as cinco crianças subiram. Só olhou pelo espelho. Esperou o portão fechar. Trancou as portas. E começou a dirigir."*
-
-As luzes do painel piscam duas vezes.
+Um ônibus. Uma ponte. As janelas têm rostos. Cinco rostos.
 
 ---
 
-**[CUTSCENE — VISÃO / FLASHBACK]**
+**[DIÁRIO DE DALE — Dia 2]**
 
-A realidade desfia como película rasgada.
+```
+Bought a notebook at the Dollar General on the way home.
+Five names. March 15, 2023. Three years ago.
+Marcus, Emma, Thomas, Grace, Oliver.
 
-Por um segundo — apenas um segundo — você não está mais no presente. O painel do ônibus é diferente, mais antigo. O rádio toca uma música que você não reconhece. Pelas janelas, a Ravenswood Gorge Road se desenrola, e você sente o ônibus **acelerar**.
-
-Você não está controlando o volante.
-
-Victor Graves está.
-
-Você vê seus ombros — tensos, arqueados para frente, como alguém que tomou uma decisão há muito tempo e está apenas cumprindo um ritual. Mãos apertadas no couro desgastado do volante. Nos espelhos, os rostos das cinco crianças: Marcus olhando pela janela sem entender, Emma rindo de algo com a testa pressionada no vidro, Thomas de olhos fechados murmurando baixinho, Grace sentada ereta com a postura de quem não se meche, Oliver desenhando sem olhar para cima.
-
-Victor pressiona o acelerador.
-
-As crianças começam a sentir que algo mudou. Emma para de rir. Marcus se vira:
-
-> *"Ei, motorista, essa não é a—"*
-
-O guardrail aparece na curva. O ônibus não desacelera.
-
-**[FIM DO FLASHBACK]**
+I know those faces now.
+I need to know why they're still on that bus.
+```
 
 ---
 
-Você pisca. Está suado, mãos brancas no volante. O ônibus está parado em sinal vermelho — você nem percebeu quando freou.
+## DIA 3 — Buried Truth
 
-Uma criança viva bate no vidro da cabine, curiosa:
+### Manhã — Principal Stone's Office
 
-> — *Ô, o sinal abriu. Tá bem?*
+**6:45 AM. Escritório de Stone.**
 
-Você respira fundo. Engata a marcha.
+Certificados nas paredes. Uma foto de turma 2022-23 atrás da mesa. Cinco rostos circulados a caneta vermelha.
 
-No retrovisor, por um instante antes de o sinal verde apagar as sombras: Thomas Sanders está sentado, imóvel, olhando para você com os olhos mais tristes que você já viu em criança. Não ameaça. Não frieza. Apenas tristeza absoluta, do tipo que não tem fundo visível.
+> — *"Mr. Mercer. This is unusual."*
 
-Depois — desaparece.
+> — *"I found this in the bus."* — Dale coloca o Gazette sobre a mesa. *"And I've been seeing things on my route. Things that don't—"*
 
-**FIM DO DIA 3**
+> — *"The bus is mechanically certified."*
 
----
+> — *"There are five kids on that bus who are dead, Principal Stone. I've seen them. Marcus Reid. Emma Lynch—"*
 
-## DIA 4 - Escalada
+Stone's face doesn't change. That's the thing. It doesn't change at all.
 
-### Manhã - O Diário
+> — *"Those were students we had. Like all the others."*
 
-**Cenário:** 06h55. Estacionamento da escola. Você chegou mais cedo que as crianças, mais cedo que os funcionários. O pátio está vazio e o ônibus está trancado — você abre com a chave.
+> — *"Five students."*
 
-Você passou a noite pesquisando Victor Graves online. Pouca coisa. Um obituário de 1998 que mal menciona as circunstâncias. Nenhuma foto além da que você viu na pasta de Stone. Nenhuma família identificada. Nenhum perfil em redes sociais — ele viveu e morreu antes do mundo ficar conectado.
+> — *"A tragedy."* — Said like a weather report.
 
-Com uma lanterna, você inspeciona o ônibus sistematicamente. Por baixo do banco do motorista, entre a estrutura metálica tubular e o forro de borracha do assento, há algo que não deveria estar lá. Fino, retangular, duro.
+Dale looks at the photo. The red circles.
 
-Um caderno de capa preta. Pequeno, de bolso. Páginas amareladas, capa desbotada, a espiral enferrujada. Uma tira de couro o mantém fechado.
+> — *"Who drew those circles?"*
 
-**O Diário de Victor Graves.**
+Stone picks up the newspaper, folds it, puts it in a drawer.
 
-As primeiras entradas são mundanas — rotas anotadas, horários de manutenção, reclamações sobre o freio traseiro. A escrita é regular, controlada, a de alguém metódico. Mas nas últimas páginas, algo muda. As letras ficam maiores, mais pressionadas contra o papel. Menos espaço entre as linhas:
-
-> *"Eles sabem que eu sei. Siqueira me disse para ficar quieto quando perguntei sobre os outros motoristas. Disse que as crianças 'problemáticas' eram um problema administrativo, não meu. Mas eu vi o relatório da rota anterior. Vi o que aconteceu antes de mim. O padrão é claro para quem quer ver."*
-
-> *"São cinco desta vez. Os mesmos cinco nomes que estão na lista. Siqueira não vai mudar. A escola não vai mudar. As famílias dessas crianças não têm poder. Não vão fazer perguntas que incomodem. Mas eu posso parar o ciclo. Há apenas uma forma de parar um ciclo."*
-
-> *"Amanhã é o último dia. Ou deles, ou meu. Passei noites pensando. Não consigo ver outra saída. Perdoem-me."*
-
-Você fecha o caderno.
-
-Suas mãos, para sua surpresa, não tremem.
-
-Você entende agora. Victor Graves não estava tendo um colapso aleatório. Ele acreditava em algo — que havia um padrão sinistro, que as crianças eram destinadas a algum fim específico pela escola, e que a única forma de quebrá-lo era o que ele fez. Acreditava estar salvando-as de algo pior.
-
-Estava errado. Estava certo. Você ainda não sabe qual dos dois.
+> — *"You have a route in twelve minutes, Mr. Mercer."*
 
 ---
 
-As crianças embarcam. Você dirige com o caderno guardado no bolso interno do casaco, peso físico sobre o peito.
+### Rota Vespertina — Thomas Narra
 
-Thomas começa antes mesmo de você sair do pátio:
+Thomas aparece às 3:47 PM, banco 4, voltado para Dale. Voz como uma gravação:
 
-> *"Você encontrou o diário."*
+> *"The driver's name was Victor. He'd been driving this route for twenty-two years. He knew every house, every pothole, every name. He knew that on March 13th he'd gotten a letter in a brown envelope. He kept driving. March 14th he kept driving. March 15th..."*
 
-Não é pergunta. Thomas está na quarta fileira, mais próximo do que em qualquer dia anterior. Você não lembra de tê-lo visto sentar.
+**Dale: — "QUIET."**
 
-> *"Victor achava que nos estava salvando,"* — Thomas continua, voz quase gentil, como a de um adulto explicando algo difícil para uma criança. *"Que havia algo pior esperando por nós. Ele estava errado. Ou estava certo. Você ainda não sabe qual, e nós também não."*
+As crianças vivas congelam. Um menino no fundo começa a chorar.
 
-Você aciona o rádio.
-
-Desta vez a voz de Thomas continua por baixo da música — não para, apenas se ajusta, encontra os espaços entre as batidas. Cada vez mais alta. Cada vez mais urgente.
-
-Uma criança viva na segunda fileira cobre os ouvidos com as mãos, franzindo a testa:
-
-> — *Que barulho é esse? Parece alguém gritando...*
-
-> — *É interferência no rádio,* — você diz, sem tirar os olhos da estrada.
-
-Você SEMPRE ouve Thomas. Cada vez mais alto. Cada vez mais dentro.
+Thomas desaparece. Grace está no retrovisor, banco 7. Sempre olhando.
 
 ---
 
-### Tarde - Ataque Coordenado
+**[FLASHBACK — Cutscene: "March 15, 2023"]**
 
-**Cenário:** 17h00. Rota de volta. O pior trajeto da semana.
+_[NOTA DE DESIGN: Preto e branco deteriorado, textura VHS, sem música. Apenas sons ambientes.]_
 
-Você mal saiu do pátio da escola quando todos os cinco se manifestam ao mesmo tempo.
+Victor Graves. 58 anos. Uniformizado. Dirigindo na Route 33 antes do amanhecer. Cinco crianças espalhadas no ônibus. Céu cinza de antes do sol.
 
-É diferente de antes. Antes era sequencial — um de cada vez, como se houvesse uma ordem tácita entre eles, um respeito à estrutura. Agora não há mais ordem. Agora é ao mesmo tempo, de todas as direções, sem intervalo.
+Ele está chorando. Silenciosamente. Lágrimas que desceram tão devagar que o rosto já as absorveu.
 
-**Marcus** está na quarta fileira, de pé no corredor, avançando passo a passo em direção à cabine. Você fala no microfone. Ele para por dois segundos. Recomeça.
+No painel: uma carta dobrada. A logo do distrito escolar.
 
-**Emma** aparece de repente ao seu lado na cabine, surgindo do ar imóvel, dedos finos estendidos em direção ao painel de controle. Você aciona a trava. Ela sorri — a primeira vez que o sorriso dela parece genuinamente triste em vez de malicioso.
+No retrovisor: Grace Harper olha para ele. Não com medo. Com reconhecimento.
 
-**Thomas** narra em volume máximo. A voz já não é sussurro — é uma corrente contínua de palavras que cascateiam sobre si mesmas, histórias dentro de histórias, o acidente narrado em loop, cada vez de um ângulo diferente.
+Victor pega a carta. Lê pela última vez. Dobra de volta.
 
-**Grace** está no espelho retrovisor cobrindo toda a visão disponível. A Ravenswood Gorge Road está a três quarteirões. Você dirige de memória, sentindo a curvatura da estrada pelos pneus.
+Ridgemont Bridge se aproxima.
 
-**Oliver** está em todo lugar — janelas, bancos, o teto do ônibus — desenhando sem parar. A mesma cena em variações infinitas: o precipício, o ônibus, o motorista que não para.
+Ele não tira o pé do acelerador.
 
-As crianças vivas entram em pânico. Não veem as assombrações, mas o ar ficou gelado, o barulho aumentou de alguma forma que elas não conseguem identificar, e o instinto de dez anos de idade é confiável: algo está muito errado aqui.
-
-> — *PARA O ÔNIBUS! PARA O ÔNIBUS!*
-
-Você processa tudo em paralelo. Trava o painel. Fala no microfone, firme. Liga o rádio no máximo. Mantém os olhos na estrada mesmo com Grace bloqueando o espelho. Rastreia Marcus pelo som dos seus passos no corredor.
-
-Marcus está na segunda fileira.
-
-Emma ri — aguda, quase mecânica, como um brinquedo com pilha fraca.
-
-Thomas: *"...e quando o ônibus chegou à curva, Victor pensou: finalmente. Finalmente. FI—"*
-
-Algo em você chega no limite.
-
-> *"CHEGA! TODOS VOCÊS PARAM AGORA!"*
-
-Silêncio absoluto.
-
-Não o silêncio das outras vezes — aquele silêncio de pausa, de recarregamento. Este é diferente. Mais pesado. As crianças vivas também param de gritar.
-
-Os cinco olham para você.
-
-Pela primeira vez em quatro dias, você vê o que está nos rostos deles. Não raiva. Não frieza. Não malícia.
-
-**Tristeza.** A tristeza específica de dez anos que nunca completou onze.
-
-Por um segundo — apenas um — você vê Marcus como ele era: um menino de andar impaciente e curiosidade insaciável que queria ver o que havia além de cada fronteira. Vê Emma rindo porque não sabia fazer diferente quando estava com medo. Vê Thomas narrando porque narrar era a única forma de ter controle sobre algo. Vê Grace observando porque era a única coisa que ela fazia bem, ficar completamente presente. Vê Oliver desenhando porque o papel era o único lugar onde as coisas dentro dele tinham forma.
-
-Então o momento passa. Marcus está de volta à décima fileira. Os outros — sumidos.
-
-Você termina a rota com mãos brancas no volante.
-
-No caminho para casa, você percebe — tarde, quando para no sinal — que está chorando. Não de medo.
-
-De algo muito mais complicado que isso.
-
-**FIM DO DIA 4**
+_[Corte para preto.]_
 
 ---
 
-## DIA 5 - Última Parada
+### Dale's Breakdown
 
-### Manhã - O Peso da Escolha
+Banheiro da escola, depois de entregar as crianças. Porta trancada. Segura a pia.
 
-**Cenário:** 06h50. Você sobe no Ônibus 104 antes das crianças. Antes de qualquer funcionário. O pátio está vazio, o ar da manhã tem aquela qualidade específica de dias em que tudo ainda pode ir de qualquer direção.
+Não chora imediatamente. Fica parado olhando para o ralo.
 
-Os cinco já estão lá.
+Depois chora. Breve, o tipo que um homem permite quando tem certeza que está sozinho.
 
-Sentados em suas fileiras habituais, quietos, esperando. Como se soubessem que hoje é diferente.
-
-Marcus Reid na décima fileira, olhando pela janela com as mãos no colo.
-Emma Lynch na sétima, sem sorrir, sem se mover.
-Thomas Sanders na quinta, cabeça levemente inclinada.
-Grace Harper de pé no corredor central, olhando para você — mas de forma diferente de todas as outras vezes. Não perturbadora. Apenas... atenta.
-Oliver Crane na última fileira. Sem desenhar. Apenas sentado.
-
-Thomas levanta a cabeça:
-
-> *"Você sabe o que aconteceu."*
-
-> *"Sim."* — Você responde, e a sua voz soa estranha no silêncio do ônibus vazio. Mais firme do que você esperava.
-
-> *"Então você sabe que tem escolha."*
-
-O celular vibra. Earl Hayes, o mecânico.
-
-> — *Olha... eu deveria ter te contado antes. Esse ônibus... houve outros antes de você. Dois motoristas nos últimos três anos. Um foi pra clínica. O outro — bem, não sei onde ele foi. Eu sempre conserto o ônibus. Sempre passa no laudo. Mas o que tem nele não é mecânico. Nunca foi.*
-
-> — *O que eu faço, Earl?* — você pergunta.
-
-Uma pausa.
-
-> — *Isso é com você, filho.*
+Para. Enxuga o rosto. Olha no espelho. Só ele.
 
 ---
 
-**[BIFURCAÇÃO NARRATIVA — O JOGADOR ESCOLHE O DESFECHO]**
+**[DIÁRIO DE DALE — Dia 3]**
+
+```
+He knew those kids.
+Their names, their seats, their faces — he'd driven them for years.
+
+I keep thinking about the letter.
+A man who drove this route for twenty-two years gets a pink slip
+and drives in the next morning like it's any other day.
+And then one morning it isn't.
+
+Marcus, Emma, Thomas, Grace, Oliver.
+I say their names in order. Like a prayer I don't have words for yet.
+```
 
 ---
 
-### FINAL A — A Fuga
-*"Não é minha guerra."*
+## DIA 4 — The Mirror
 
-Você realiza a rota matinal em silêncio. Os cinco estão quietos, quase pacientes — como se soubessem o que você decidiu antes de você mesmo saber.
+### Manhã — O Diário de Graves
 
-Na última parada da manhã, quando a última criança viva desce, você desliga o motor. Tira a chave. Tira o diário de Victor do bolso — aquela capa preta, aquelas páginas amareladas.
+Dale abre o painel de emergência atrás do banco do motorista. Earl mencionou "reparos que não precisavam ser feitos" nessa área.
 
-Você o deixa aberto no banco do motorista, na última página. *"Perdoem-me."*
-
-Você sai pela porta dianteira, fecha sem olhar para trás.
-
-Harrison Siqueira Stone está na entrada da secretaria, como se tivesse sido avisado. Os dois se olham por um momento que não tem duração mensurável.
-
-> — *Quer entregar a chave?*
-
-Você coloca as chaves na palma da mão dele. Olha nos olhos dele — aqueles olhos de alguém que passou décadas se convencendo de que o que fez não foi suficientemente grave para ser chamado pelo nome certo.
-
-> — *Você sabia,* — você diz, voz baixa, sem inflexão. *"Você sabe e continua sabendo. E um dia alguém vai descobrir."*
-
-Stone fecha a mão em volta das chaves. Não responde.
-
-Você vai embora a pé. A escola fica atrás de você.
-
-Naquela noite, você acorda às 3h com o sussurro de Thomas na orelha — suave, quase gentil:
-
-> *"Obrigado por tentar."*
-
-E então: silêncio. Pela primeira vez em cinco dias, silêncio de verdade. Não a ausência de som — a ausência daquela presença.
-
-Pela manhã, você arruma as malas. Sai de Ravenswood antes do café.
-
-**[FINAL A — SOBREVIVÊNCIA: O MOTORISTA ESCAPA. AS CRIANÇAS PERMANECEM. STONE PERMANECE. O CICLO CONTINUA — ATÉ O PRÓXIMO MOTORISTA.]**
+O painel cede mais do que deveria. Dentro, envolto em plástico de cozinha e fita isolante: um caderno espiral. Capa preta. Escrito à caneta vermelha na frente: **V.G.**
 
 ---
 
-### FINAL B — A Redenção
-*"Alguém precisa fechar isso."*
+**[ARTEFATO — Diário de Victor Graves]**
 
-Você realiza a rota matinal. Fez uma parada antes de começar: a delegacia de polícia de Ravenswood. Entregou o diário de Victor, o recorte de jornal, os documentos que fotografou na pasta de Stone com o celular. Assinou uma declaração. O investigador disse que investigaria.
+```
+February 28, 2023
 
-Pode não ser suficiente. Pode demorar. Mas alguém além de você sabe agora.
+Twenty-two years. Not complaining. Just saying.
+I know every kid on this route by name, by seat, by what they do when
+they're tired. Marcus always moves forward. Emma always laughs at something.
+Thomas always talks too much. Grace always watches. Oliver always draws.
 
-Na última parada da manhã, quando o ônibus fica vazio, você não sai.
+Feels like family, almost. The kind you don't pick.
+```
 
-Você fica sentado no banco do motorista, mãos no colo, olhando pelo espelho.
+```
+March 8, 2023
 
-> *"Eu sei quem vocês são."*
+Brown envelope on my doorstep. District letterhead.
+"Effective April 1st, Bus 104 route will be reassigned as part of the
+district's operational restructuring."
 
-Os cinco aparecem, um por um. Nas fileiras habituais. Quietos.
+Twenty-two years. April first.
 
-> *"Marcus Reid. Emma Lynch. Thomas Sanders. Grace Harper. Oliver Crane."*
+I drove the route this morning and didn't tell a soul.
+```
 
-Os nomes no ar. Thomas levanta a cabeça de forma abrupta — provavelmente é a primeira vez desde 1998 que alguém os chama pelos nomes em voz alta, deliberadamente, como se importassem.
+```
+March 12, 2023
 
-> *"Eu sei o que aconteceu com vocês. Sei que foi injusto. Sei que vocês não tiveram escolha. Sei que Victor estava errado — mesmo que acreditasse que estava certo. E sei que Siqueira sabia e ficou calado."*
+I keep thinking about those five.
+Marcus always pushing past where he's supposed to be.
+Emma never caring who she hurts.
+Thomas talking and nobody really listening.
+Grace right there and nobody seeing her.
+Oliver saying everything through his hands and nobody reading it.
 
-Oliver para de enrolar os dedos. Emma fecha o sorriso pela primeira vez.
+Nobody sees them the way they really are.
+I know what that's like.
+I knew it when I was ten too.
+```
 
-> *"Eu fui à polícia esta manhã. Entreguei tudo. O diário de Victor, os documentos de Stone, tudo. Isso vai sair à luz. As pessoas vão saber o que aconteceu com vocês em 1998. Seus nomes vão sair do papel amarelado numa gaveta trancada."*
+```
+March 14, 2023
 
-Marcus Reid se levanta da décima fileira pela última vez. Caminha pelo corredor devagar — não o andar impaciente de explorador que cruzava limites. O andar de uma criança que chegou onde precisava chegar.
+I think I've been planning something without letting myself know I was
+planning it.
 
-Para a um metro de você.
+Is that how it works.
+Is that how a person
+```
 
-> *"Você vai embora agora?"* — Marcus pergunta.
+```
+march 15 2023
 
-> *"Sim."*
+five kids nobody sees right
+twenty two years nobody saw me either
+ridgemont bridge one mile
+not scared anymore
+past where scared lives
+april first is too far away
+this is
+```
 
-Marcus olha para os outros quatro. Uma comunicação sem palavras — a linguagem de quem passou anos compartilhando o mesmo espaço, o mesmo silêncio, a mesma história sem fim.
+Dale fecha o caderno. Fica parado. Abre de novo na última entrada. Lê duas vezes.
 
-E então, um por um, eles vão. Não de forma violenta. Não de forma dramática. Simplesmente... vão — como uma vela que apaga devagar sem vento.
+*"Nobody sees them the way they really are. I know what that's like."*
 
-O ônibus fica mais quente.
+Ele pensa na Kaylee. Como ela o vê quando ele aparece tarde. Como Carol o vê agora. Como a seguradora o viu depois do jackknife.
 
-O cheiro de vinil velho e poeira se transforma, por um instante, em algo que você não consegue nomear — algo infantil, quase doce, como o cheiro de giz numa tarde de verão.
-
-Você sai do ônibus. O sol está mais forte do que esteve em toda a semana.
-
-Harrison Siqueira Stone é levado para interrogatório àquela tarde. O diário de Victor Graves vira evidência. Os nomes de cinco crianças de 1998 são lembrados.
-
-**[FINAL B — REDENÇÃO: AS CRIANÇAS SÃO LIBERTADAS. A VERDADE VEM À TONA. O CICLO É QUEBRADO. CUSTO: UMA SEMANA DE TERROR E O QUE VOCÊ VIU NÃO PODE SER DESAPRENDIDO.]**
-
----
-
-### FINAL C — O Ciclo
-*"Não consigo mais."*
-
-Você começa a rota da tarde.
-
-Está exausto de um jeito que não é físico — é o cansaço de alguém que ficou acordado demais dentro da própria cabeça. Os limites entre o que é real e o que não é ficaram porosos. Você não sabe mais com certeza o que as crianças vivas veem e o que só você vê.
-
-Marcus está na segunda fileira. Você não usa o microfone.
-
-Emma toca no painel. Você não aciona a trava. O gesto dela não parece mais ameaçador — parece curioso, infantil, como uma criança tocando em algo brilhante.
-
-Thomas narra. Você desliga o rádio voluntariamente. A voz dele, sem a música por cima, é quase bonita — tem o ritmo de quem aprendeu a contar histórias antes de aprender a escrever.
-
-Grace cobre o retrovisor. Você não tenta ver ao redor dela. A estrada parece continuar de alguma forma.
-
-Oliver está em todo lugar. Os desenhos nas janelas acumulam dia após dia, camada sobre camada — você olha para eles e começa a ver coisas que antes não via. Padrões. Beleza, de um tipo perturbador e específico.
-
-A Ravenswood Gorge Road aparece no GPS. Não é a rota de hoje. Você não corrige.
-
-Thomas, mais alto do que nunca, a voz transformada em algo entre sussurro e canto:
-
-> *"...e quando o motorista chegou à última curva, ele entendeu. Que não há saída. Que nunca houve saída. Que o Ônibus 104 sempre chega ao mesmo lugar, e o único motorista que importa é o que não desvia..."*
-
-A curva aparece no farol.
-
-O guardrail está lá, exatamente onde esteve em 1998.
-
-Você não desacelera.
-
-**[TELA PRETA]**
-
-**[SOM: METAL CONTRA PEDRA. VIDRO. SILÊNCIO.]**
+Dale fecha o caderno. Coloca no bolso. Sai para o turno.
 
 ---
 
-*Três dias depois, um novo aviso é afixado no quadro de funcionários da Ravenswood Elementary School:*
+### Tarde — Dois ao Mesmo Tempo
 
-> *"VAGA ABERTA: Motorista de Ônibus Escolar — Período integral. Experiência com veículos de grande porte necessária. Boa remuneração e benefícios. Contato: Diretor H. Stone."*
+**3:52 PM. Oito crianças vivas.**
 
-**[FINAL C — O CICLO SE REPETE. UM NOVO MOTORISTA SERÁ CONTRATADO. E OS CINCO ESTARÃO ESPERANDO.]**
+Emma aparece à esquerda — risada crescente, mão se estendendo para o painel.
 
-**FIM DO DIA 5**
+Dale gira para cobrir —
 
----
+E Marcus está na fileira dois, avançando.
 
-## Transições entre Dias
+**Pela primeira vez, dois ao mesmo tempo.**
 
-**Mecânica Definida: Diário do Protagonista + Ligações Telefônicas**
+**Dale: — "STOP. BOTH OF YOU. NOW."**
 
-Ao final de cada dia, antes do próximo começar, o jogador vê:
+As oito crianças vivas congelam.
 
-1. **Página do diário manuscrita** — Ray Morgan anota o que viveu. Tom progressivamente mais perturbado: letra controlada no Dia 1, rasuras no Dia 3, letras grandes e pressionadas no Dia 4. Serve como recap narrativo e revelação de estado emocional.
+Uma menina, seis anos, tranças, no fundo:
 
-2. **Ligação opcional de Earl Hayes** — O mecânico liga brevemente em alguns dias. Não explica nada diretamente, mas deixa fragmentos: *"Passou na revisão... de novo."* / *"Os outros motoristas também tinham pesadelos."*
+> — *"Why are you crying, mister?"*
 
-3. **Fragmento de jornal ou documento** — Um recorte, uma foto, uma anotação encontrada aparece na tela, revelando lore progressivamente (acidente, Victor, crianças).
-
-**Tom das transições:** Realista, doméstico, opressivo. Ray em casa, cansado, mas não conseguindo descansar. A câmera sempre volta para a janela — e a estrada lá fora.
+Dale passa a mão no rosto. Está molhado. Ele não sabia que estava chorando.
 
 ---
 
-## Lore Fragments (Distribuídos Progressivamente)
+### Earl — A Primeira Confissão
 
-### O Acidente de 1998 — Backstory Completa
+**6:30 PM. Depot garage.**
 
-#### O que Aconteceu
+Dale tira o caderno do bolso. Não entrega. Só mostra.
 
-Em 13 de março de 1998, o Ônibus 104 da Ravenswood Elementary School não retornou da rota vespertina.
+Earl olha. Toma um gole. Olha de novo.
 
-Victor Graves, 44 anos, motorista há seis anos na escola, conduziu o veículo pela Ravenswood Gorge Road — uma estrada de montanha fora da rota oficial marcada em seu mapa — e acelerou. O ônibus atravessou o guardrail na curva fechada do quilômetro 7 e caiu no precipício abaixo.
+> — *"Where was it?"*
 
-Cinco crianças foram mortas: **Marcus Reid (10), Emma Lynch (10), Thomas Sanders (11), Grace Harper (10) e Oliver Crane (10)**.
+> — *"Emergency panel. Behind the seat."*
 
-O corpo de Victor Graves **nunca foi encontrado**.
+Earl assente.
 
-A investigação policial foi encerrada em menos de duas semanas como "acidente por falta de atenção do condutor". Harrison Siqueira Stone, então como agora diretor da escola, não pressionou por investigação mais profunda.
+> — *"You know, the last guy — not Graves. After Graves. Tim something, from Altoona. He started keeping a notebook too. About the kids. Said they were trying to tell him something."*
 
----
+Pausa.
 
-#### Victor Graves — O Colapso
+> — *"I told him to quit. He didn't quit. He lasted four days and drove himself to the county hospital at two in the morning. Checked himself in voluntarily."*
 
-Victor não era um homem violento. Era, segundo colegas, metódico e pouco sociável — o tipo que fazia a rota sem reclamações e ia para casa. Nenhum incidente registrado em seis anos.
+> — *"Why didn't you tell me any of this?"*
 
-Nos meses anteriores ao acidente, algo mudou.
+Earl picks up a rag. Starts wiping down a tool that's already clean.
 
-Colegas relataram que Victor começou a fazer perguntas sobre o histórico do Ônibus 104. Sobre motoristas anteriores. Sobre quais crianças eram designadas para qual veículo, e por quê. Pediu acesso a arquivos de rotas e foi recusado por Harrison Siqueira Stone. Pediu novamente. Foi recusado com mais firmeza.
-
-Seu diário, encontrado décadas depois escondido sob o banco do motorista (passado pelas inspeções pós-acidente sem ser detectado), revela uma mente se deteriorando sob o peso de uma crença que ele nunca conseguiu provar:
-
-> *"O padrão é claro para quem quer ver. Sempre as mesmas crianças — as que têm menos advogados. As que têm famílias que não fazem perguntas difíceis. Siqueira não escolhe as mais problemáticas. Escolhe as mais vulneráveis."*
-
-Victor acreditava que havia um ciclo intencional — que as crianças "problemáticas" designadas ao Ônibus 104 estavam destinadas a algum tipo de fim específico pela negligência sistemática da escola. Acreditava que a única forma de quebrar esse ciclo era acabar com ele definitivamente.
-
-Estava correto sobre o padrão de negligência. Estava errado sobre o que isso significava — e tragicamente errado sobre a solução.
+> — *"Figured you'd find out or you wouldn't. Everybody does it different."*
 
 ---
 
-#### Por que Essas Cinco Crianças
+**[DIÁRIO DE DALE — Dia 4]**
 
-Harrison Siqueira Stone, diretor desde 1994, havia desenvolvido uma prática informal de realocar crianças com "perfil difícil" para rotas especiais do Ônibus 104 em horários específicos. A justificativa oficial: *"reorganização de rotas para melhor gestão disciplinar."*
+```
+"Nobody sees them the way they really are."
 
-A realidade: essas crianças tinham menos advogados. Pais ausentes ou sobrecarregados, famílias sem influência na escola, históricos que tornavam fácil ignorá-las. Quando havia incidentes menores nessas rotas, havia menos reclamações formais.
+Victor. I get it.
+And that scares me more than anything on that bus.
 
-Stone não era monstruoso de forma ativa. Era monstruoso de forma passiva — a cumplicidade lenta de alguém que deixa de fazer a pergunta que sabe que não vai querer responder.
+Called Kaylee tonight. She didn't pick up.
+Left a voicemail with too much in it.
+Stood in the motel parking lot for a while after.
 
-Os cinco foram escolhidos por Victor especificamente porque eram os que estavam na lista de "realocação" daquele mês:
-
-- **Marcus Reid** — suspensões por "invasão de áreas restritas da escola"
-- **Emma Lynch** — incidentes de bullying reincidentes
-- **Thomas Sanders** — "influência negativa sobre os demais alunos"
-- **Grace Harper** — comportamento "preocupante" relatado pelos pais, sem investigação formal
-- **Oliver Crane** — encaminhado para avaliação psicológica que nunca aconteceu
-
----
-
-#### Por que as Cinco Assombram
-
-As cinco crianças morreram no pico de emoções interrompidas — cada uma no meio de fazer a única coisa que sabia fazer:
-
-**Marcus** — Pela primeira vez, estava genuinamente com medo e sem saída. Morreu avançando pelo corredor em direção ao motorista, tentando chegar à cabine para pedir ajuda. O impulso que em vida o fazia explorar espaços proibidos, em morte o faz avançar compulsivamente em direção à cabine de todo motorista.
-
-**Emma** — Riu nervosamente até o último segundo, porque era o único escudo que tinha contra o medo. Morreu com a risada travada. Em morte, a risada continua — mas agora é o sinal de um terror que ela não consegue parar de expressar na única linguagem que tinha.
-
-**Thomas** — Tentou narrar o que estava acontecendo para ter controle sobre o caos. Sua última história ficou incompleta — nunca chegou ao fim. Em morte, narra em loop, buscando um final que não encontrou.
-
-**Grace** — Via tudo nos olhos do motorista no espelho retrovisor. Estava olhando neles quando o ônibus caiu. Não fechou os olhos. Em morte, continua olhando — buscando testemunha para o que viu.
-
-**Oliver** — Estava desenhando quando o impacto aconteceu. O lápis deixou uma linha rasgando o papel. Em morte, continua desenhando — sempre a mesma cena, sempre incompleta, sempre o precipício que se aproxima.
-
-O vínculo com o Ônibus 104 é o trauma do último momento: cada um tentou fazer, uma última vez, aquilo que sempre fez — e não conseguiu terminar. São loops interrompidos. Histórias sem fim. Assombram o ônibus porque o ônibus é onde suas histórias pararam.
+One more day.
+```
 
 ---
 
-#### Harrison Siqueira Stone — A Cumplicidade
+## DIA 5 — Last Run
 
-Stone nunca ordenou o acidente. Mas sabia do padrão de realocação. Sabia que havia algo sistemático no Ônibus 104, e escolheu não investigar porque investigar significaria ter que nomeá-lo.
+### Manhã — A Oferta de Stone
 
-Quando o acidente aconteceu, foi o primeiro a garantir que o relatório policial fosse mínimo. Que a investigação fosse encerrada rapidamente. Que o corpo de Victor não fosse procurado com a seriedade necessária.
+**7:05 AM. Escritório de Stone. Antes do turno.**
 
-Ele sabe o que o ônibus é. Sabe dos motoristas anteriores que saíram traumatizados. Continua colocando novos motoristas nele — não por maldade ativa, mas pela covardia entorpecida de alguém que já investiu tanto em não enfrentar o que fez que encarar seria destruir o que resta da própria identidade.
+Stone está de pé. Envelope na mão. Coloca sobre a mesa.
 
-Sua cumplicidade é o horror mais mundano do jogo: não o sobrenatural, mas o humano que o criou.
+> — *"Your week ends today. I'd like to make sure it ends quietly."*
+
+Dale olha para o envelope.
+
+> — *"There's an extra four hundred dollars in there. Completion bonus. Confidential."*
+
+> — *"Confidential about what?"*
+
+> — *"About whatever you think you experienced this week."*
+
+> — *"I found Victor Graves's diary. In the emergency panel. He wrote about those five kids the morning he killed them."*
+
+Stone is quiet for a long moment.
+
+> — *"That diary is district property. I'll need you to—"*
+
+> — *"No."*
 
 ---
 
-### Fragmentos Revelados por Dia
-
-| Dia | Fragmento | Como é Revelado |
-|-----|-----------|-----------------|
-| Dia 2 | Recorte do Ravenswood Courier (1998) | Quadro de avisos da sala de descanso |
-| Dia 2 | Victor Graves foi motorista do 104 | Confronto com Stone |
-| Dia 3 | Lista dos 5 passageiros com anotações | Pasta confidencial no escritório de Stone |
-| Dia 3 | "ELE SABIA" — Victor sabia do acidente | Desenho de Oliver na janela |
-| Dia 3 | Flashback do acidente | Narração de Thomas durante a rota |
-| Dia 4 | Diário de Victor Graves | Escondido sob o banco do motorista |
-| Dia 4 | Victor acreditava estar "quebrando um ciclo" | Últimas páginas do diário |
-| Dia 5 | Ligação de Earl Hayes confirmando motoristas anteriores | Telefone antes do embarque |
+**[BIFURCAÇÃO 1]**
+- **Aceitar o dinheiro e entregar o diário** → caminho para The Cycle
+- **Recusar** → caminhos para The Last Stop ou Early Retirement
 
 ---
 
-## Temas Narrativos
+### Rota Final — Os Cinco
 
-1. **Culpa e Redenção** - As crianças buscam algo?
-2. **Ciclos de Violência** - O acidente se repete?
-3. **Sanidade vs Realidade** - É real ou alucinação?
-4. **Responsabilidade** - Protagonista pode salvá-las ou só sobreviver?
+**3:40 PM. Último turno da semana. Crianças vivas já desembarcaram.**
+
+Dale para no acostamento da Maple Street. Motor ligado.
+
+Eles estão todos lá.
+
+Marcus no banco 12. Emma no banco 8. Thomas no banco 5. Grace no banco 7. Oliver no banco 4.
+
+Sentados em silêncio. Não atacando. Não avançando. Não rindo.
+
+Apenas olhando.
+
+Oliver abre um caderno e vira para Dale — sem se mover do banco:
+
+Um desenho. Um homem ao volante. Cinco figuras em volta. Acima de tudo, letras de criança:
+
+**WE DIDN'T PICK HIM EITHER**
+
+---
+
+**[BIFURCAÇÃO 2]**
+- **Ignorar e prosseguir para o depot** → The Last Stop
+- **Tentar falar com eles** → Early Retirement
+- **Entrar em pânico** → The Cycle
+
+---
+
+### O Rádio
+
+**4:12 PM. Ônibus estacionado, motor desligado.**
+
+O rádio liga sozinho. Channel two.
+
+Uma voz infantil. Calma:
+
+> *"33 north. Ridgemont bridge. One point four miles."*
+
+**[BIFURCAÇÃO 3]**
+- **Desligar o rádio e sair do ônibus** → The Last Stop / Early Retirement
+- **Pegar as chaves e dirigir** → The Cycle
+
+---
+
+## FINAIS
+
+### FINAL 1 — "The Last Stop" *(Bom)*
+
+**Condições:** Recusou Stone + ignorou as crianças na Bifurcação 2 + desligou o rádio
+
+Dale desce do ônibus. Tranca. Entrega as chaves para Earl sem dizer nada.
+
+> — *"You alright?"*
+
+> — *"I'm leaving Ravenswood."*
+
+Earl assente. Toma um gole.
+
+> — *"That's what I'd do."*
+
+**Cutscene:** Manhã seguinte. Dale no Civic, mala no banco de trás. Placa na saída da cidade: *THANK YOU FOR VISITING RAVENSWOOD.*
+
+Liga o rádio: *"Bus 104 found abandoned on district property overnight..."*
+
+Muda de estação. Patsy Cline. Ele sabe todas as palavras.
+
+Ele não olha pelo retrovisor.
+
+**Tom:** Vitória sem glória. Vivo. Ainda Dale. As crianças ficam presas, mas o ciclo não se repete nele.
+
+---
+
+### FINAL 2 — "Early Retirement" *(Médio)*
+
+**Condições:** Recusou Stone + tentou falar com as crianças + desligou o rádio
+
+Dale para o ônibus na Maple Street. Vira para os cinco.
+
+> — *"I read his diary. I know what he did. And I'm sorry. I'm sorry nobody stopped him. I'm sorry I can't fix it."*
+
+Silêncio. Oliver olha para o desenho. Grace olha para Dale — pela primeira vez, não com intensidade. Com algo mais parecido com reconhecimento.
+
+Thomas diz, muito baixinho:
+
+> *"Drive safe, mister."*
+
+Eles somem.
+
+Dale entrega as chaves em silêncio. Leva o diário de Graves no bolso.
+
+**Cutscene:** Semanas depois. Dale num semáforo em Pittsburgh. Rádio em estática. Olha pelo retrovisor do próprio carro.
+
+Fração de segundo: rosto pálido no banco de trás.
+
+Vira-se. Nada.
+
+Fica parado no verde até o carro atrás buzinar.
+
+**Texto:** *"He survived. He left. He never drove professionally again. Sometimes, at night, he checks the backseat before getting in the car."*
+
+---
+
+### FINAL 3 — "The Cycle" *(Ruim)*
+
+**Condições:** Aceitou o dinheiro de Stone + colapso na Bifurcação 2 + pegou as chaves
+
+Dale pega as chaves. Sobe no Bus 104.
+
+As vozes mudam de tom:
+
+> *"You know the way."*
+> *"You drive better than he did."*
+> *"Take us home."*
+
+Route 33 North. Neblina. **RIDGEMONT BRIDGE — 1.4 MI.**
+
+O acelerador vai fundo.
+
+**[Corte para preto. Som de metal. Vidro. Água.]**
+
+---
+
+**[ARTEFATO — Ravenswood Gazette, data sem especificar]**
+
+```
+RAVENSWOOD GAZETTE
+
+BUS TRAGEDY STRIKES AGAIN
+Second driver lost at Ridgemont Bridge
+
+Bus 104 was found at the base of Ridgemont gorge Friday night.
+The driver, whose name has not been released pending family notification,
+had been employed by Ravenswood Elementary School for one week.
+
+No other passengers were aboard.
+
+District officials say Bus 104 will be taken in for assessment.
+Principal Harrison Stone: "The district will have no further comment."
+```
+
+**Última imagem:** Bus 104 sendo guinchado. Placa encostada no chassis:
+
+**AVAILABLE FOR REPAIRS**
+
+---
+
+## MECÂNICA DE TRANSIÇÃO ENTRE DIAS
+
+**Decisão:** Combinação de dois formatos:
+
+1. **Diário de Dale** — monólogo escrito, aparece na tela como página de caderno ao final de cada dia
+2. **Conversa com Earl no depot** — cena breve (20–40 segundos) antes do turno seguinte
+
+**Execução:** Fade to black com som do motor apagando → página do diário → corte para garage com Earl → fade para o novo dia
+
+---
+
+## LORE FRAGMENTS — Artefatos
+
+### Ravenswood Gazette — Recorte #2
+
+```
+RAVENSWOOD GAZETTE
+Wednesday, March 22, 2023
+
+FIVE CHILDREN LAID TO REST; COMMUNITY MOURNS
+Graves body still not found; search suspended
+
+Memorial services concluded this week for the five Ravenswood Elementary
+students killed in the March 15th crash.
+
+Marcus Reid: "curious about everything — always somewhere he wasn't supposed
+to be." Emma Lynch: "spirited." Thomas Sanders: "a kid who had a story for
+every occasion." Grace Harper: "She saw everything. She just didn't always
+say it." Oliver Crane's art teacher submitted his drawings for the service.
+
+The search for Victor Graves was formally suspended after eleven days.
+Sheriff's deputies cite the depth and current of the gorge as untenable.
+
+Principal Harrison Stone declined to comment beyond an earlier statement.
+```
+
+### Objetos Encontráveis no Bus 104
+
+| Objeto | Localização | O que revela |
+|--------|-------------|-------------|
+| **Diário de Victor Graves** | Painel de emergência, atrás do banco do motorista | Deterioração de Graves, seleção intencional das 5 crianças |
+| **Gazette 15/03/23** | Bolso traseiro do banco (Earl "deixou cair") | Confirmação do acidente, nomes das vítimas |
+| **Desenho no banco 9** | Estofamento do banco 9, lado esquerdo | Oliver: ônibus na ponte, 5 rostos nas janelas |
+| **Bilhete amassado** | Preso atrás do visor solar | Letra de criança: *"DO NOT PRESS RED BUTTON"* |
+| **Foto de turma 2022-23** | Atrás do espelho retrovisor (cai quando ajustado) | 5 rostos circulados — os círculos parecem recentes |
+| **Carta de demissão de Graves** | Dentro do diário, última página | Data: 12 de março de 2023. Efeito: 1 de abril. |
 
 ---
 
 ## Notas de Desenvolvimento
 
-**Status:** 🟢 Narrativa Completa
-- Dia 1 completo ✅
-- Dia 2 completo ✅
-- Dia 3 completo ✅
-- Dia 4 completo ✅
-- Dia 5 completo ✅ (3 finais: Fuga / Redenção / Ciclo)
-- Escola confirmada: Ravenswood Elementary School ✅
-- Lore Fragments do acidente de 1998 completos ✅
-- Transições entre dias definidas ✅
-- Personagens: ver [characters.md](characters.md) ✅
+**Status:** 🟡 Em Progresso
+
+- [x] Dia 1 completo
+- [x] Dia 2 completo
+- [x] Dia 3 completo
+- [x] Dia 4 completo
+- [x] Dia 5 e Finais completos
+- [x] Protagonista definido — Dale Mercer
+- [x] Artefatos de lore escritos
+- [x] Mecânica de transição definida
+- [ ] Atualizar `characters.md` com Dale Mercer e Earl Pruitt
+- [ ] Revisar `endings.md` com detalhes expandidos
+- [ ] Expandir cenas de Grace e Oliver (Dias 3–4)
+
+**Ver também:** `NARRATIVE_DECISIONS.md`, `characters.md`, `endings.md`
