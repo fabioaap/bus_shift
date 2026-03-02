@@ -1,11 +1,18 @@
 /**
  * Agent Creation Elicitation Workflow
- * Progressive disclosure for creating new agents
+ *
+ * @deprecated This file is a compatibility stub.
+ * The canonical source is now `.aios-core/elicitation/index.js`.
+ * Import from there directly:
+ *   const { agentElicitationSteps } = require('./index');
+ *
+ * Fixes #61: Consolidate 3 elicitation files
  */
 
-const agentElicitationSteps = [
-  {
-    title: 'Basic Agent Information',
+const { agentElicitationSteps } = require('./index');
+
+module.exports = agentElicitationSteps;
+
     description: 'Let\'s start with the fundamental details about your agent',
     help: 'An agent is a specialized AI assistant with a specific role and set of capabilities. Think of it as a team member with expertise in a particular area.',
     questions: [

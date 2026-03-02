@@ -10,7 +10,7 @@
  * - Rollback information generation
  * - Error handling and edge cases
  *
- * @see .aios-core/scripts/decision-log-generator.js
+ * @see .aios-core/development/scripts/decision-log-generator.js
  */
 
 const {

@@ -1,3 +1,5 @@
+# Task: Create Task
+
 ---
 
 ## Execution Modes
@@ -225,8 +227,6 @@ tools:
 # checklists:
 #   - task-validation-checklist.md
 ---
-
-# Create Task
 
 ## Purpose
 To create a new task file that defines executable workflows for agents, with proper structure, elicitation steps, and validation.

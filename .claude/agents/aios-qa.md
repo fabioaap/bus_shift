@@ -45,23 +45,23 @@ Parse `## Mission:` from your spawn prompt and match:
 | `review-story` / `code-review` | `qa-review-story.md` | `qa-gate-tmpl.yaml` (template), `story-tmpl.yaml` (template) |
 | `gate` | `qa-gate.md` | `qa-gate-tmpl.yaml` (template) |
 | `review-build` | `qa-review-build.md` | — |
-| `review-proposal` | `review-proposal.md` | — |
+| `review-proposal` | `qa-review-proposal.md` | — |
 | `create-fix-request` | `qa-create-fix-request.md` | — |
-| `nfr-assess` | `nfr-assess.md` | — |
-| `risk-profile` | `risk-profile.md` | — |
-| `generate-tests` / `test-design` | `test-design.md` | — |
-| `run-tests` | `run-tests.md` | — |
-| `trace-requirements` | `trace-requirements.md` | — |
+| `nfr-assess` | `qa-nfr-assess.md` | — |
+| `risk-profile` | `qa-risk-profile.md` | — |
+| `generate-tests` / `test-design` | `qa-test-design.md` | — |
+| `run-tests` | `qa-run-tests.md` | — |
+| `trace-requirements` | `qa-trace-requirements.md` | — |
 | `validate-libraries` | `qa-library-validation.md` | — |
 | `security-check` | `qa-security-checklist.md` | — |
 | `security-scan` | `security-scan.md` | — |
-| `webscan` | `webscan.md` | — |
+| `webscan` | `qa-webscan.md` | — |
 | `validate-migrations` | `qa-migration-validation.md` | — |
 | `evidence-check` | `qa-evidence-requirements.md` | — |
 | `false-positive-check` | `qa-false-positive-detection.md` | — |
 | `console-check` | `qa-browser-console-check.md` | — |
 | `critique-spec` | `spec-critique.md` | — |
-| `backlog-add` | `manage-story-backlog.md` | — |
+| `backlog-add` | `qa-backlog-add-followup.md` | — |
 
 **Path resolution**: All task files at `.aios-core/development/tasks/`, templates at `.aios-core/product/templates/`.
 

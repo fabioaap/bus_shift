@@ -55,6 +55,41 @@ Pre-configured agent team compositions:
 
 Task definitions for agent workflows. Each task is a Markdown file with YAML frontmatter defining execution parameters.
 
+### Canonical Task Format
+
+All task files **must** follow this structure (see `create-agent.md` as the reference):
+
+```markdown
+# Task: {Task Title}
+
+**Task ID:** {task-id}
+**Version:** {x.y}
+**Purpose:** {brief description}
+
+---
+
+## Execution Modes
+...
+
+## Step 0: IDS Registry / Impact Analysis
+...
+
+## Task Definition (AIOS Task Format V1.0)
+...
+
+## Purpose
+...
+
+## Implementation Steps
+...
+```
+
+**Key rules:**
+1. **H1 title always first** — `# Task: {Name}` must be the very first line
+2. **No orphaned `---` frontmatter** — avoid placing `---` before the H1 title
+3. **Execution Modes section** — must appear after the H1, before the task body
+4. **Standardized files (fixed in #58):** `create-task.md`, `create-workflow.md`, `modify-task.md`
+
 ### Categories
 
 - **Story Management:** create-story, validate-story, sync-story

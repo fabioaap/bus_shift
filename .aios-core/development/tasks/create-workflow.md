@@ -1,3 +1,5 @@
+# Task: Create Workflow
+
 ---
 
 ## Execution Modes
@@ -243,8 +245,6 @@ tools:
 # checklists:
 #   - workflow-validation-checklist.md
 ---
-
-# Create Workflow
 
 ## Purpose
 To create a new workflow definition that orchestrates multiple agents and tasks for complex multi-step processes in Synkra AIOS.

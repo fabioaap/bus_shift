@@ -1,3 +1,5 @@
+# Task: Modify Task
+
 ---
 
 ## Execution Modes
@@ -220,8 +222,6 @@ updated_at: 2025-11-17
 checklists:
   - change-checklist.md
 ---
-
-# Modify Task Task
 
 ## Purpose
 
