@@ -88,11 +88,13 @@
 
 | # | Item | Agente |
 |---|------|-------|
-| #59 | Fix @qa agent broken task ref | agent-23 (aios-qa) |
-| #60 | Unit tests decision-log-generator | agent-23 (aios-qa) |
-| #58 | Deduplicate 3 task files | agent-24 (aios-devops) |
-| #61 | Consolidate elicitation files | agent-24 (aios-devops) |
-| #65 | Test coverage 10+ AIOS modules | agent-24 (aios-devops) |
+| #59 | Fix @qa agent broken task ref | ✅ agent-23 (ca55525) |
+| #60 | Unit tests decision-log-generator | ✅ agent-23 (ca55525) |
+| #58 | Deduplicate 3 task files | ✅ agent-24 (ca55525) |
+| #61 | Consolidate elicitation files | ✅ agent-24 (7fbf6fd) |
+| #65 | Test coverage 10+ AIOS modules | ✅ agent-24 (7fbf6fd) |
+
+### ✅ DONE — Wave 7 AIOS infrastructure
 
 ### 📋 TODO — Requer assets externos
 
@@ -107,7 +109,8 @@
 
 ---
 
-> **48 scripts C# implementados** · **10 docs de design** · **Narrativa completa (characters + endings + story PT-BR)** · **Wave 7 AIOS em progresso**
+> **48 scripts C# implementados** · **10 docs de design** · **Narrativa completa** · **Wave 7 AIOS completa (5 issues fechados)**
+> **Restam 18 issues abertos:** 4 art (🎨 bloqueado), 3 audio (🔊 bloqueado), 5 QA/testing (fase futura), 2 MCP, 1 transmedia, 1 voiceover, 2 polish/release
 
 ---
 
