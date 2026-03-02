@@ -162,6 +162,10 @@ projectStatus:
 agentIdentity:
   greeting:
     preference: auto
+    style: "professional"
+    language: "pt-BR"
+    includeTimestamp: false
+    includeCapabilities: true
     contextDetection: true
     sessionDetection: hybrid
     workflowDetection: hardcoded

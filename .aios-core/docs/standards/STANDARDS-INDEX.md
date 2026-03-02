@@ -51,12 +51,19 @@
 
 | Document | Description | Status | Superseded By |
 |----------|-------------|--------|---------------|
-| [AIOS-LIVRO-DE-OURO.md](./AIOS-LIVRO-DE-OURO.md) | v2.0.0 base document | ⚠️ Deprecated | AIOS-LIVRO-DE-OURO-V2.1-COMPLETE.md |
-| [AIOS-LIVRO-DE-OURO-V2.1.md](./AIOS-LIVRO-DE-OURO-V2.1.md) | v2.1 delta (partial) | ⚠️ Deprecated | AIOS-LIVRO-DE-OURO-V2.1-COMPLETE.md |
-| [AIOS-LIVRO-DE-OURO-V2.1-SUMMARY.md](./AIOS-LIVRO-DE-OURO-V2.1-SUMMARY.md) | v2.1 summary | ⚠️ Deprecated | AIOS-LIVRO-DE-OURO-V2.1-COMPLETE.md |
 | [AIOS-LIVRO-DE-OURO-V2.2-SUMMARY.md](./AIOS-LIVRO-DE-OURO-V2.2-SUMMARY.md) | Future v2.2 planning | 📋 Draft | N/A |
-| [AIOS-FRAMEWORK-MASTER.md](./AIOS-FRAMEWORK-MASTER.md) | v2.0.0 framework doc | ⚠️ Deprecated | AIOS-LIVRO-DE-OURO-V2.1-COMPLETE.md |
-| [V3-ARCHITECTURAL-DECISIONS.md](./V3-ARCHITECTURAL-DECISIONS.md) | Old architectural decisions | 📦 Archive Candidate | Current architecture docs |
+
+## Arquivados
+
+Os documentos abaixo foram movidos para [`archive/`](./archive/) em 2026-03 por terem sido supersedidos por `AIOS-LIVRO-DE-OURO-V2.1-COMPLETE.md`. Mantidos para referência histórica.
+
+| Document | Description | Arquivado Em | Supersedido Por |
+|----------|-------------|--------------|-----------------|
+| [archive/AIOS-LIVRO-DE-OURO.md](./archive/AIOS-LIVRO-DE-OURO.md) | v2.0.0 base document | 2026-03 | AIOS-LIVRO-DE-OURO-V2.1-COMPLETE.md |
+| [archive/AIOS-LIVRO-DE-OURO-V2.1.md](./archive/AIOS-LIVRO-DE-OURO-V2.1.md) | v2.1 delta (partial) | 2026-03 | AIOS-LIVRO-DE-OURO-V2.1-COMPLETE.md |
+| [archive/AIOS-LIVRO-DE-OURO-V2.1-SUMMARY.md](./archive/AIOS-LIVRO-DE-OURO-V2.1-SUMMARY.md) | v2.1 summary | 2026-03 | AIOS-LIVRO-DE-OURO-V2.1-COMPLETE.md |
+| [archive/AIOS-FRAMEWORK-MASTER.md](./archive/AIOS-FRAMEWORK-MASTER.md) | v2.0.0 framework doc | 2026-03 | AIOS-LIVRO-DE-OURO-V2.1-COMPLETE.md |
+| [archive/V3-ARCHITECTURAL-DECISIONS.md](./archive/V3-ARCHITECTURAL-DECISIONS.md) | Old architectural decisions | 2026-03 | Current architecture docs |
 
 ---
 
@@ -111,12 +118,13 @@
 │   ├── AIOS-COLOR-PALETTE-V2.1.md           # Color system
 │   └── AIOS-COLOR-PALETTE-QUICK-REFERENCE.md
 │
-├── Legacy (Reference Only)
-│   ├── AIOS-LIVRO-DE-OURO.md              # v2.0.0 base (deprecated)
-│   ├── AIOS-LIVRO-DE-OURO-V2.1.md         # v2.1 delta (deprecated)
-│   ├── AIOS-LIVRO-DE-OURO-V2.1-SUMMARY.md # v2.1 summary (deprecated)
-│   ├── AIOS-FRAMEWORK-MASTER.md           # v2.0.0 (deprecated)
-│   └── V3-ARCHITECTURAL-DECISIONS.md      # Archive candidate
+├── archive/                               # Archived deprecated documents (2026-03)
+│   ├── ARCHIVE-README.md                  # Archive manifest
+│   ├── AIOS-LIVRO-DE-OURO.md              # v2.0.0 base (archived)
+│   ├── AIOS-LIVRO-DE-OURO-V2.1.md         # v2.1 delta (archived)
+│   ├── AIOS-LIVRO-DE-OURO-V2.1-SUMMARY.md # v2.1 summary (archived)
+│   ├── AIOS-FRAMEWORK-MASTER.md           # v2.0.0 (archived)
+│   └── V3-ARCHITECTURAL-DECISIONS.md      # Architectural decisions (archived)
 │
 ├── Needs Update
 │   └── OPEN-SOURCE-VS-SERVICE-DIFFERENCES.md # Update with multi-repo
@@ -201,6 +209,7 @@ grep -r "v2.0" .aios-core/docs/standards --include="*.md"
 
 | Date | Version | Changes | Author |
 |------|---------|---------|--------|
+| 2026-03 | 2.1.1 | Archive 5 deprecated standards to archive/ (#63), update structure | @devops (Gage) |
 | 2025-12-09 | 2.1.0 | Initial STANDARDS-INDEX creation for v2.1 | @dev (Dex) |
 
 ---
