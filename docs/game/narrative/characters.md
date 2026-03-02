@@ -2,33 +2,82 @@
 
 ## Protagonista
 
-### O Motorista
-**Nome:** Ray Morgan
-*(Nome canônico — aparece no crachá, documentos internos e créditos. Em gameplay: personagem sem nome explícito no diálogo; experiência em primeira pessoa/imersão total.)*
+### Dale Mercer
+**Nome canônico:** Dale Mercer
+*(Aparece no crachá, documentos internos e créditos. Em gameplay: sem nome explícito no diálogo — experiência em primeira pessoa para imersão total.)*
 
 **Perfil:**
-- Idade: 38 anos
-- Situação: Recém-desempregado após empresa de frete encerrar as atividades; aceita o emprego na Ravenswood sem pesquisar o histórico do cargo
-- Personalidade inicial: Cansado, cético, pragmático — homem que já viu muita coisa difícil e não se surpreende facilmente
-- Progressão: Do ceticismo ao terror; do terror à investigação; da investigação à escolha final (escapar / confrontar / sucumbir)
+- Idade: 41 anos | Origin: Pittsburgh, PA
+- Situação: CDL suspensa após acidente (jackknife na I-376, fevereiro/2025 — não culpa dele, mas scapegoat da empresa). Pensão da filha 3 meses atrasada. Ravenswood foi o único emprego que retornou a ligação.
+- Personalidade inicial: Cansado, cético, pragmático — homem que já viu coisa difícil e não se surpreende fácil
+- Progressão: Negação → Curiosidade → Reconhecimento doloroso → Identificação perigosa → Escolha existencial
 
 **Background:**
-- Trabalhou 12 anos como motorista de frete pesado em rotas interestaduais; sabe lidar com veículos grandes e situações de pressão
-- Empresa faliu há dois meses; economias quase zeradas, aluguel atrasado
-- Sem família imediata em Ravenswood — veio de outra cidade, sem raízes locais que o prendam
-- Nunca trabalhou com crianças antes; este é o primeiro emprego com transporte escolar
-- Aceitou porque era o único disponível na semana — não perguntou por que a vaga estava aberta
+- 11 anos como motorista de longa distância (long-haul) saindo de Pittsburgh; corredor da I-76
+- Fevereiro 2025: gelo preto no viaduto, jackknife, Civic clipped. Ninguém foi ao hospital. Mas a empresa precisou de bode expiatório.
+- Filha **Kaylee** (14) mora com ex-mulher Carol em Harrisburg; guarda compartilhada
+- Sem raízes em Ravenswood — veio de fora, sem vínculos locais que o prendam
+- Nunca trabalhou com crianças antes; não perguntou por que a vaga estava aberta
+
+**Stakes (o que ele perde se sucumbir):**
+- A guarda compartilhada de Kaylee — se desaparecer ou enlouquecer, Carol tem custódia total
+- A chance de reconstruir a vida fora de Ravenswood
 
 **Motivação:**
-- **Inicial:** Ganhar o salário e ir embora sem confusão
-- **Progressiva:** Entender o que está acontecendo antes que o mache
-- **Final:** Determinada pelo jogador — escapar com a vida, libertar as crianças, ou sucumbir ao ciclo
+- **Inicial:** Ganhar o salário, pagar a pensão atrasada, ir embora
+- **Progressiva:** Entender o que aconteceu com essas cinco crianças
+- **Final:** Determinada pelo jogador — escapar / confrontar / sucumbir ao ciclo
+
+**Arco Emocional por Dia:**
+
+| Dia | Estado | Frase-âncora (in-game) |
+|-----|--------|------------------------|
+| 1 | Negação pragmática | *"It's just an old bus. Old buses make noises."* |
+| 2 | Curiosidade ansiosa | *"Five names. I know those faces now."* |
+| 3 | Reconhecimento doloroso | *"They didn't deserve what happened to them."* |
+| 4 | Identificação perigosa | *"I understand you, Victor. That's the problem."* |
+| 5 | Escolha existencial | *"Kaylee needs her dad to come home."* |
 
 **Características Vocais:**
 - Tom cansado, mas profissional — não é dramático por natureza
 - Frases curtas e diretas; pragmático mesmo diante do sobrenatural
-- Reações autênticas ao terror: xingamentos baixos, respiração tensa, ironia amarga
-- À medida que os dias avançam, o filtro vai caindo; as reações ficam mais cruas
+- Reações autênticas: xingamentos baixos em inglês americano, respiração tensa, ironia amarga
+- À medida que os dias avançam o filtro cai; no Dia 4 ele chora sem perceber
+
+---
+
+## NPCs Secundários
+
+### Earl Pruitt — O Mecânico
+
+**Nome completo:** Earl Pruitt
+**Papel:** Mecânico responsável pelo Ônibus 104; único NPC que fala com Dale honestamente (em doses pequenas)
+
+**Perfil:**
+- Idade: 63 anos
+- Nascido e criado em Ravenswood — nunca saiu
+- Macacão azul desbotado com plaquinha de nome passada a ferro em 1998
+- Copo de isopor de café que nunca termina
+- Fala o mínimo necessário. Cada palavra dele pesa.
+
+**O que Earl sabe:**
+- Estava lá quando o Ônibus 104 voltou para serviço após o acidente de 2023
+- Fez os "reparos que não precisavam ser feitos" no painel de emergência (onde está o diário de Graves)
+- Conheceu Tim (o motorista entre Graves e Dale) — avisou pra ele largar; não adiantou
+- Sabe que algo está errado com o ônibus; nunca disse isso abertamente para ninguém
+
+**Progressão por dia:**
+
+| Dia | O que Earl faz |
+|-----|---------------|
+| 1 | Apresenta o ônibus. Diz "bus is road-ready" com camadas demais. |
+| 2 | "Deixa cair" o Gazette de 15/03/23. Não pega. Dale pega. |
+| 3 | Silêncio total. Nota que Dale está diferente. Não pergunta. |
+| 4 | Primeira confissão: conta sobre Tim. Diz que "everybody does it different." |
+| 5 | Recebe as chaves sem perguntar. No Final Bom: *"That's what I'd do."* |
+
+**Linha de diálogo que define o personagem:**
+> *"Figured you'd find out or you wouldn't. Everybody does it different."*
 
 ---
 
@@ -191,10 +240,9 @@
 
 ## NPCs Secundários
 
-### Principal Harrison Siqueira Stone
+### Principal Harrison Stone
 
-**Nome Completo:** Principal Harrison Siqueira Stone
-**Nome Informal:** "Siqueira" *(usado por colegas e no cotidiano da escola; "Stone" em documentos formais)*
+**Nome Completo:** Principal Harrison Stone
 **Papel:** Diretor da Ravenswood Elementary School
 
 **Perfil:**
@@ -204,14 +252,14 @@
 
 **Conhecimento sobre a Maldição:**
 - ✅ Sabe completamente o que aconteceu
-- Estava no cargo durante o acidente de 1998 (há mais de duas décadas)
+- Estava no cargo durante o acidente de **março de 2023** (Ridgemont Bridge, Route 33)
 - Deliberadamente oculta informações; os arquivos originais existem mas estão trancados
 - "Não faça perguntas" — ele sabe que sabe algo, e sabe que o jogador pode descobrir
 
 **Possíveis Revelações:**
 - Dia 2-3: Jogador pode confrontá-lo na escola
 - Documentos no escritório dele revelam a pasta confidencial do acidente
-- ✅ Era diretor na época do acidente de 1998
+- ✅ Era diretor na época do acidente de março/2023
 - Sabe que Victor Graves estava intencionalmente isolando essas 5 crianças naquele dia
 - Sua cumplicidade: não ordenou o acidente, mas assinou as "reorganizações de rota" que sempre colocavam crianças problemáticas no Ônibus 104
 
@@ -220,48 +268,85 @@
 ### O Motorista Anterior - Victor Graves
 
 **Nome:** Victor Graves
-**Status:** ✅ Morreu no acidente de 1998, corpo **nunca encontrado**
+**Status:** ✅ Desaparecido no acidente de **15 de março de 2023**, Ridgemont Bridge, Route 33 — corpo **nunca encontrado**
 
 **Importância Narrativa:**
-- Teve breakdown psicológico progressivo nos meses anteriores ao acidente
+- Teve breakdown psicológico progressivo nos meses anteriores ao acidente (jan–mar/2023)
 - **Deliberadamente selecionou as 5 crianças "problemáticas"** e pediu sua realocação para o Ônibus 104 naquele dia
-- Acelerou o ônibus intencionalmente em direção ao precipício na Ravenswood Gorge Road
+- Acelerou o ônibus intencionalmente em direção à Ridgemont Bridge na Route 33
 - Acreditava estar "quebrando um ciclo" — via padrão de negligência sistemática da escola com crianças vulneráveis
 - Corpo nunca encontrado — buscas foram encerradas prematuramente por pressão de Stone
-- **Diário escondido sob o banco do motorista** (descoberto no Dia 4 pelo jogador)
+- **Diário escondido no painel de emergência** (encontrado por Earl, recolocado — descoberto no Dia 4 pelo jogador)
 
 **Revelação no Dia 4:**
 - Jogador encontra o diário e descobre que Victor sabia do padrão de realocação de crianças vulneráveis
 - Victor não era monstro nem herói: era um homem que chegou à conclusão errada a partir de premissas parcialmente certas
-- Última entrada do diário: *"Amanhã é o último dia. Ou deles, ou meu. Não importa mais qual dos dois. Perdoem-me."*
+- Última entrada do diário: *"Tomorrow is the last day. Mine or theirs. Doesn't matter which anymore. Forgive me."*
 
 ---
 
-### Mecânico
+---
 
-**Nome:** Earl Hayes
-**Apelido:** "Old Earl" *(como os outros funcionários o chamam)*
-**Papel:** Responsável pelos "reparos" e manutenção do Ônibus 104
+### Earl Pruitt — O Despachante
+
+**Nome completo:** Earl Pruitt
+**Papel:** Despachante / Supervisor de Rota — Ravenswood School District; voz no canal 4 do rádio do Ônibus 104
 
 **Perfil:**
-- Idade: 67 anos; trabalha na Ravenswood Elementary há mais de 20 anos
-- Aparência: Macacão de trabalho desgastado, mãos sempre sujas de graxa, rosto curtido
-- Sabe que tem algo errado com o ônibus — não é o primeiro motorista que vê passar por aqui
-- Não diz diretamente: mistura de medo genuíno, acordo tácito com Stone, e uma certa resignação de quem já tentou alertar antes e não foi ouvido
-- Fuma cachimbo no estacionamento ao fim do dia; é o tipo que fala pouco mas carrega muito
+- Idade: 63 anos
+- Nascido e criado em Ravenswood — nunca saiu. Nem tentou.
+- A mesma voz no rádio há dezoito anos; os motoristas aprendem o ritmo dela antes de aprender as paradas da rota
+- Tom natural: burocrático-amigável, autoridade que nunca precisou de volume
+- Check-ins de rota com pontualidade quase mecânica: 6:55 AM (partida), 7:43 AM (ponto médio), 3:15 PM (início retorno), 4:20 PM (chegada ao depot)
+- Copo de isopor de café que nunca termina — o mesmo copo há anos, ou sempre um novo, impossível dizer
 
-**Background:**
-- Consertou o Ônibus 104 após o acidente de 1998; sabe que o laudo de "estrutura intacta" foi forçado
-- Tentou recusar a tarefa naquela época; Stone o pressionou a assinar o relatório
-- Carrega culpa silenciosa desde então; não conseguiu largar o emprego por razões financeiras
-- Tem uma filha em outra cidade — não a vê há anos
+**Dupla Função no Distrito:**
+Em um distrito do tamanho de Ravenswood nenhuma função vem sozinha. Earl é mecânico do Bus 104 pela manhã e despachante pelo canal 4 durante a rota. Ninguém jamais perguntou se era demais para um homem só. Earl nunca reclamou.
 
-**Diálogos:**
-> — *Esse ônibus tem história, moço. Se ele começar a fazer barulhos estranhos... bom, só ignore. Não é problema mecânico.*
+**O que Earl Sabe — e Não Diz:**
+- Estava presente no acidente de **13 de março de 1998** como assistente de rota júnior — era ele no rádio confirmando as paradas quando o ônibus de 1998 saiu da rota oficial para a Ravenswood Gorge Road
+- Ouviu o último check-in do motorista antes do silêncio — e nunca falou sobre o que a voz soava naquele momento
+- **Harrison Stone** garantiu o emprego de Earl logo após o acidente. Os registros de rota daquele dia nunca foram formalizados. Earl é a única testemunha viva do desvio.
+- Sabe que o padrão se repete — 1998, 2023, agora. Sempre soube.
+- Justifica o silêncio como autopreservação. Talvez ainda acredite que é proteção.
 
-> — *Eu conserto o que é mecânico. O que tem nesse ônibus não é mecânico. Aprendi isso do jeito difícil.*
+**Progressão por Dia — Diálogos no Rádio (Canal 4):**
 
-> *(Dia 5, ao telefone):* — *Olha... eu deveria ter te contado antes. Houve outros antes de você. Dois motoristas nos últimos anos. Um foi pra clínica. O outro... bem, não sei onde ele foi. Eu sempre conserto o ônibus. Sempre passa no laudo. Mas o que tem nele não é mecânico. Isso é com você, filho.*
+| Dia | Tom | Frase-âncora |
+|-----|-----|-------------|
+| 1 | Profissional, rotineiro | *"Bus 104, channel four clear. Welcome aboard, Mr. Mercer. Have a good route."* |
+| 2 | Ligeiramente mais atento | *"104, you're running forty seconds behind at stop three. Everything okay out there?"* |
+| 3 | Pausas mais longas que o normal | *"Copy that, 104. Just… keep the kids safe. That's the job."* |
+| 4 | Nervosismo contido, confirma posição | *"104, I need you to confirm your current position. Just… confirm for me."* |
+| 5 (Final Bom) | Alívio discreto | *"Route complete. Good copy, 104. Keys go to Earl."* |
+| 5 (Final Ruim) | Última transmissão, sem resposta | *"Bus 104, this is dispatch. Please respond. 104… respond."* — e então silêncio. |
+
+**Cena Narrativa-Chave — Dia 3 (Rádio):**
+
+Dale para o ônibus no acostamento. Tem o peso do que Thomas narrou ainda nos ouvidos. Liga o rádio no canal 4.
+
+> — *"Dispatch, this is 104. I need to ask you something off-route."*
+
+*(Pausa. Longa demais para ser interferência.)*
+
+> — *"Go ahead, 104."*
+
+> — *"The accident. Before 2023. Was there another one? On this route?"*
+
+*(Pausa mais longa. O canal ronca baixo.)*
+
+> — *"104, you're coming in broken. Say again?"*
+
+Dale não diz mais nada. O canal fica aberto por seis segundos — ele pode ouvir a respiração de Earl do outro lado.
+
+Então Earl desliga.
+
+**Relação com Harrison Stone:**
+O acordo entre Stone e Earl nunca foi escrito porque não precisou ser. Stone sabe o que Earl viu em 1998. Earl sabe que Stone sabe. O emprego de Earl — e a versão da história que Ravenswood aceitou — dependem de que a segunda frase nunca seja dita em voz alta. Em vinte e seis anos, nunca foi.
+
+**Linha de diálogo que define o personagem:**
+> *"104, you're coming in broken. Say again?"*
+> *(Ele ouviu perfeitamente.)*
 
 ---
 
@@ -346,7 +431,7 @@
 **Status:** 🟢 Concluído
 
 **Definições Canônicas:**
-- ✅ Protagonista: Ray Morgan (sem nome em gameplay — imersão de primeira pessoa)
+- ✅ Protagonista: Dale Mercer (sem nome em gameplay — imersão de primeira pessoa)
 - ✅ Escola: Ravenswood Elementary School
 - ✅ Cidade: Ravenswood
 - ✅ Diretor: Harrison Siqueira Stone ("Siqueira" informal)

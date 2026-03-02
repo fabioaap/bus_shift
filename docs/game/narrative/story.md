@@ -302,9 +302,114 @@ As crianças vivas congelam. Um menino no fundo começa a chorar.
 
 Thomas desaparece. Grace está no retrovisor, banco 7. Sempre olhando.
 
+Trinta segundos depois, Dale olha de novo.
+
+**Banco 4.**
+
+Ela não andou — ele não a viu andar. Mas está quatro fileiras mais próxima agora. A mesma postura. A mesma expressão de quem assiste e processa.
+
+É a primeira vez que Grace aparece fora do reflexo do espelho.
+
+Dale olha para a estrada. Quando olha para o retrovisor novamente: banco 4. Ela não tenta avançar. Só chegou mais perto. E não vai mais embora.
+
 ---
 
-**[FLASHBACK — Cutscene: "March 15, 2023"]**
+### Grace — A Testemunha Aponta
+
+**3:55 PM. Semáforo na Birch com Maple.**
+
+O ônibus para no vermelho. Dale olha no retrovisor — Grace no banco 4, posição habitual.
+
+Mas desta vez ela não está olhando para *ele*. Está olhando para o *painel*.
+
+Dale segue o olhar dela. O odômetro. O relógio digital abaixo — o que nunca marcou a hora certa em cinco dias de rota. Agora marca: **13:03**.
+
+Não é uma hora. É uma data.
+
+**13 de março.**
+
+O dedo de Grace se estende — lento, deliberado — e aponta para o relógio. Como uma criança que não quer dizer o que quer mas não consegue parar de mostrar.
+
+> — *"March 13th,"* — Dale diz em voz baixa, para o para-brisa. *"That's when it happened."*
+
+Grace abaixa o braço. Olha para ele. Pela primeira vez a intensidade no rosto não é de vigia — é de *confirmação*. Como alguém que esperou muito tempo que a mensagem fosse lida e ela finalmente foi.
+
+O sinal abre.
+
+Quando Dale olha de novo, banco 4 está vazio.
+
+Mas o relógio continua: **13:03**. Travado. Como sempre esteve.
+
+_[NOTA DE DESIGN: O relógio do Bus 104 trava em 13:03 desde o Dia 1 — detalhe visível desde a primeira inspeção do painel. Se o jogador inspecionou o relógio anteriormente, o diário de Dale registrou "clock's broken." Esta cena retroativamente transforma o detalhe em pista. Mecânica: após esta cena, clicar no relógio adiciona ao diário: "Not broken. A date. March 13th. 1998."]_
+
+
+
+**7:10 AM. Ônibus com crianças vivas.**
+
+Dale nota algo diferente no banco 9. O desenho que ele viu ontem — o ônibus na ponte, os cinco rostos — agora tem mais detalhes.
+
+Não mais um painel. **Quatro painéis.**
+
+_[NOTA DE DESIGN: Sistema de inspeção — Dale pode se inclinar para ler.]_
+
+```
+Painel 1 — perspectiva de fora da ponte: o ônibus no ar, a água abaixo.
+Painel 2 — perspectiva de dentro: Thomas, boca aberta, gritando.
+Painel 3 — perspectiva de dentro: Marcus, mão na janela, tentando abrir.
+Painel 4 — perspectiva de dentro: Oliver mesmo, desenhando. No papel que ele está desenhando
+           no painel 4: um homem no banco do motorista. Não é Victor Graves.
+           O homem tem roupas de 2025. Um crachá que diz "MERCER."
+```
+
+Oliver estava desenhando isso antes de Dale existir.
+
+Dale se levanta do banco de inspeção. Oliver está no banco 9 — apareceu sem aviso, sem ruído. Olha para os desenhos. Olha para Dale. Aponta para o Painel 4.
+
+Não está assustando. Está mostrando.
+
+---
+
+### Oliver — Os Desenhos da Névoa
+
+**7:28 AM. Ônibus com crianças vivas. Temperatura externa: -4°C.**
+
+O vidro interno embacia quando as crianças entram — respiração quente contra o frio de fora. Normal.
+
+O que não é normal: três painéis de vidro — bancos 6, 7 e 8, janelas do lado esquerdo — que já têm desenhos quando Dale embarca as primeiras crianças. Detalhados. Precisos. Não o tipo que uma criança faz com o dedo enquanto mata tempo.
+
+Dale para o ônibus na última parada e vai inspecionar antes de fechar a porta.
+
+**Janela 6** — perspectiva aérea: a Ravenswood Gorge Road, a curva, o precipício. Vista de cima, como de um pássaro. Ou de alguém que já caiu e olha de volta.
+
+**Janela 7** — perspectiva de dentro: cinco crianças sentadas no ônibus. Os assentos, as roupas, as posições exatas. O motorista no banco da frente — de costas, como sempre. No canto inferior direito, com a letra de uma criança de dez anos:
+
+**13 / 03 / 98**
+
+**Janela 8** — perspectiva aproximada: um par de mãos no volante. As mãos têm veias e calos que não são de Victor Graves de 1998 — Graves tinha 58 anos então. Essas mãos são de alguém mais jovem. Dale olha para as próprias mãos, ainda no volante.
+
+São iguais.
+
+Uma criança no banco 12 grita — *"Ei, quem fez isso no vidro?"* — e duas outras vão ver. O embaçamento some quando elas encostam os rostos para olhar melhor.
+
+Dale fotografa as três janelas antes que somam completamente.
+
+Oliver está no banco 8 quando Dale se vira. Não estava lá um segundo atrás. Está olhando para a janela vazia — para onde o desenho estava. Sem contato visual, aponta para onde estava a Janela 7. Para a data.
+
+Depois some.
+
+_[NOTA DE DESIGN: **MECÂNICA — FOTOGRAFAR OS DESENHOS.** Dale usa o celular para fotografar antes que o calor das crianças apague o embaçamento. Janela 6: colecionável narrativo (+2 pts). Janela 7: colecionável narrativo (+2 pts). Janela 8 / mãos idênticas: fragmento especial (+3 pts) — desbloqueia entrada no diário e contribui para pontuação do Final Bom. Timer: 45 segundos antes que as crianças apaguem os desenhos ao encostar nos vidros.]_
+
+> *[DIÁRIO DE DALE — Fragmento, Dia 3, 7:41 AM]*
+> ```
+> Took three photos this morning. Kid drew on the fog.
+> The dates. The road. The hands on the wheel.
+>
+> I know those hands.
+> ```
+
+---
+
+
 
 _[NOTA DE DESIGN: Preto e branco deteriorado, textura VHS, sem música. Apenas sons ambientes.]_
 
@@ -433,7 +538,57 @@ Dale fecha o caderno. Fica parado. Abre de novo na última entrada. Lê duas vez
 
 Ele pensa na Kaylee. Como ela o vê quando ele aparece tarde. Como Carol o vê agora. Como a seguradora o viu depois do jackknife.
 
+**Grace aparece no vidro da janela lateral — não no retrovisor.**
+
+Pela primeira vez fora do espelho. Está do lado de fora do ônibus, reflexo na janela, como se viesse da escuridão além do vidro.
+
+Ela não está olhando para ele com intensidade. Pela primeira vez — ela acena com a cabeça.
+
+Uma única vez. Devagar.
+
+Dale não reage de imediato. Depois:
+
+> — *"Yeah. I know."*
+
+Grace desaparece.
+
 Dale fecha o caderno. Coloca no bolso. Sai para o turno.
+
+---
+
+### Rota Matinal — Grace e o Desvio
+
+**7:55 AM. Rota matinal, crianças embarcadas.**
+
+Tudo normal até o cruzamento da Route 33 com a Coalfield Road.
+
+O volante puxa para a direita.
+
+Não bruscamente — é uma resistência, como dirigir contra vento lateral forte. Dale corrige. O volante puxa de novo, com mais insistência.
+
+Grace está no banco 7. Inclinada para frente, dedos nos braços do assento à frente. O olhar não é de observação — é de *pressão aplicada*, como uma criança que aprendeu que não pode gritar e então empurra com tudo o que tem.
+
+Ela aponta para a janela direita. Passando: a entrada da Route 33 North. Placa: **RIDGEMONT BRIDGE — 3.2 MI.**
+
+O volante puxa de novo — desta vez mais forte, em direção à entrada da 33.
+
+Uma criança no fundo solta um grito curto com o balanço.
+
+> — *"Everybody sit down. Hands off the seats."*
+
+Dale segura. Dois punhos no volante, cotovelos travados. Mantém a rota. Quatro segundos de resistência ativa — e então o volante cede.
+
+Grace desaparece.
+
+O ônibus segue reto.
+
+Mas na parada seguinte, quando Dale abre a porta, ele olha para o asfalto. Há marcas de pneu em semicírculo na sarjeta — como se o ônibus tivesse virado ali. Como se alguém tivesse marcado o ponto no mapa.
+
+Dale não virou.
+
+> — *"Not today,"* — ele diz para ninguém. Fecha a porta. Segue em frente.
+
+_[NOTA DE DESIGN: **MECÂNICA — RESISTÊNCIA NO VOLANTE.** No Dia 4, Grace causa desvios ativos: o controle do volante sofre resistência de 3–5 segundos em dois momentos específicos da rota, sempre próximos a vias que levam à Route 33. Correção: segurar o controle por toda a duração sem soltar. Falha: colisão menor com objeto estático (lixeira, guia, poste de sinalização) e queda de 8% de sanidade. Diferença dos dias anteriores — antes era visão obstruída; agora é controle físico resistido.]_
 
 ---
 
@@ -458,6 +613,58 @@ Uma menina, seis anos, tranças, no fundo:
 > — *"Why are you crying, mister?"*
 
 Dale passa a mão no rosto. Está molhado. Ele não sabia que estava chorando.
+
+No banco 9 — no meio do caos — Oliver está sentado calmamente. Tem um caderno no colo.
+
+Está desenhando.
+
+Dale trava Emma. Empurra Marcus para trás com a voz. Vira de novo para o banco 9.
+
+Oliver vira o caderno para Dale.
+
+É um retrato. Linhas finas a lápis. Dale Mercer — de costas, mãos no volante, ombros tensionados.
+
+_[NOTA DE DESIGN: O retrato captura o estado exato de Dale nesse momento. Perspectiva de quem está sentado atrás, olhando para ele.]_
+
+Oliver não estava desenhando o caos. Estava desenhando Dale **dentro** do caos.
+
+Vendo quem ele é quando tudo está indo mal.
+
+Trinta segundos depois, Oliver vira a página. Começa novo desenho — traços mais curtos, mais pressionados. Dale mantém Marcus afastado com a voz enquanto observa pelo espelho.
+
+O rosto no caderno não é de criança. É adulto. Uniforme de motorista. Mandíbula pesada, nariz largo, expressão de quem cruzou uma linha que não sabia onde ficava.
+
+Um **X** riscado sobre o rosto em traço único, definitivo. Como uma exclusão. Como um veredito.
+
+Dale reconhece das fotos que viu no escritório de Stone: **Victor Graves**. Não é raiva no desenho. É um fato declarado. *Este aqui. Este foi ele.*
+
+> — *"Oliver."*
+
+Oliver olha para cima. Dale aponta para o caderno.
+
+> — *"That's him? That's the driver?"*
+
+Oliver não acena, não nega. Fecha o caderno devagar.
+
+Some.
+
+O ônibus fica em silêncio por três segundos.
+
+Dale olha para cima — para a câmera dome acima do banco do motorista. A câmera velha que ele nunca viu funcionar. Está piscando: luz vermelha, fraca, intermitente. **Está gravando.**
+
+Depois do último desembarque, com o ônibus vazio no depot, Dale acessa a câmera. Tela pequena, resolução mínima, preto e branco.
+
+Banco 9. Turvo. Granulado. Mas visível.
+
+Uma figura de criança — contorno, postura, caderno aberto no colo.
+
+**A primeira vez que Oliver Crane aparece na câmera.**
+
+Dale fica olhando para a tela por um longo tempo.
+
+> — *"There you are."*
+
+_[NOTA DE DESIGN: **MECÂNICA — CÂMERA DE SEGURANÇA.** Colecionável especial do Dia 4 (+5 pts). O frame capturado é adicionado ao inventário de evidências — é uma das provas que Dale pode levar à delegacia no Final Bom. A câmera não funcionou em nenhum outro dia. Unlocks entrada no diário: "Camera caught something. First time. He was real enough to show up on it."]_
 
 ---
 
@@ -729,7 +936,7 @@ Principal Harrison Stone declined to comment beyond an earlier statement.
 |--------|-------------|-------------|
 | **Diário de Victor Graves** | Painel de emergência, atrás do banco do motorista | Deterioração de Graves, seleção intencional das 5 crianças |
 | **Gazette 15/03/23** | Bolso traseiro do banco (Earl "deixou cair") | Confirmação do acidente, nomes das vítimas |
-| **Desenho no banco 9** | Estofamento do banco 9, lado esquerdo | Oliver: ônibus na ponte, 5 rostos nas janelas |
+| **Desenho no banco 9** | Estofamento do banco 9, lado esquerdo | Oliver: sequência de 4 painéis — o acidente visto de perspectivas diferentes (ver Dia 3) |
 | **Bilhete amassado** | Preso atrás do visor solar | Letra de criança: *"DO NOT PRESS RED BUTTON"* |
 | **Foto de turma 2022-23** | Atrás do espelho retrovisor (cai quando ajustado) | 5 rostos circulados — os círculos parecem recentes |
 | **Carta de demissão de Graves** | Dentro do diário, última página | Data: 12 de março de 2023. Efeito: 1 de abril. |
@@ -738,7 +945,7 @@ Principal Harrison Stone declined to comment beyond an earlier statement.
 
 ## Notas de Desenvolvimento
 
-**Status:** 🟡 Em Progresso
+**Status:** 🟢 Completo
 
 - [x] Dia 1 completo
 - [x] Dia 2 completo
@@ -748,8 +955,9 @@ Principal Harrison Stone declined to comment beyond an earlier statement.
 - [x] Protagonista definido — Dale Mercer
 - [x] Artefatos de lore escritos
 - [x] Mecânica de transição definida
-- [ ] Atualizar `characters.md` com Dale Mercer e Earl Pruitt
-- [ ] Revisar `endings.md` com detalhes expandidos
-- [ ] Expandir cenas de Grace e Oliver (Dias 3–4)
+- [x] Grace e Oliver expandidos — Dias 3 e 4
+- [x] Atualizar `characters.md` com Dale Mercer e Earl Pruitt
+- [x] Revisar `endings.md` com detalhes expandidos
+- [x] Expandir cenas de Grace e Oliver (Dias 3–4)
 
 **Ver também:** `NARRATIVE_DECISIONS.md`, `characters.md`, `endings.md`
