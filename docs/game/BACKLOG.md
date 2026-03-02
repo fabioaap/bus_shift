@@ -1,8 +1,89 @@
 # Bus Shift - Product Backlog
 
-**Última Atualização:** 2026-03-01
+**Última Atualização:** 2026-03-02
 **Projeto:** Bus Shift - Horror Survival Game
-**Status:** Pre-Production
+**Status:** In Development (Wave 4 completa — 42 scripts C# implementados)
+
+---
+
+## 🗂️ Kanban — Status Atual
+
+### ✅ DONE (Implementado)
+
+| # | Item | Entregável |
+|---|------|-----------|
+| #1 | Definir Nomes e Identidades | `docs/game/narrative/characters.md` |
+| #2 | Completar Narrativa (Dias 2-5) | `docs/game/narrative/story.md` |
+| #3 | Backstory do Acidente Original | `story.md` — seção Lore |
+| #4 | Style Guide Visual (Low Poly) | `docs/game/art/style-guide.md` |
+| #5 | Especificação Técnica Completa | `docs/game/technical/architecture.md` |
+| #6 | Asset List Completa | `docs/game/art/assets.md` (174 assets) |
+| #7 | Plano de Testes Detalhado | `docs/game/testing/test-plan.md` (113 casos) |
+| #55 | Specs Engine/Física/IA | `docs/game/technical/specs-engine.md` |
+| #8 | Setup Unity Project | `game/` — estrutura Unity 6 (6000.3.2f1) |
+| #9 | Controles de Direção | `BusController.cs` |
+| #10 | Protótipo de Rota | `RouteManager.cs` |
+| #11 | Embarque/Desembarque | `BusStopSystem.cs` + `PassengerManager.cs` |
+| #12 | Sistema de Tempo e Relógio | `TimerSystem.cs` + `WatchUI.cs` |
+| #13 | Mapa Interativo | `MapUI.cs` |
+| #14 | Sistema de Retrovisor | `CameraSystem.cs` |
+| #15 | Câmera de Segurança | `SecurityCameraMonitor.cs` |
+| #16 | Sistema de Farol | `HeadlightSystem.cs` |
+| **+** | Sistema de Combustível | `FuelSystem.cs` + `FuelUI.cs` |
+| #17 | Sistema de Sanidade | `SanitySystem.cs` |
+| #18 | Comportamento CRIANÇA 1 (Marcus) | `MarcusGhost.cs` + `GhostVisibilityChecker.cs` |
+| #19 | Comportamento CRIANÇA 2 (Emma) | `EmmaGhost.cs` |
+| #20 | Comportamento CRIANÇA 3 (Thomas) | `ThomasGhost.cs` |
+| **+** | Comportamento Grace + Oliver | `GraceGhost.cs` + `OliverGhost.cs` |
+| #23 | Contramedidas (Intervenção) | `HeadlightSystem`, `MicrophoneSystem`, `PanelLockSystem`, `RadioSystem` |
+| #24 | UI de Cooldowns | `CooldownIconUI.cs` |
+| #25 | Sistema de Tensão/Insanidade | `SanitySystem.cs` + `TensionUI.cs` |
+| #26 | Efeitos Visuais de Tensão | `TensionUI.cs` |
+| #27 | Efeitos Sonoros de Tensão | `TensionAudioManager.cs` |
+| #28 | Sistema de Dias e Períodos | `DayManager.cs` |
+| #29 | Balanceamento de Dificuldade | `DifficultyManager.cs` |
+| #30 | Sistema de Save/Load | `SaveSystem.cs` |
+| #34 | Iluminação Dia vs Noite | `LightingController.cs` |
+| #37 | UI/UX HUD e Menus | `HUDController.cs` |
+| **+** | AudioManager (SFX Pool) | `AudioManager.cs` |
+| **+** | GameStateManager | `GameStateManager.cs` |
+| **+** | SceneTransitionManager | `SceneTransitionManager.cs` |
+
+### 🔄 IN PROGRESS / NEXT
+
+| # | Item | Bloqueio |
+|---|------|---------|
+| #31 | Modelar Ônibus 104 | 🎨 Requer artista 3D |
+| #32 | Modelar Ambiente Escola | 🎨 Requer artista 3D |
+| #33 | Modelar Rota Completa | 🎨 Requer artista 3D |
+| #35 | Modelar Crianças Vivas (NPCs) | 🎨 Requer artista 3D |
+| #36 | Materiais e Texturas | 🎨 Requer artista 3D |
+| #38 | SFX Essenciais | 🔊 Requer sound designer |
+| #39 | Trilha Sonora | 🔊 Requer sound designer |
+| #40 | Áudio Ambiente | 🔊 Requer sound designer |
+| #41 | Áudio Dinâmico | ✅ Arquitetura pronta (`TensionAudioManager`) |
+| #42 | Cutscene Introdução Dia 1 | 🎬 Próximo código |
+| #43 | Jumpscare CRIANÇA 2 Dia 1 | 🎬 Próximo código |
+| #44 | Implementar 3 Finais | 🎬 Próximo código |
+| #45 | Eventos Narrativos Dias 2-5 | 🎬 Próximo código |
+| #46 | Diálogos NPCs | 🎬 Próximo código |
+
+### 📋 TODO (Futuro)
+
+| # | Item | Bloqueio |
+|---|------|---------|
+| #47 | Alpha Testing | Aguarda MVP completo |
+| #48 | Balanceamento Final | Aguarda Alpha |
+| #49 | Polish Visual | Aguarda assets 3D |
+| #50 | Polish Audio | Aguarda SFX |
+| #51 | Beta Testing Externo | Aguarda Alpha |
+| #52 | Preparar Release Build | Última fase |
+
+---
+
+> **42 scripts C# implementados** · **10 docs de design** · **Próximo:** Narrativa in-game (#42–#46)
+
+---
 
 ---
 
