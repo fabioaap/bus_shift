@@ -26,6 +26,7 @@ docs/
 ├── platforms/                 # English
 ├── aios-agent-flows/          # Detailed agent documentation
 ├── aios-workflows/            # Detailed workflow documentation
+├── game/                      # 🎮 Bus Shift Game Documentation
 │
 ├── pt/                        # Português (translations)
 │   ├── getting-started.md
@@ -43,6 +44,13 @@ docs/
 ---
 
 ## 🚀 Quick Links
+
+### 🎮 Game Documentation
+
+- [Bus Shift Game Documentation](./game/README.md)
+- [Game Design Document](./game/design/game-design-doc.md)
+- [Game Mechanics](./game/design/mechanics.md)
+- [Known Issues & Bugs](./game/testing/known-issues.md)
 
 ### English
 

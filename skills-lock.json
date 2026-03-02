@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "game-developer": {
+      "source": "jeffallan/claude-skills",
+      "sourceType": "github",
+      "computedHash": "676df2072ecbf02d0b69c2fbe9fee051ba9c97ee39c352b8a2477fbc4f530d2f"
+    }
+  }
+}

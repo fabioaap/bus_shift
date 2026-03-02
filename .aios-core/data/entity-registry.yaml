@@ -1,6 +1,6 @@
 metadata:
   version: 1.0.0
-  lastUpdated: '2026-02-12T13:07:01.327Z'
+  lastUpdated: '2026-03-02T01:06:03.179Z'
   entityCount: 487
   checksumAlgorithm: sha256
 entities:
@@ -4690,7 +4690,7 @@ entities:
     copilot-rules:
       path: .aios-core/product/templates/ide-rules/copilot-rules.md
       type: template
-      purpose: Synkra AIOS Agent for GitHub Copilot
+      purpose: Short description shown in mode selector
       keywords:
         - copilot
         - rules
@@ -4704,8 +4704,8 @@ entities:
         score: 0.5
         constraints: []
         extensionPoints: []
-      checksum: sha256:9c614000604f4e073a81b594f3ff4bb86362b9a23559716bc68d9781c0ea223c
-      lastVerified: '2026-02-08T13:33:24.279Z'
+      checksum: sha256:8c4038abaec7ad342e2d7ad18e6376d4ee5475f1f9b2be090754dad97f55115e
+      lastVerified: '2026-03-02T01:06:03.176Z'
     cursor-rules:
       path: .aios-core/product/templates/ide-rules/cursor-rules.md
       type: template
@@ -8266,8 +8266,8 @@ entities:
         score: 0.4
         constraints: []
         extensionPoints: []
-      checksum: sha256:8e1d03a482b820a6a23d5821fae9e23fcb13cb70c95daec388e2e03d3283861f
-      lastVerified: '2026-02-09T16:42:28.275Z'
+      checksum: sha256:2a39382ece31df17685e9f4314b9c4e2ae980f0dcd5b8d324aab59f0c893433c
+      lastVerified: '2026-03-02T01:06:03.172Z'
     active-modules.verify:
       path: .aios-core/core/memory/__tests__/active-modules.verify.js
       type: module
