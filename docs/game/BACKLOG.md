@@ -2,7 +2,7 @@
 
 **Última Atualização:** 2026-03-02
 **Projeto:** Bus Shift - Horror Survival Game
-**Status:** In Development (Wave 5 completa — 48 scripts C# implementados)
+**Status:** In Development (Wave 6 completa — 48 scripts C# + narrativa completa)
 
 ---
 
@@ -73,6 +73,27 @@
 | #45 | Eventos Narrativos Dias 2-5 | `NarrativeEventManager.cs` |
 | #46 | Diálogos NPCs | `DialogueSystem.cs` |
 
+### ✅ DONE — Wave 6 Narrativa documentação
+
+| # | Item | Entregável |
+|---|------|-----------|
+| #19 | Comportamento Criança #1 | `EmmaGhost.cs` — lurking + sanity drain |
+| #21 | Comportamento Criança #2 | `MarcusGhost.cs` — aggressive charge |
+| #31 | Endings Múltiplos | `EndingManager.cs` + `endings.md` |
+| #66 | Atualizar characters.md | `characters.md` — Dale Mercer + Earl Pruitt |
+| #67 | endings.md expandido | `endings.md` — 3 finais canônicos completos |
+| #68 | Grace/Oliver Days 3-4 | `story.md` — cenas expandidas + `story_pt-BR.md` |
+
+### 🔄 IN PROGRESS — Wave 7 AIOS
+
+| # | Item | Agente |
+|---|------|-------|
+| #59 | Fix @qa agent broken task ref | agent-23 (aios-qa) |
+| #60 | Unit tests decision-log-generator | agent-23 (aios-qa) |
+| #58 | Deduplicate 3 task files | agent-24 (aios-devops) |
+| #61 | Consolidate elicitation files | agent-24 (aios-devops) |
+| #65 | Test coverage 10+ AIOS modules | agent-24 (aios-devops) |
+
 ### 📋 TODO — Requer assets externos
 
 | # | Item | Bloqueio |
@@ -86,7 +107,7 @@
 
 ---
 
-> **48 scripts C# implementados** · **10 docs de design** · **MVP Code completo — aguardando assets 3D/áudio**
+> **48 scripts C# implementados** · **10 docs de design** · **Narrativa completa (characters + endings + story PT-BR)** · **Wave 7 AIOS em progresso**
 
 ---
 
