@@ -26,7 +26,7 @@
 
 ## 1. Modelos 3D — Veículo
 
-> **Referência obrigatória:** `docs/game/references/onibus-104-visual.md` e `docs/game/references/interior-onibus-pov-jogador.md`  
+> **Referência obrigatória:** `game/docs/references/onibus-104-visual.md` e `game/docs/references/interior-onibus-pov-jogador.md`  
 > **Regra:** Ônibus deve parecer "velho e doente". Ferrugem visível, pintura descascando. Cor base `#C8A84B` → oxidação `#A07830` → ferrugem `#7A3B1E`.
 
 ---

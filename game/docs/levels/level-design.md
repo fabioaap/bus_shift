@@ -609,10 +609,10 @@ Para o protótipo ser aprovado e avançar para a fase de arte Low Poly, **todos 
 
 | Documento | Localização | Relevância |
 |---|---|---|
-| GDD Principal | `docs/game/GDD.md` | Visão macro do jogo |
-| Personagens | `docs/game/narrative/characters.md` | Lore de todos os personagens |
-| Mecânicas | `docs/game/design/mechanics.md` | Controles detalhados |
-| Balanceamento | `docs/game/design/balancing.md` | Tabela de tensão por dia |
+| GDD Principal | `game/docs/GDD.md` | Visão macro do jogo |
+| Personagens | `game/docs/narrative/characters.md` | Lore de todos os personagens |
+| Mecânicas | `game/docs/design/mechanics.md` | Controles detalhados |
+| Balanceamento | `game/docs/design/balancing.md` | Tabela de tensão por dia |
 
 ### 8.2 Decisões de Design Documentadas
 

@@ -444,7 +444,7 @@ Notas: _________________________________
 
 ### 4.2 Procedimento de Report de Bugs
 
-Todos os bugs devem ser reportados em `docs/game/testing/known-issues.md` seguindo o template:
+Todos os bugs devem ser reportados em `game/docs/testing/known-issues.md` seguindo o template:
 
 ```markdown
 ### [ID]: [Título breve]

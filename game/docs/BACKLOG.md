@@ -12,14 +12,14 @@
 
 | # | Item | Entregável |
 |---|------|-----------|
-| #1 | Definir Nomes e Identidades | `docs/game/narrative/characters.md` |
-| #2 | Completar Narrativa (Dias 2-5) | `docs/game/narrative/story.md` |
+| #1 | Definir Nomes e Identidades | `game/docs/narrative/characters.md` |
+| #2 | Completar Narrativa (Dias 2-5) | `game/docs/narrative/story.md` |
 | #3 | Backstory do Acidente Original | `story.md` — seção Lore |
-| #4 | Style Guide Visual (Low Poly) | `docs/game/art/style-guide.md` |
-| #5 | Especificação Técnica Completa | `docs/game/technical/architecture.md` |
-| #6 | Asset List Completa | `docs/game/art/assets.md` (174 assets) |
-| #7 | Plano de Testes Detalhado | `docs/game/testing/test-plan.md` (113 casos) |
-| #55 | Specs Engine/Física/IA | `docs/game/technical/specs-engine.md` |
+| #4 | Style Guide Visual (Low Poly) | `game/docs/art/style-guide.md` |
+| #5 | Especificação Técnica Completa | `game/docs/technical/architecture.md` |
+| #6 | Asset List Completa | `game/docs/art/assets.md` (174 assets) |
+| #7 | Plano de Testes Detalhado | `game/docs/testing/test-plan.md` (113 casos) |
+| #55 | Specs Engine/Física/IA | `game/docs/technical/specs-engine.md` |
 | #8 | Setup Unity Project | `game/` — estrutura Unity 6 (6000.3.2f1) |
 | #9 | Controles de Direção | `BusController.cs` |
 | #10 | Protótipo de Rota | `RouteManager.cs` |
@@ -193,7 +193,7 @@ Definir nomes oficiais para:
 - [ ] 3 crianças têm nomes e backstories básicas
 - [ ] NPCs nomeados em characters.md
 
-**Arquivo:** `docs/game/narrative/characters.md`
+**Arquivo:** `game/docs/narrative/characters.md`
 
 ---
 
@@ -215,7 +215,7 @@ Desenvolver narrativa completa dos dias 2 a 5:
 - [ ] Eventos chave definidos por dia
 - [ ] Diálogos essenciais escritos
 
-**Arquivo:** `docs/game/narrative/story.md`
+**Arquivo:** `game/docs/narrative/story.md`
 
 ---
 
@@ -238,7 +238,7 @@ Criar lore completo sobre o acidente:
 - [ ] Motivações das assombrações justificadas
 - [ ] Documentado em story.md
 
-**Arquivo:** `docs/game/narrative/story.md` (seção Lore Fragments)
+**Arquivo:** `game/docs/narrative/story.md` (seção Lore Fragments)
 
 ---
 
@@ -261,7 +261,7 @@ Definir estilo visual Low Poly consistente:
 - [ ] Paleta definida (hex codes)
 - [ ] Guidelines de poly count
 
-**Arquivo:** `docs/game/art/style-guide.md`
+**Arquivo:** `game/docs/art/style-guide.md`
 
 ---
 
@@ -284,7 +284,7 @@ Criar especificação técnica detalhada:
 - [ ] Performance targets documentados
 - [ ] Tech stack definido
 
-**Arquivo:** `docs/game/technical/architecture.md`
+**Arquivo:** `game/docs/technical/architecture.md`
 
 ---
 
@@ -308,7 +308,7 @@ Inventariar todos os assets necessários:
 - [ ] Priorização (MVP vs Polish)
 - [ ] Estimativas de tempo de criação
 
-**Arquivo:** `docs/game/art/assets.md`
+**Arquivo:** `game/docs/art/assets.md`
 
 ---
 
@@ -329,7 +329,7 @@ Criar plano de testes completo:
 - [ ] Test cases para cada mecânica
 - [ ] Critérios de aceitação definidos
 
-**Arquivo:** `docs/game/testing/test-plan.md`
+**Arquivo:** `game/docs/testing/test-plan.md`
 
 ---
 
@@ -377,7 +377,7 @@ Implementar mecânica de direção do ônibus:
 - [ ] Feedback sonoro básico (motor)
 - [ ] Testes unitários passam
 
-**Referência:** `docs/game/design/mechanics.md` (Direção do Ônibus)
+**Referência:** `game/docs/design/mechanics.md` (Direção do Ônibus)
 
 ---
 
@@ -421,7 +421,7 @@ Implementar interação com pontos:
 - [ ] Animação de porta suave
 - [ ] Contador de passageiros atualiza
 
-**Referência:** `docs/game/design/mechanics.md` (Ponto de Ônibus)
+**Referência:** `game/docs/design/mechanics.md` (Ponto de Ônibus)
 
 ---
 
@@ -444,7 +444,7 @@ Implementar sistema de tempo in-game:
 - [ ] Cooldown funciona
 - [ ] Fail state ao exceder tempo limite
 
-**Referência:** `docs/game/design/mechanics.md` (Relógio)
+**Referência:** `game/docs/design/mechanics.md` (Relógio)
 
 ---
 
@@ -469,7 +469,7 @@ Criar mapa que o jogador pode consultar:
 - [ ] Visão parcialmente bloqueada
 - [ ] Pontos de parada visíveis
 
-**Referência:** `docs/game/design/mechanics.md` (Mapa)
+**Referência:** `game/docs/design/mechanics.md` (Mapa)
 
 ---
 
@@ -492,7 +492,7 @@ Implementar retrovisor funcional:
 - [ ] Interior visível no reflexo
 - [ ] Soltar E retorna foco normal
 
-**Referência:** `docs/game/design/mechanics.md` (Retrovisor)
+**Referência:** `game/docs/design/mechanics.md` (Retrovisor)
 
 ---
 
@@ -515,7 +515,7 @@ Modelar monitor de câmera com chiado:
 - [ ] Efeito visual de estática
 - [ ] Mostra interior traseiro
 
-**Referência:** `docs/game/design/mechanics.md` (Câmera)
+**Referência:** `game/docs/design/mechanics.md` (Câmera)
 
 ---
 
@@ -538,7 +538,7 @@ Implementar farol do ônibus:
 - [ ] Iluminação aumenta visivelmente
 - [ ] Som de clique ao ativar
 
-**Referência:** `docs/game/design/mechanics.md` (Farol)
+**Referência:** `game/docs/design/mechanics.md` (Farol)
 
 ---
 
@@ -586,7 +586,7 @@ Sistema de IA da CRIANÇA 1:
 - [ ] Som sincronizado com aparição
 - [ ] Responde ao microfone (contramedida)
 
-**Referência:** `docs/game/narrative/characters.md` (CRIANÇA 1)
+**Referência:** `game/docs/narrative/characters.md` (CRIANÇA 1)
 
 ---
 
@@ -630,7 +630,7 @@ IA CRÍTICA com Game Over:
 - [ ] Trava de painel cancela ação
 - [ ] Game Over funciona se falhar
 
-**Referência:** `docs/game/design/mechanics.md` (Tabela de Ameaças)
+**Referência:** `game/docs/design/mechanics.md` (Tabela de Ameaças)
 
 ---
 
@@ -674,7 +674,7 @@ Sistema de ataque sonoro:
 - [ ] Visual glitch sutil ao ativar
 - [ ] Rádio cancela efeito
 
-**Referência:** `docs/game/narrative/characters.md` (CRIANÇA 3)
+**Referência:** `game/docs/narrative/characters.md` (CRIANÇA 3)
 
 ---
 
@@ -700,7 +700,7 @@ Cada um com cooldown específico.
 - [ ] Feedback visual de disponibilidade
 - [ ] Efetivo contra assombração correta
 
-**Referência:** `docs/game/design/mechanics.md` (Objetos de Intervenção)
+**Referência:** `game/docs/design/mechanics.md` (Objetos de Intervenção)
 
 ---
 
@@ -748,7 +748,7 @@ Implementar sistema central de tensão:
 - [ ] UI mostra % de tensão (no relógio)
 - [ ] Game Over ao atingir 100%
 
-**Referência:** `docs/game/design/balancing.md` (Sistema de Tensão)
+**Referência:** `game/docs/design/balancing.md` (Sistema de Tensão)
 
 ---
 
@@ -772,7 +772,7 @@ Feedback visual baseado no nível de tensão:
 - [ ] Performance não afetada
 - [ ] Ajustável para acessibilidade
 
-**Referência:** `docs/game/design/balancing.md` (Balanceamento Visual/Sonoro)
+**Referência:** `game/docs/design/balancing.md` (Balanceamento Visual/Sonoro)
 
 ---
 
@@ -796,7 +796,7 @@ Feedback visual baseado no nível de tensão:
 - [ ] Teste com jogadores (efetivo?)
 - [ ] Volume ajustável separadamente
 
-**Referência:** `docs/game/design/balancing.md` (Indicadores de Tensão)
+**Referência:** `game/docs/design/balancing.md` (Indicadores de Tensão)
 
 ---
 
@@ -819,7 +819,7 @@ Gerenciador de progressão 5 dias × 2 períodos:
 - [ ] Tensão inicial correta por período
 - [ ] UI mostra dia/período atual
 
-**Referência:** `docs/game/design/balancing.md` (Progressão)
+**Referência:** `game/docs/design/balancing.md` (Progressão)
 
 ---
 
@@ -845,7 +845,7 @@ Ajustar frequência de ataques por dia:
 - [ ] Logs de telemetria implementados
 - [ ] Ajustes iterativos documentados
 
-**Referência:** `docs/game/design/balancing.md` (Curva de Dificuldade)
+**Referência:** `game/docs/design/balancing.md` (Curva de Dificuldade)
 
 ---
 
@@ -1134,7 +1134,7 @@ Primeira cutscene com Diretor Siqueira:
 - [ ] Skipável (após primeira vez)
 - [ ] Estabelece tom do jogo
 
-**Referência:** `docs/game/narrative/story.md` (Dia 1 Manhã)
+**Referência:** `game/docs/narrative/story.md` (Dia 1 Manhã)
 
 ---
 
@@ -1157,7 +1157,7 @@ Primeiro jumpscare controlado:
 - [ ] Diálogo das crianças após
 - [ ] Introduz mecânica CRIANÇA 2
 
-**Referência:** `docs/game/narrative/story.md` (Dia 1 Tarde)
+**Referência:** `game/docs/narrative/story.md` (Dia 1 Tarde)
 
 ---
 
@@ -1179,7 +1179,7 @@ Criar cutscenes dos 3 finais:
 - [ ] Impacto emocional testado
 - [ ] Créditos após finais
 
-**Referência:** `docs/game/narrative/endings.md`
+**Referência:** `game/docs/narrative/endings.md`
 
 ---
 
@@ -1270,7 +1270,7 @@ Ajustes baseados em dados:
 - [ ] Feedback de testers positivo
 - [ ] Mudanças documentadas
 
-**Referência:** `docs/game/design/balancing.md` (Teste de Balanceamento)
+**Referência:** `game/docs/design/balancing.md` (Teste de Balanceamento)
 
 ---
 

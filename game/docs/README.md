@@ -7,7 +7,7 @@ Documentação completa do jogo Bus Shift.
 ## 📁 Estrutura da Documentação
 
 ```
-docs/game/
+game/docs/
 ├── README.md                    # Este arquivo - Índice principal
 ├── design/                      # Game Design Documents
 │   ├── README.md               # Visão geral do design

@@ -52,7 +52,7 @@ Pasta de output: `Builds/` (ignorada pelo git)
 
 ## Documentação do Jogo
 
-Ver: `../docs/game/`
-- [Arquitetura Técnica](../docs/game/technical/architecture.md)
-- [Mecânicas](../docs/game/design/mechanics.md)
-- [Personagens](../docs/game/narrative/characters.md)
+Ver: `docs/`
+- [Arquitetura Técnica](docs/technical/architecture.md)
+- [Mecânicas](docs/design/mechanics.md)
+- [Personagens](docs/narrative/characters.md)
