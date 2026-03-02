@@ -65,9 +65,31 @@ docs/
 - VS Code 1.101+ required
 - Enable `chat.agent.enabled: true` in settings
 
-### Chat Modes Location
-- Agent modes defined in `.github/chatmodes/`
-- Each file defines a specialized agent persona
+### Structure
+```
+.github/
+├── copilot-instructions.md          # Global context (always active)
+└── chatmodes/                       # Native VS Code agent modes
+    ├── aios-dev.chatmode.md         # Developer (Dex)
+    ├── aios-qa.chatmode.md          # QA (Quinn)
+    ├── aios-architect.chatmode.md   # Architect (Aria)
+    ├── aios-devops.chatmode.md      # DevOps (Gage) — sole git push authority
+    └── aios-data-engineer.chatmode.md  # Data Engineer (Dara)
+```
+
+> **Note**: `.github/copilot/agents/*.md` files (documentation-style) are NOT native
+> agent modes and require unreliable workarounds (`@context:` comments, chat hints).
+> Use `.github/chatmodes/*.chatmode.md` for native mode switching in VS Code 1.101+.
+
+### Chat Mode File Format
+```markdown
+---
+description: Short description shown in mode selector
+tools: ['codebase', 'editFiles', 'runCommands', 'search', 'problems']
+---
+
+# Agent instructions (system prompt for this mode)
+```
 
 ### Usage
 1. Open Chat view: `Ctrl+Alt+I` (Windows/Linux) or `⌃⌘I` (Mac)
@@ -75,12 +97,13 @@ docs/
 3. Choose the AIOS agent mode you need
 
 ### Available Agent Modes
-| Mode | Purpose |
-|------|---------|
-| aios-dev | Full-stack development |
-| aios-qa | Quality assurance |
-| aios-architect | System design |
-| aios-pm | Project management |
+| Mode | File | Purpose |
+|------|------|---------|
+| aios-dev | `aios-dev.chatmode.md` | Full-stack development, IDS Protocol |
+| aios-qa | `aios-qa.chatmode.md` | Code review, quality gates |
+| aios-architect | `aios-architect.chatmode.md` | System design, impact analysis |
+| aios-devops | `aios-devops.chatmode.md` | Git push, CI/CD (exclusive authority) |
+| aios-data-engineer | `aios-data-engineer.chatmode.md` | Database design, migrations |
 
 ### Performance Tips
 - Use inline completions for quick code suggestions
@@ -89,4 +112,4 @@ docs/
 - Use @workspace for project-wide context
 
 ---
-*Synkra AIOS GitHub Copilot Configuration v2.1*
+*Synkra AIOS GitHub Copilot Configuration v2.2*

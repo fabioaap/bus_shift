@@ -30,6 +30,7 @@ const claudeCodeTransformer = require('./transformers/claude-code');
 const cursorTransformer = require('./transformers/cursor');
 const windsurfTransformer = require('./transformers/windsurf');
 const antigravityTransformer = require('./transformers/antigravity');
+const githubCopilotTransformer = require('./transformers/github-copilot');
 
 // ANSI colors for output
 const colors = {
@@ -76,6 +77,11 @@ function loadConfig(projectRoot) {
         path: '.antigravity/rules/agents',
         format: 'cursor-style',
       },
+      'github-copilot': {
+        enabled: true,
+        path: '.github/agents',
+        format: 'chatmode-md',
+      },
     },
     redirects: {
       'aios-developer': 'aios-master',
@@ -117,6 +123,7 @@ function getTransformer(format) {
     'condensed-rules': cursorTransformer,
     'xml-tagged-markdown': windsurfTransformer,
     'cursor-style': antigravityTransformer,
+    'chatmode-md': githubCopilotTransformer,
   };
 
   return transformers[format] || claudeCodeTransformer;
