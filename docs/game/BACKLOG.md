@@ -2,7 +2,7 @@
 
 **Última Atualização:** 2026-03-02
 **Projeto:** Bus Shift - Horror Survival Game
-**Status:** In Development (Wave 4 completa — 42 scripts C# implementados)
+**Status:** In Development (Wave 5 completa — 48 scripts C# implementados)
 
 ---
 
@@ -61,14 +61,19 @@
 | #38 | SFX Essenciais | 🔊 Requer sound designer |
 | #39 | Trilha Sonora | 🔊 Requer sound designer |
 | #40 | Áudio Ambiente | 🔊 Requer sound designer |
-| #41 | Áudio Dinâmico | ✅ Arquitetura pronta (`TensionAudioManager`) |
-| #42 | Cutscene Introdução Dia 1 | 🎬 Próximo código |
-| #43 | Jumpscare CRIANÇA 2 Dia 1 | 🎬 Próximo código |
-| #44 | Implementar 3 Finais | 🎬 Próximo código |
-| #45 | Eventos Narrativos Dias 2-5 | 🎬 Próximo código |
-| #46 | Diálogos NPCs | 🎬 Próximo código |
+| #41 | Áudio Dinâmico | ✅ `TensionAudioManager.cs` |
 
-### 📋 TODO (Futuro)
+### ✅ DONE — Wave 5 Narrativa in-game
+
+| # | Item | Entregável |
+|---|------|-----------|
+| #42 | Cutscene Introdução Dia 1 | `CutsceneManager.cs` + `DialogueData.cs` |
+| #43 | Jumpscare CRIANÇA 2 Dia 1 | `JumpscareSystem.cs` |
+| #44 | Implementar 3 Finais | `EndingManager.cs` |
+| #45 | Eventos Narrativos Dias 2-5 | `NarrativeEventManager.cs` |
+| #46 | Diálogos NPCs | `DialogueSystem.cs` |
+
+### 📋 TODO — Requer assets externos
 
 | # | Item | Bloqueio |
 |---|------|---------|
@@ -81,7 +86,7 @@
 
 ---
 
-> **42 scripts C# implementados** · **10 docs de design** · **Próximo:** Narrativa in-game (#42–#46)
+> **48 scripts C# implementados** · **10 docs de design** · **MVP Code completo — aguardando assets 3D/áudio**
 
 ---
 
