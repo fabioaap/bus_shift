@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 4e5a9b3c3e2374b488512155cfd72953
+timeCreated: 1529671827
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 70485
+  packageName: School Bus HQ
+  packageVersion: 1.0
+  assetPath: Assets/School Bus/Prefab/School_Bus_no_damage.prefab
+  uploadId: 253157

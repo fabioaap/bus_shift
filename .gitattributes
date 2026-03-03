@@ -1,9 +1,7 @@
 # AIOS Framework Git Attributes
 # https://git-scm.com/docs/gitattributes
-
 # Set default behavior to automatically normalize line endings
 * text=auto
-
 # Explicitly declare text files that should be normalized
 *.js text eol=lf
 *.mjs text eol=lf
@@ -22,15 +20,12 @@
 *.svg text eol=lf
 *.txt text eol=lf
 *.csv text eol=lf
-
 # Shell scripts should use LF (Unix style)
 *.sh text eol=lf
-
 # Windows batch files should use CRLF
 *.bat text eol=crlf
 *.cmd text eol=crlf
 *.ps1 text eol=crlf
-
 # Declare binary files that should not be modified
 *.png binary
 *.jpg binary
@@ -47,19 +42,34 @@
 *.woff2 binary
 *.ttf binary
 *.eot binary
-
 # Git config files
 .gitattributes text eol=lf
 .gitignore text eol=lf
 .gitkeep text eol=lf
-
 # Lock files should be treated as text
 package-lock.json text eol=lf
 yarn.lock text eol=lf
 pnpm-lock.yaml text eol=lf
-
 # Linguist settings for GitHub language statistics
 *.md linguist-documentation
 docs/** linguist-documentation
 *.yml linguist-detectable=false
 *.yaml linguist-detectable=false
+game/Assets/**/*.fbx filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.FBX filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.png filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.tga filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.psd filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.tiff filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.exr filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.hdr filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.unity filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.prefab filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.asset filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.mat filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.obj filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.wav filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.mp3 filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.mp4 filter=lfs diff=lfs merge=lfs -text
+game/Assets/**/*.dll filter=lfs diff=lfs merge=lfs -text

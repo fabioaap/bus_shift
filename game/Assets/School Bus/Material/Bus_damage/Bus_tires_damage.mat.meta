@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 38641d5265270844ca51df86ffef3b17
+timeCreated: 1529595868
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 70485
+  packageName: School Bus HQ
+  packageVersion: 1.0
+  assetPath: Assets/School Bus/Material/Bus_damage/Bus_tires_damage.mat
+  uploadId: 253157
