@@ -1,21 +1,20 @@
-MIT License
+Copyright (c) 2026 Bus Shift Team. Todos os direitos reservados.
 
-Copyright (c) 2026 Bus Shift Team
+Este software, incluindo todo o código-fonte, assets, documentação e demais
+arquivos contidos neste repositório, é propriedade exclusiva dos seus autores
+e não está licenciado para uso público.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+É expressamente proibido, sem autorização prévia por escrito dos titulares
+dos direitos:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+- Copiar, reproduzir ou distribuir qualquer parte deste projeto
+- Modificar, adaptar ou criar obras derivadas
+- Sublicenciar ou transferir direitos a terceiros
+- Usar o projeto ou qualquer de suas partes para fins comerciais
+- Publicar ou disponibilizar publicamente qualquer parte do projeto
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+O acesso a este repositório não concede qualquer direito de uso, cópia,
+modificação ou distribuição do seu conteúdo.
+
+Para solicitar autorização ou obter mais informações, entre em contato com
+a equipe através das Issues do repositório.

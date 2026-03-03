@@ -1,6 +1,6 @@
 # Contribuindo com Bus Shift
 
-Obrigado pelo interesse em contribuir com Bus Shift! Este é um projeto de jogo narrativo desenvolvido como trabalho acadêmico. Veja abaixo como colaborar.
+Bus Shift é um projeto privado. Contribuições externas só são aceitas mediante convite da equipe. Se você faz parte da equipe ou foi convidado, siga as orientações abaixo.
 
 ## Como Contribuir
 
