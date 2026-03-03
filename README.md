@@ -1,6 +1,6 @@
 # Bus Shift
 
-[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)](#)
+[![Status](https://img.shields.io/badge/status-beta-orange.svg)](#)
 [![Engine](https://img.shields.io/badge/engine-Unity%206-black.svg)](https://unity.com/)
 [![Plataforma](https://img.shields.io/badge/plataforma-PC-blue.svg)](#)
 [![Licença](https://img.shields.io/badge/licença-MIT-green.svg)](LICENSE)
