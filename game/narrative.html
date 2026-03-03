@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Shift — A História</title>
+    <link rel="stylesheet" href="css/narrative.css">
+</head>
+<body>
+    <!-- Elementos de atmosfera -->
+    <div class="atmosphere">
+        <div class="fog"></div>
+        <div class="noise"></div>
+    </div>
+
+    <!-- Navegação flutuante -->
+    <nav class="floating-nav">
+        <div class="nav-dot active" data-day="intro"></div>
+        <div class="nav-dot" data-day="1"></div>
+        <div class="nav-dot" data-day="2"></div>
+        <div class="nav-dot" data-day="3"></div>
+        <div class="nav-dot" data-day="4"></div>
+        <div class="nav-dot" data-day="5"></div>
+    </nav>
+
+    <main class="narrative-container">
+        <!-- INTRO: MUNDO -->
+        <section class="narrative-section intro active" data-section="intro">
+            <div class="section-header">
+                <h1 class="game-title">BUS SHIFT</h1>
+                <p class="subtitle">Ravenswood, Pennsylvania</p>
+            </div>
+
+            <div class="world-intro">
+                <div class="world-stat">
+                    <span class="stat-label">População</span>
+                    <span class="stat-value">4.847</span>
+                </div>
+                <div class="world-stat">
+                    <span class="stat-label">Elevação</span>
+                    <span class="stat-value">1.240 ft</span>
+                </div>
+                <div class="world-stat">
+                    <span class="stat-label">História</span>
+                    <span class="stat-value">Carvão</span>
+                </div>
+            </div>
+
+            <article class="world-description">
+                <p class="world-intro-text">
+                    Era uma cidade do carvão. Agora é uma cidade que esqueceu que um dia foi alguma coisa.
+                </p>
+
+                <div class="sensory-details">
+                    <div class="detail smell">
+                        <span class="icon">👃</span>
+                        <p>Água ferrugenta de canos velhos, fumaça de lenha em outubro, diesel que nunca sai do ar</p>
+                    </div>
+                    <div class="detail sound">
+                        <span class="icon">🔊</span>
+                        <p>WRVN 1050 AM — "A Voz da Montanha" — country clássico e gospel interrompido por alertas de tempestade</p>
+                    </div>
+                    <div class="detail sight">
+                        <span class="icon">👁️</span>
+                        <p>A Serra dos Apalaches desaparece nas manhãs de neblina. Parece que o mundo acaba na linha das árvores</p>
+                    </div>
+                </div>
+
+                <blockquote class="world-quote">
+                    "O Moose Lodge na Birch Ave ainda tem as luzes de Natal de 1987. Ninguém mais faz comentário."
+                </blockquote>
+            </article>
+
+            <div class="protagonist-preview">
+                <h2>Seu Role</h2>
+                <p class="role-name">Dale Mercer — 41 anos</p>
+                <p class="role-desc">Caminhoneiro suspenso. Pai com pensão atrasada. Um novo emprego num ônibus velho.</p>
+                <p class="role-hook">O que começa como um emprego qualquer vira outra coisa quando você percebe que não está sozinho na rota.</p>
+            </div>
+
+            <div class="cta-explore">
+                <span class="arrow-down">↓</span>
+                <p>Comece o Dia 1</p>
+            </div>
+        </section>
+
+        <!-- DIA 1 -->
+        <section class="narrative-section day-1" data-section="1">
+            <div class="day-header">
+                <span class="day-number">DIA 1</span>
+                <h2 class="day-title">Primeiro Turno</h2>
+                <span class="day-time">6:47 da Manhã</span>
+            </div>
+
+            <div class="scene-setting">
+                <p class="location">Depósito de ônibus da Ravenswood Elementary</p>
+                <p class="weather">Céu cor de concreto. Geada no asfalto.</p>
+            </div>
+
+            <!-- Diálogo com Stone -->
+            <div class="dialogue-scene">
+                <div class="dialogue-container">
+                    <div class="character-dialogue stone">
+                        <span class="char-name">Harrison Stone — Diretor</span>
+                        <p class="dialogue-text">"Route's straightforward. Morning pickup starts at Elm and Depot, ends here. Afternoon reverse."</p>
+                    </div>
+
+                    <div class="dialogue-divider"></div>
+
+                    <div class="character-dialogue stone">
+                        <p class="dialogue-text">"The bus — it's older. Had some... maintenance work done after the last driver's... situation. Earl will tell you it's road-ready, and it is. It just has its quirks."</p>
+                    </div>
+
+                    <div class="dialogue-divider"></div>
+
+                    <div class="character-dialogue dale">
+                        <span class="char-name">Dale Mercer — Você</span>
+                        <p class="dialogue-text">"What kind of situation?"</p>
+                    </div>
+
+                    <div class="dialogue-divider"></div>
+
+                    <div class="character-dialogue stone">
+                        <p class="dialogue-text">"Bus went out of service. Nothing mechanical. Just... time to retire it and bring it back. That's all."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- O Ônibus -->
+            <div class="bus-reveal">
+                <h3>Ônibus 104</h3>
+                <p class="bus-specs">International AmTran 1989</p>
+                
+                <div class="bus-visual">
+                    <svg viewBox="0 0 400 200" class="bus-svg">
+                        <!-- Corpo do ônibus -->
+                        <rect x="30" y="60" width="340" height="100" rx="8" class="bus-body"/>
+                        <!-- Teto -->
+                        <ellipse cx="200" cy="60" rx="170" ry="15" class="bus-roof"/>
+                        <!-- Janelas -->
+                        <rect x="60" y="75" width="30" height="25" rx="2" class="bus-window"/>
+                        <rect x="110" y="75" width="30" height="25" rx="2" class="bus-window"/>
+                        <rect x="160" y="75" width="30" height="25" rx="2" class="bus-window"/>
+                        <rect x="210" y="75" width="30" height="25" rx="2" class="bus-window"/>
+                        <rect x="260" y="75" width="30" height="25" rx="2" class="bus-window"/>
+                        <rect x="310" y="75" width="30" height="25" rx="2" class="bus-window"/>
+                        <!-- Pneus -->
+                        <circle cx="70" cy="165" r="12" class="bus-tire"/>
+                        <circle cx="330" cy="165" r="12" class="bus-tire"/>
+                        <!-- Espelho -->
+                        <circle cx="35" cy="90" r="8" class="bus-mirror" id="mirror-distort"/>
+                    </svg>
+                </div>
+
+                <div class="bus-details">
+                    <h4>Detalhes Sensoriais</h4>
+                    <ul class="sensory-list">
+                        <li><strong>Cheiro:</strong> Espuma de vinil de banco, óleo velho, algo metálico por baixo</li>
+                        <li><strong>Som:</strong> O banco do motorista range com o som de uma pergunta sendo feita</li>
+                        <li><strong>Visual:</strong> O espelho retrovisor tem uma mancha que distorce o reflexo das fileiras do meio</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Motor ligando -->
+            <div class="engine-start">
+                <p class="inner-monologue">"Alright then. Let's go to work."</p>
+                <div class="engine-visual">
+                    <div class="ignition-spark"></div>
+                </div>
+            </div>
+
+            <div class="emotional-state">
+                <p class="emotion-label">Estado Emocional</p>
+                <p class="emotion-anchor">"It's just an old bus. Old buses make noises."</p>
+                <p class="emotion-desc">Negação pragmática</p>
+            </div>
+        </section>
+
+        <!-- DIA 2 -->
+        <section class="narrative-section day-2" data-section="2">
+            <div class="day-header">
+                <span class="day-number">DIA 2</span>
+                <h2 class="day-title">Padrões</h2>
+                <span class="day-time">Em Progresso</span>
+            </div>
+
+            <div class="scene-setting">
+                <p class="location">Rota Matinal — Elm e Depot até Ravenswood Elementary</p>
+                <p class="weather">Neblina leve. Temperatura em queda.</p>
+            </div>
+
+            <article class="day-content">
+                <p class="day-intro">
+                    Five names. You know their faces now. Kaylee, Tyler, Marcus, Sarah, Emma. Same seats. Same morning routes. Same patterns.
+                </p>
+
+                <div class="children-manifest">
+                    <h3>A Rota Matinal</h3>
+                    <div class="child-card">
+                        <p class="child-name">Kaylee</p>
+                        <p class="child-detail">14 anos. Sempre silenciosa. Assento 3.</p>
+                    </div>
+                    <div class="child-card">
+                        <p class="child-name">Tyler</p>
+                        <p class="child-detail">11 anos. Sempre barulhento. Assento 7.</p>
+                    </div>
+                    <div class="child-card">
+                        <p class="child-name">Marcus</p>
+                        <p class="child-detail">10 anos. Headphones. Assento 4.</p>
+                    </div>
+                    <div class="child-card">
+                        <p class="child-name">Sarah</p>
+                        <p class="child-detail">9 anos. Sempre segurando uma boneca. Assento 2.</p>
+                    </div>
+                    <div class="child-card">
+                        <p class="child-name">Emma</p>
+                        <p class="child-detail">8 anos. Sempre desenhando. Assento 1.</p>
+                    </div>
+                </div>
+
+                <p class="warning-text">
+                    Mas há algo no padrão que não encaixa. Um padrão fantasma. Um sexto assento que está sempre vazio, mas...
+                </p>
+            </article>
+
+            <div class="emotional-state">
+                <p class="emotion-label">Estado Emocional</p>
+                <p class="emotion-anchor">"Five names. I know those faces now."</p>
+                <p class="emotion-desc">Curiosidade Ansiosa</p>
+            </div>
+        </section>
+
+        <!-- DIA 3 -->
+        <section class="narrative-section day-3" data-section="3">
+            <div class="day-header">
+                <span class="day-number">DIA 3</span>
+                <h2 class="day-title">Descoberta</h2>
+                <span class="day-time">Tarde — 15:30</span>
+            </div>
+
+            <div class="scene-setting">
+                <p class="location">Rota Vespertina — Volta da Escola</p>
+                <p class="weather">Céu fechando. Temperatura caindo.</p>
+            </div>
+
+            <article class="day-content">
+                <p class="day-intro">
+                    They didn't deserve what happened to them. Nenhuma criança merecia.
+                </p>
+
+                <p class="revelation">
+                    O sexto assento não está vazio. Alguém senta ali — mas não é uma criança que você conhece do registro de embarque.
+                </p>
+
+                <div class="mystery-deepens">
+                    <h3>O que você vê no assento 6:</h3>
+                    <p class="mystery-text">Silhueta pequena. Uniforme escolar. Rosto que não consegue focar direito — como a mancha no espelho retrovisor.</p>
+                </div>
+
+                <blockquote class="day-quote">
+                    "O único som que faz é o farfalhar do uniforme contra o vinil quando o ônibus faz conversas bruscas."
+                </blockquote>
+            </article>
+
+            <div class="emotional-state">
+                <p class="emotion-label">Estado Emocional</p>
+                <p class="emotion-anchor">"They didn't deserve what happened to them."</p>
+                <p class="emotion-desc">Reconhecimento Doloroso</p>
+            </div>
+        </section>
+
+        <!-- DIA 4 -->
+        <section class="narrative-section day-4" data-section="4">
+            <div class="day-header">
+                <span class="day-number">DIA 4</span>
+                <h2 class="day-title">Compreensão</h2>
+                <span class="day-time">Noite — 19:45</span>
+            </div>
+
+            <div class="scene-setting">
+                <p class="location">Ravenswood Elementary — Depósito de Ônibus</p>
+                <p class="weather">Totalmente escuro. Apenas as luzes do depósito iluminam.</p>
+            </div>
+
+            <article class="day-content">
+                <p class="day-intro">
+                    I understand you, Victor. That's the problem.
+                </p>
+
+                <div class="victor-context">
+                    <h3>Victor Holder</h3>
+                    <p class="victor-detail">O motorista anterior. Que não conseguiu lidar com ouvir vozes todas as manhãs no Assento 6.</p>
+                    <p class="victor-sad">Que não conseguiu voltar para casa depois de três semanas.</p>
+                </div>
+
+                <p class="understanding-text">
+                    Você entende por que ele saiu. Por que ele nunca ligou de volta. Por que Harrison Stone olhou pro ônibus e disse "é só trazer de volta ao serviço."
+                </p>
+
+                <blockquote class="day-quote internal">
+                    "Porque ele não podia deixar uma criança sozinha num ônibus. Nem que fosse uma criança que já não estava mais em lugar nenhum."
+                </blockquote>
+            </article>
+
+            <div class="emotional-state">
+                <p class="emotion-label">Estado Emocional</p>
+                <p class="emotion-anchor">"I understand you, Victor. That's the problem."</p>
+                <p class="emotion-desc">Identificação Perigosa</p>
+            </div>
+        </section>
+
+        <!-- DIA 5 -->
+        <section class="narrative-section day-5" data-section="5">
+            <div class="day-header">
+                <span class="day-number">DIA 5</span>
+                <h2 class="day-title">Escolha</h2>
+                <span class="day-time">Amanhecer</span>
+            </div>
+
+            <div class="scene-setting">
+                <p class="location">Sua casa. Ravenswood.</p>
+                <p class="weather">Primeiro raio de sol chegando. Seu telefone está vibrando.</p>
+            </div>
+
+            <article class="day-content">
+                <p class="day-intro">
+                    Kaylee needs her dad to come home.
+                </p>
+
+                <div class="final-choice">
+                    <h3>A Chamada</h3>
+                    <p class="choice-context">
+                        "Hey, Dale, é a Carol. Kaylee quer te apresentar alguém na escola dela. Sexta à noite na biblioteca. Você consegue estar lá?"
+                    </p>
+
+                    <p class="choice-weight">
+                        Você tem que escolher. Voltar pra Pittsburgh. Resgatar o que deixou para trás.
+                    </p>
+
+                    <p class="choice-conflict">
+                        Ou ficar. No ônibus. Com Victor. Com o Assento 6.
+                    </p>
+                </div>
+
+                <blockquote class="day-quote final">
+                    "Nem todos os ônibus chegam onde você espera. Mas dirigir é uma ação. E ações têm peso."
+                </blockquote>
+            </article>
+
+            <div class="emotional-state">
+                <p class="emotion-label">Estado Emocional</p>
+                <p class="emotion-anchor">"Kaylee needs her dad to come home."</p>
+                <p class="emotion-desc">Escolha Existencial</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé narrativo -->
+    <footer class="narrative-footer">
+        <p class="footer-text">Bus Shift é uma história sobre segunda chances, carga invisível e o que fazemos quando ninguém está vendo.</p>
+        <p class="footer-credits">Uma narrativa de Ravenswood, Pennsylvania</p>
+    </footer>
+
+    <script src="js/narrative.js"></script>
+</body>
+</html>
