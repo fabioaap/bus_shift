@@ -1,0 +1,349 @@
+/* =========================================
+   BUS SHIFT - NARRATIVE DESK CSS
+   Architect-First: Estética Evolutiva 
+   ========================================= */
+
+:root {
+    /* Cores Dossiê Policial */
+    --wood-bg: #1c1511;
+    --paper-clean: #e6dfcc;
+    --blueprint-bg: #2d3b45;
+    --ink-black: #111;
+    --ink-red: #c22929;
+    
+    /* Cores Diário Macabro */
+    --paper-corrupted: #8c7355;
+    --blood-dark: #4a0d0d;
+    --blood-light: #801010;
+    
+    /* Atmosfera Variável */
+    --blood-opacity: 0;
+    --noise-opacity: 0.15;
+    --light-brightness: 0.8;
+    --jitter-intensity: 0px;
+    
+    /* Tipografia */
+    --font-typewriter: 'Courier Prime', monospace;
+    --font-stamps: 'Special Elite', cursive;
+    --font-handwriting: 'Nanum Pen Script', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--wood-bg);
+    background-image: 
+        radial-gradient(circle at center, transparent 30%, #000 90%),
+        repeating-linear-gradient(90deg, transparent 0, transparent 20px, rgba(0,0,0,0.1) 20px, rgba(0,0,0,0.1) 22px);
+    background-size: 100vw 100vh, 200px 100%;
+    color: var(--ink-black);
+    font-family: var(--font-typewriter);
+    height: 100vh;
+    overflow: hidden;
+    user-select: none; /* Previne seleção arrastada estragando a ilusão */
+}
+
+/* =========================================
+   CAMADAS DE ATMOSFERA
+   ========================================= */
+#vignette {
+    position: fixed;
+    inset: 0;
+    box-shadow: inset 0 0 150px rgba(0,0,0,0.9);
+    pointer-events: none;
+    z-index: 10;
+}
+
+#desk-light {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at 50% 40%, rgba(255,230,180, var(--light-brightness)) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 11;
+    mix-blend-mode: overlay;
+    transition: opacity 0.5s ease;
+}
+
+#blood-overlay {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at 50% 50%, transparent 40%, rgba(130, 20, 20, var(--blood-opacity)) 100%);
+    pointer-events: none;
+    z-index: 12;
+    transition: opacity 2s ease;
+}
+
+/* Efeito de ruído em CSS puro */
+#noise-overlay {
+    position: fixed;
+    inset: 0;
+    background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noise"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noise)" opacity="0.5"/%3E%3C/svg%3E');
+    opacity: var(--noise-opacity);
+    pointer-events: none;
+    z-index: 13;
+    mix-blend-mode: multiply;
+}
+
+/* =========================================
+   UI
+   ========================================= */
+#ui-layer {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#tension-monitor {
+    color: #fff;
+    font-family: var(--font-stamps);
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 0 #000;
+    opacity: 0.8;
+}
+
+#tension-bar-container {
+    width: 200px;
+    height: 8px;
+    background: #333;
+    border: 1px solid #111;
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+#tension-bar {
+    height: 100%;
+    width: 0%;
+    background: #4caf50;
+    transition: width 1s ease, background-color 1s ease;
+}
+
+#close-btn {
+    pointer-events: auto;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: var(--font-stamps);
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    backdrop-filter: blur(2px);
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+#close-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+#close-btn.hidden {
+    display: none;
+}
+
+/* =========================================
+   A MESA E OS DOCUMENTOS
+   ========================================= */
+#desk {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.document {
+    position: absolute;
+    background: var(--paper-clean);
+    padding: 2rem;
+    box-shadow: 
+        5px 5px 15px rgba(0,0,0,0.5),
+        inset 0 0 50px rgba(100,80,60,0.1);
+    cursor: pointer;
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.6s ease, background 2s ease;
+    transform-origin: center center;
+    border-radius: 2px;
+}
+
+/* Estados de Interação */
+.document.idle:hover {
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.6);
+    filter: brightness(1.1);
+}
+
+.document.focused {
+    cursor: default;
+    box-shadow: 0 30px 100px rgba(0,0,0,0.9);
+    z-index: 500 !important;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+/* Custom Scrollbar para os documentos */
+.document.focused::-webkit-scrollbar {
+    width: 6px;
+}
+.document.focused::-webkit-scrollbar-track {
+    background: transparent;
+}
+.document.focused::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+body.corrupted .document.focused::-webkit-scrollbar-thumb {
+    background-color: rgba(130, 20, 20, 0.6);
+}
+
+.document.hidden-bg {
+    opacity: 0.3;
+    filter: blur(3px) grayscale(50%);
+    pointer-events: none;
+}
+
+/* Tipos de Documentos */
+.doc-clipboard {
+    width: 350px;
+    min-height: 450px;
+    background-image: repeating-linear-gradient(transparent, transparent 24px, rgba(0, 0, 0, 0.1) 25px);
+    background-position: 0 30px;
+    padding-top: 50px;
+}
+
+.doc-clipboard::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 35px;
+    background: #888;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+}
+
+.doc-folder {
+    width: 400px;
+    min-height: 300px;
+    background: #d4c5b0;
+    border-left: 20px solid #a39171;
+}
+
+.doc-polaroid {
+    width: 250px;
+    min-height: 300px;
+    background: #fff;
+    padding: 15px 15px 60px 15px;
+}
+
+.doc-polaroid::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-3deg);
+    width: 80px;
+    height: 25px;
+    background: rgba(255,255,255,0.6);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Decorações Diegéticas */
+.stamp {
+    font-family: var(--font-stamps);
+    color: var(--ink-red);
+    font-size: 2rem;
+    font-weight: bold;
+    border: 3px solid var(--ink-red);
+    padding: 5px 15px;
+    transform: rotate(-15deg);
+    opacity: 0.8;
+    position: absolute;
+    display: inline-block;
+    mix-blend-mode: multiply;
+}
+
+.doc-title {
+    font-family: var(--font-stamps);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.doc-content {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.doc-content h3 {
+    margin-top: 1rem;
+    font-family: var(--font-stamps);
+}
+
+/* =========================================
+   ESTADO CORROMPIDO (O ABISMO / DIÁRIO MACABRO)
+   ========================================= */
+body.corrupted {
+    --wood-bg: #0a0505;
+    --paper-clean: var(--paper-corrupted);
+    --ink-black: #2a0808;
+    --blood-opacity: 0.6;
+    --noise-opacity: 0.4;
+    --light-brightness: 0.4;
+}
+
+body.corrupted .document {
+    /* Textura de sangue e sujeira revelada */
+    background-image: 
+        radial-gradient(circle at 80% 20%, rgba(130, 20, 20, 0.4) 0%, transparent 40%),
+        radial-gradient(circle at 20% 80%, rgba(80, 10, 10, 0.3) 0%, transparent 50%);
+    color: #1a0505;
+}
+
+body.corrupted .doc-clipboard {
+    background-image: 
+        repeating-linear-gradient(transparent, transparent 24px, rgba(130, 20, 20, 0.3) 25px),
+        radial-gradient(circle at 50% 50%, rgba(100,0,0,0.1) 0%, rgba(50,0,0,0.3) 100%);
+}
+
+body.corrupted .stamp {
+    color: #4a0000;
+    border-color: #4a0000;
+}
+
+/* Animação de lâmpada piscando em tensão extrema */
+@keyframes flicker {
+    0% { opacity: 0.8; }
+    5% { opacity: 0.2; }
+    10% { opacity: 0.9; }
+    15% { opacity: 0.1; }
+    20% { opacity: 0.8; }
+    30% { opacity: 0.8; }
+    50% { opacity: 0.3; }
+    55% { opacity: 0.8; }
+    100% { opacity: 0.8; }
+}
+
+body.tension-critical #desk-light {
+    animation: flicker 3s infinite;
+}
+
+/* Fontes macabras injetadas no estado corrompido */
+body.corrupted .macabre-text {
+    font-family: var(--font-handwriting);
+    color: var(--blood-light);
+    font-size: 1.3rem;
+    line-height: 1.2;
+    transform: rotate(-2deg);
+    display: block;
+    margin-top: 10px;
+}
