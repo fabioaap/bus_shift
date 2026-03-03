@@ -132,8 +132,10 @@ cd bus_shift/game
 
 | Papel | Responsável |
 |---|---|
-| Game Design & Narrativa | Fábio |
+| Designer Gráfico e de Produto | Fábio |
 | Programação Unity | Yan Callegaris |
+| Programação Unity | Gabriel Felix |
+| Game Design & Programação Unity | Luana Zaparoli |
 
 ---
 
