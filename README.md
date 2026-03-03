@@ -132,7 +132,7 @@ cd bus_shift/game
 
 | Papel | Responsável |
 |---|---|
-| Designer Gráfico e de Produto | Fábio |
+| IA Builder de Product Designer | Fábio Alves |
 | Programação Unity | Yan Callegaris |
 | Programação Unity | Gabriel Felix |
 | Game Design & Programação Unity | Luana Zaparoli |
