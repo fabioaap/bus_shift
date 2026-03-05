@@ -16,18 +16,6 @@ namespace BusShift.Core
     /// </summary>
     public enum EndingType { Good, Neutral, Bad }
 
-    /// <summary>
-    /// Identifiers for Day 5 ending cutscenes.
-    /// Forward-compatible: CutsceneManager is not yet implemented.
-    /// Wire CutsceneManager to subscribe <see cref="EndingManager.OnCutsceneRequested"/>.
-    /// </summary>
-    public enum CutsceneId
-    {
-        Day5Ending_Good,
-        Day5Ending_Neutral,
-        Day5Ending_Bad
-    }
-
     // ─────────────────────────────────────────────────────────────────────────────
     //  EndingManager
     // ─────────────────────────────────────────────────────────────────────────────
