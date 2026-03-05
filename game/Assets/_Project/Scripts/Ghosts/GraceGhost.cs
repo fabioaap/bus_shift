@@ -57,6 +57,15 @@ namespace BusShift.Ghosts
         /// </summary>
         public static event Action OnBusCollided;
 
+        /// <summary>
+        /// Raises <see cref="OnBusCollided"/> from outside this type without exposing
+        /// direct event invocation to other classes.
+        /// </summary>
+        public static void NotifyBusCollision()
+        {
+            OnBusCollided?.Invoke();
+        }
+
         // ── Presence events ───────────────────────────────────────────────────
         /// <summary>Fired when Grace appears and starts blocking the view.</summary>
         public static event Action OnViewBlocked;

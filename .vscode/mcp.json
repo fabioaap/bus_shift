@@ -1,0 +1,22 @@
+{
+  "servers": {
+    "blender": {
+      "type": "stdio",
+      "command": "C:\\Users\\Educacross\\.local\\bin\\uvx.exe",
+      "args": [
+        "blender-mcp"
+      ]
+    },
+    "unity": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "unity-mcp-server"
+      ],
+      "env": {
+        "UNITY_PROJECT_PATH": "c:\\Users\\Educacross\\Documents\\Projetos Fábio\\bus_shift\\game"
+      }
+    }
+  }
+}

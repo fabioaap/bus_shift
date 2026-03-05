@@ -1,4 +1,5 @@
 using UnityEngine;
+using BusShift.Bus;
 using BusShift.Interventions;
 using BusShift.Ghosts;
 
@@ -73,7 +74,7 @@ namespace BusShift.Core
         // 3. Grace: collision forwarding
         private void HandleBusCollision()
         {
-            GraceGhost.OnBusCollided?.Invoke();
+            GraceGhost.NotifyBusCollision();
         }
 
         // ─────────────────────────────────────────────────────────────────────

@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using Unity.Cinemachine;
+using BusShift.Core;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -408,7 +409,7 @@ namespace BusShift.Bus
                 yield break;
             }
 
-            var noise = _virtualCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+            var noise = _virtualCam.GetComponent<CinemachineBasicMultiChannelPerlin>();
             if (noise == null)
             {
 #if UNITY_EDITOR || DEVELOPMENT_BUILD
@@ -434,7 +435,7 @@ namespace BusShift.Bus
         private void ResetShakeAmplitude()
         {
             if (_virtualCam == null) return;
-            var noise = _virtualCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+            var noise = _virtualCam.GetComponent<CinemachineBasicMultiChannelPerlin>();
             if (noise != null)
                 noise.AmplitudeGain = 0f;
         }
