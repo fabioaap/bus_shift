@@ -1,3 +1,5 @@
+<!-- Versão pública em português da narrativa de Bus Shift; narrative/story.html espelha este conteúdo. -->
+
 # Bus Shift — Um Conto de Estrada
 
 > Em Ravenswood, toda estrada parece voltar para o mesmo lugar. Algumas voltam com você dentro. Outras voltam com alguma coisa ao seu lado.
