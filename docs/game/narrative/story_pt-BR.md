@@ -1,6 +1,9 @@
 <!-- Versão pública em português da narrativa de Bus Shift; narrative/story.html espelha este conteúdo. -->
+<!-- Versão 2 da narrativa pública em português. -->
 
 # Bus Shift — Um Conto de Estrada
+
+_Versão 2 da narrativa pública em português._
 
 > Em Ravenswood, toda estrada parece voltar para o mesmo lugar. Algumas voltam com você dentro. Outras voltam com alguma coisa ao seu lado.
 
