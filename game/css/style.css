@@ -1,0 +1,337 @@
+/* === RESET & BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+    user-select: none;
+}
+
+/* === GAME CONTAINER === */
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    overflow: hidden;
+}
+
+#gameCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* === UI CONTAINER === */
+#ui-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* === CENTER MESSAGE === */
+#center-message {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2.35rem;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.28);
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.glitch-text {
+    position: relative;
+    color: #fff;
+    text-shadow: 
+        0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+        0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    animation: glitch 500ms infinite;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 
+            0.05em 0 0 rgba(255, 0, 0, 0.75),
+            -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+            0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    14% {
+        text-shadow: 
+            0.05em 0 0 rgba(255, 0, 0, 0.75),
+            -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+            0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    15% {
+        text-shadow: 
+            -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+            0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+            -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    49% {
+        text-shadow: 
+            -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+            0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+            -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    50% {
+        text-shadow: 
+            0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+            0.05em 0 0 rgba(0, 255, 0, 0.75),
+            0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    99% {
+        text-shadow: 
+            0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+            0.05em 0 0 rgba(0, 255, 0, 0.75),
+            0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    100% {
+        text-shadow: 
+            0.05em 0 0 rgba(255, 0, 0, 0.75),
+            -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+            0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+}
+
+/* === PANELS === */
+.panel {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 0.9rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.left-panel {
+    bottom: 16px;
+    left: 20px;
+    width: 200px;
+}
+
+.right-panel {
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* === DASHBOARD === */
+.gauge {
+    margin-bottom: 15px;
+}
+
+.gauge-label {
+    font-size: 0.75rem;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.gauge-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0;
+}
+
+.gauge-progress {
+    width: 100%;
+    height: 10px;
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.gauge-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #0f0 0%, #ff0 50%, #f00 100%);
+    transition: width 0.3s ease;
+}
+
+.warning-lights {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.warning-light {
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.65rem;
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 3px;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.warning-light.active {
+    background: #ff3d00;
+    color: #fff;
+    border-color: #ff3d00;
+    box-shadow: 0 0 14px #ff3d00;
+    animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+/* === DOCUMENT PANEL === */
+.document-header {
+    font-size: 1rem;
+    font-weight: bold;
+    border-bottom: 2px solid #444;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    color: #888;
+}
+
+.route-info {
+    margin-bottom: 15px;
+}
+
+.route-info p {
+    margin: 5px 0;
+    font-size: 0.85rem;
+}
+
+.document-notes {
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.note-text {
+    font-size: 0.8rem;
+    margin: 8px 0;
+    font-style: italic;
+    color: #ccc;
+}
+
+.note-text.faded {
+    color: #666;
+    animation: fade-flicker 3s infinite;
+}
+
+@keyframes fade-flicker {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.7; }
+}
+
+/* === GAME STATE MESSAGE === */
+.state-message {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 0, 0, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+    to {
+        top: 20px;
+        opacity: 1;
+    }
+}
+
+/* === SCREENS === */
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 100;
+    pointer-events: all;
+}
+
+.screen.hidden {
+    display: none;
+}
+
+.loading-content,
+.pause-content,
+.gameover-content {
+    text-align: center;
+    padding: 40px;
+}
+
+.loading-content h1,
+.gameover-content h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.pause-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.loading-content p,
+.pause-content p,
+.gameover-content p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.controls-hint {
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #888;
+}
+
+.controls-hint p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* === UTILITY CLASSES === */
+.hidden {
+    display: none !important;
+}
