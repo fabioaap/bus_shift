@@ -20,6 +20,8 @@ module.exports = [
       '**/build/**',
       '**/dist/**',
       '**/.next/**',
+      // AIOX 5.3 is installed framework code, validated by its own installer and doctor
+      '.aiox-core/**',
       // Dashboard has its own ESLint config
       'apps/dashboard/**',
       '**/.aios-core/_legacy-v4.31.0/**',
