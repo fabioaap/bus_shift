@@ -1,0 +1,98 @@
+pack:
+  name: game-development
+  version: 0.1.0
+  short-title: Game Development Squad
+  description: >-
+    Squad especializado em desenvolvimento de jogos, com foco em direção de produto,
+    game design, narrativa e lore, direção visual, engenharia Unity, QA e balanceamento.
+    Criado inicialmente para concluir o Bus Shift, mas estruturado para reutilização em
+    outros projetos de jogos.
+  author: Bus Shift Team
+  icon: "🎮"
+  slashPrefix: game
+
+pattern_library:
+  prefix: GAME
+  naming_convention:
+    format: "{PREFIX}-{CATEGORY}-{NUMBER}"
+    example: "GAME-GD-001"
+  categories:
+    - id: DIR
+      name: Direção
+      description: Decisões de escopo, visão e produção
+    - id: GD
+      name: Game Design
+      description: Mecânicas, loops, progressão e balanceamento
+    - id: ENG
+      name: Engenharia
+      description: Unity, C#, integração e performance
+    - id: NAR
+      name: Narrativa
+      description: Lore, personagens, diálogos e continuidade
+    - id: ART
+      name: Arte
+      description: Direção visual, assets, UI e experiência audiovisual
+    - id: QA
+      name: Qualidade
+      description: Testes, telemetria, bugs e critérios de lançamento
+  patterns: []
+
+task_standards:
+  enforce_anatomy: true
+  required_fields:
+    - task_name
+    - status
+    - responsible_executor
+    - input
+    - output
+    - action_items
+    - acceptance_criteria
+  optional_fields:
+    - estimated_effort
+    - dependencies
+    - risks
+    - quality_gate
+    - handoff
+
+workflow_config:
+  checkpoint_policy: always_active
+  fail_fast: true
+  allow_manual_override: true
+  definition_of_done:
+    - Executável ou artefato verificável produzido
+    - Critérios de aceite testados
+    - Evidências registradas
+    - Documentação atualizada
+    - Próximo handoff explícito
+
+tier_system:
+  tier_0:
+    name: Direção e Orquestração
+    agents:
+      - game-chief
+  tier_1:
+    name: Especialistas Principais
+    agents:
+      - game-designer
+      - unity-gameplay-engineer
+      - lore-architect
+      - visual-art-director
+  tier_2:
+    name: Validação e Balanceamento
+    agents:
+      - game-qa-balance
+
+handoff_policy:
+  strategy_before_execution: true
+  design_before_code: true
+  playable_evidence_required: true
+  narrative_continuity_required: true
+  art_direction_required_before_final_assets: true
+
+settings:
+  greeting: named
+  language: pt-BR
+  max_context_files: 8
+  default_engine: Unity 6
+  default_platform: Windows PC
+  project_context: data/bus-shift-context.md
