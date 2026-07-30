@@ -1,0 +1,65 @@
+name: Upgrade AIOX Core 5.3.0
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - agent/aiox-5-3-game-squad
+    paths:
+      - .github/workflows/aiox-upgrade.yml
+
+permissions:
+  contents: write
+
+jobs:
+  upgrade:
+    name: Install and validate AIOX 5.3.0
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout upgrade branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/aiox-5-3-game-squad
+          fetch-depth: 0
+
+      - name: Configure Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org
+
+      - name: Confirm target AIOX version
+        run: npx -y -p @aiox-squads/core@5.3.0 aiox --version
+
+      - name: Upgrade framework
+        env:
+          CI: "true"
+        run: npx -y -p @aiox-squads/core@5.3.0 aiox install --quiet --force
+
+      - name: Validate framework health
+        env:
+          CI: "true"
+        run: |
+          npx -y -p @aiox-squads/core@5.3.0 aiox doctor
+          test -d .aiox-core || test -d .aios-core
+          test -f squads/game-development/config.yaml
+          test -f squads/game-development/agents/game-chief.md
+          test -f squads/game-development/agents/unity-gameplay-engineer.md
+          test -f squads/game-development/agents/lore-architect.md
+          test -f squads/game-development/agents/visual-art-director.md
+          test -f squads/game-development/agents/game-qa-balance.md
+
+      - name: Commit upgraded framework
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "AIOX installation is already current."
+          else
+            git commit -m "chore: upgrade AIOX Core to 5.3.0 [skip ci]"
+            git push origin HEAD:agent/aiox-5-3-game-squad
+          fi
