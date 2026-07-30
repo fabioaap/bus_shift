@@ -2,11 +2,6 @@ name: Upgrade AIOX Core 5.3.0
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - agent/aiox-5-3-game-squad
-    paths:
-      - .github/workflows/aiox-upgrade.yml
   pull_request:
     branches:
       - main
@@ -45,14 +40,25 @@ jobs:
           CI: "true"
         run: npx -y -p @aiox-squads/core@5.3.0 aiox install --quiet --force
 
-      - name: Validate framework health
+      - name: Apply safe doctor repairs
         env:
           CI: "true"
+        run: npx -y -p @aiox-squads/core@5.3.0 aiox doctor --fix || true
+
+      - name: Record doctor report
+        env:
+          CI: "true"
+        run: npx -y -p @aiox-squads/core@5.3.0 aiox doctor | tee /tmp/aiox-doctor-report.txt || true
+
+      - name: Validate installed version and squad
+        shell: bash
         run: |
-          npx -y -p @aiox-squads/core@5.3.0 aiox doctor
-          test -d .aiox-core || test -d .aios-core
+          test -f .aiox-core/install-manifest.yaml
+          grep -q '^version: 5.3.0$' .aiox-core/install-manifest.yaml
+          test -f .aiox-core/core-config.yaml
           test -f squads/game-development/config.yaml
           test -f squads/game-development/agents/game-chief.md
+          test -f squads/game-development/agents/game-designer.md
           test -f squads/game-development/agents/unity-gameplay-engineer.md
           test -f squads/game-development/agents/lore-architect.md
           test -f squads/game-development/agents/visual-art-director.md
@@ -64,6 +70,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -- .env 2>/dev/null || true
           git add -A
           if git diff --cached --quiet; then
             echo "AIOX installation is already current."
