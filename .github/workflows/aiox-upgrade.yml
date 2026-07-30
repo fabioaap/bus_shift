@@ -1,29 +1,31 @@
-name: Upgrade AIOX Core 5.3.0
+name: Upgrade AIOX Core
 
 on:
   workflow_dispatch:
-  pull_request:
-    branches:
-      - main
-    types: [opened, synchronize, reopened]
-    paths:
-      - .github/workflows/aiox-upgrade.yml
+    inputs:
+      target_ref:
+        description: Branch that will receive the framework update
+        required: true
+        default: main
+      aiox_version:
+        description: AIOX Core version
+        required: true
+        default: 5.3.0
 
 permissions:
   contents: write
 
 jobs:
   upgrade:
-    name: Install and validate AIOX 5.3.0
-    if: github.event_name != 'pull_request' || github.head_ref == 'agent/aiox-5-3-game-squad'
+    name: Install and validate AIOX
     runs-on: ubuntu-latest
     timeout-minutes: 25
 
     steps:
-      - name: Checkout upgrade branch
+      - name: Checkout target branch
         uses: actions/checkout@v4
         with:
-          ref: agent/aiox-5-3-game-squad
+          ref: ${{ inputs.target_ref }}
           fetch-depth: 0
 
       - name: Configure Node.js
@@ -33,12 +35,12 @@ jobs:
           registry-url: https://registry.npmjs.org
 
       - name: Confirm target AIOX version
-        run: npx -y -p @aiox-squads/core@5.3.0 aiox --version
+        run: npx -y -p @aiox-squads/core@${{ inputs.aiox_version }} aiox --version
 
       - name: Upgrade framework
         env:
           CI: "true"
-        run: npx -y -p @aiox-squads/core@5.3.0 aiox install --quiet --force
+        run: npx -y -p @aiox-squads/core@${{ inputs.aiox_version }} aiox install --quiet --force
 
       - name: Apply nonbreaking dependency fixes
         run: npm audit fix || true
@@ -52,18 +54,18 @@ jobs:
       - name: Apply safe doctor repairs
         env:
           CI: "true"
-        run: npx -y -p @aiox-squads/core@5.3.0 aiox doctor --fix || true
+        run: npx -y -p @aiox-squads/core@${{ inputs.aiox_version }} aiox doctor --fix || true
 
       - name: Record doctor report
         env:
           CI: "true"
-        run: npx -y -p @aiox-squads/core@5.3.0 aiox doctor | tee /tmp/aiox-doctor-report.txt || true
+        run: npx -y -p @aiox-squads/core@${{ inputs.aiox_version }} aiox doctor | tee /tmp/aiox-doctor-report.txt || true
 
       - name: Validate installed version and squad
         shell: bash
         run: |
           test -f .aiox-core/install-manifest.yaml
-          grep -q '^version: 5.3.0$' .aiox-core/install-manifest.yaml
+          grep -q "^version: ${{ inputs.aiox_version }}$" .aiox-core/install-manifest.yaml
           test -f .aiox-core/core-config.yaml
           test -f squads/game-development/config.yaml
           test -f squads/game-development/agents/game-chief.md
@@ -74,7 +76,6 @@ jobs:
           test -f squads/game-development/agents/game-qa-balance.md
 
       - name: Commit upgraded framework
-        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
@@ -84,6 +85,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "AIOX installation is already current."
           else
-            git commit -m "chore: upgrade AIOX Core to 5.3.0 [skip ci]"
-            git push origin HEAD:agent/aiox-5-3-game-squad
+            git commit -m "chore: upgrade AIOX Core to ${{ inputs.aiox_version }}"
+            git push origin HEAD:${{ inputs.target_ref }}
           fi
