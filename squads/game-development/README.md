@@ -4,6 +4,17 @@ Squad AIOX para planejar, construir, integrar, testar e concluir jogos digitais.
 
 O primeiro projeto atendido é o Bus Shift, um jogo de horror psicológico em primeira pessoa desenvolvido em Unity 6.
 
+## Compatibilidade
+
+| Componente | Versão |
+|---|---|
+| AIOX Core | 5.3.0 |
+| Unity | 6 |
+| Plataforma inicial | Windows PC |
+| Idioma operacional | Português do Brasil |
+
+A instalação canônica do framework fica em `.aiox-core/`. A árvore antiga `.aios-core/`, versão 4.0.3, foi preservada temporariamente nesta PR para uma etapa separada de migração e remoção segura de referências legadas.
+
 ## Agentes
 
 | Agente | Responsabilidade |
