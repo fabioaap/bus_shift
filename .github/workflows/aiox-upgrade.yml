@@ -7,6 +7,12 @@ on:
       - agent/aiox-5-3-game-squad
     paths:
       - .github/workflows/aiox-upgrade.yml
+  pull_request:
+    branches:
+      - main
+    types: [opened, synchronize, reopened]
+    paths:
+      - .github/workflows/aiox-upgrade.yml
 
 permissions:
   contents: write
@@ -14,6 +20,7 @@ permissions:
 jobs:
   upgrade:
     name: Install and validate AIOX 5.3.0
+    if: github.event_name != 'pull_request' || github.head_ref == 'agent/aiox-5-3-game-squad'
     runs-on: ubuntu-latest
     timeout-minutes: 25
 
@@ -52,6 +59,7 @@ jobs:
           test -f squads/game-development/agents/game-qa-balance.md
 
       - name: Commit upgraded framework
+        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
