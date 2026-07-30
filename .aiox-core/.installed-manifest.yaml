@@ -3,7 +3,7 @@
 # Used for brownfield upgrades to detect changes
 # DO NOT EDIT MANUALLY
 #
-installed_at: '2026-07-30T23:43:17.314Z'
+installed_at: '2026-07-30T23:45:47.131Z'
 installed_from: aiox-core@5.3.0
 installed_version: 5.3.0
 source_manifest_hash: sha256:2a52d42d7be185b84aba270ea10353583d713e0cabec88a0a8ddd965ec4f0a07
