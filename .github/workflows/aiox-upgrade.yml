@@ -40,6 +40,15 @@ jobs:
           CI: "true"
         run: npx -y -p @aiox-squads/core@5.3.0 aiox install --quiet --force
 
+      - name: Apply nonbreaking dependency fixes
+        run: npm audit fix || true
+
+      - name: Reconcile legacy generated artifacts
+        shell: bash
+        run: |
+          npm run sync:ide || true
+          npm run generate:manifest || true
+
       - name: Apply safe doctor repairs
         env:
           CI: "true"
