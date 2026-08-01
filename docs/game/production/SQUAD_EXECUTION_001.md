@@ -5,133 +5,135 @@
 | Campo | Valor |
 |---|---|
 | Projeto | Bus Shift |
-| Branch auditada | `agent/aiox-5-3-game-squad` |
-| Commit inicial da auditoria | `b11b31c0492e389ad74e6cec83dd052fc572820c` |
+| Branch | `agent/aiox-5-3-game-squad` |
 | Workflow | `wf-finish-game` |
-| Fase | 0, Diagnóstico |
-| Meta imediata | Build 0.1.0, vertical slice completa do Dia 1 |
-| Data | 1 de agosto de 2026 |
+| Fase atual | 1, Vertical Slice |
+| Meta | Build 0.1.0, Dia 1 jogável |
+| Início | 1 de agosto de 2026 |
 
 ## Agentes invocados
 
-### Game Chief
+1. `game-chief`
+2. `game-designer`
+3. `unity-gameplay-engineer`
+4. `lore-architect`
+5. `visual-art-director`
+6. `game-qa-balance`
 
-Responsável por consolidar evidências, corrigir a ordem do roadmap e definir a próxima build verificável.
+## Decisões consolidadas
 
-Decisão: o projeto não deve iniciar alpha testing do jogo completo. A prioridade passa a ser uma vertical slice executável do Dia 1.
+### Produto
 
-### Game Designer
+O projeto não deve iniciar alpha testing do jogo completo enquanto não houver uma vertical slice executável.
 
-Responsável por fechar o loop mínimo da Build 0.1.0.
+A primeira entrega validável é a Build 0.1.0 do Dia 1.
 
-Decisão: a slice precisa provar direção, embarque, desembarque, tensão, ameaça, contramedida, falha, reinício e conclusão.
+### Narrativa
 
-### Unity Gameplay Engineer
+1. Dale Mercer continua sendo o protagonista canônico.
+2. Harrison Stone apresenta a rota e proíbe o canal dois.
+3. Emma é o primeiro contato sobrenatural claro.
+4. Thomas aparece somente como prenúncio sonoro no rádio.
+5. Marcus, Grace, Oliver e a manifestação completa de Thomas permanecem para dias posteriores.
+6. A cena técnica `Day1Night` será exibida como `Afternoon Shift` na slice.
 
-Responsável por avaliar compilação, cenas, Build Settings, integração e fluxo executável.
+### Gameplay
 
-Constatação crítica: `game/ProjectSettings/EditorBuildSettings.asset` não possui cenas registradas. O sistema de transição espera dez cenas nomeadas de `Day1Morning` até `Day5Night`, mas nenhuma está disponível no build.
+1. Emma possui seis segundos de reação no Dia 1.
+2. Do Dia 2 em diante, Emma retorna à janela crítica de dois segundos.
+3. O prenúncio do rádio não causa game over.
+4. Ignorar o rádio aplica tensão uma única vez.
+5. Tensão máxima causa game over exatamente uma vez.
 
-### Lore Architect
+### Arquitetura
 
-Responsável por restringir a narrativa ao conteúdo necessário para validar o Dia 1.
+1. `GameManager` é a fonte única de estado.
+2. `GameStateManager` é um adaptador legado.
+3. `CurrentTension` cresce de zero a um.
+4. `RemainingSanity` é derivada por `1 - CurrentTension`.
+5. Finais usam sanidade restante.
+6. Concluir o Dia 5 produz `Victory`, não `GameOver`.
+7. Ausência da cena de créditos retorna ao menu com segurança.
 
-Decisão: a Build 0.1.0 terá apenas a introdução do motorista, sinais do acidente anterior, duas presenças sobrenaturais e um encerramento temporário. Expansões de lore ficam bloqueadas até o loop ser validado.
+## Entregáveis produzidos
 
-### Visual Art Director
+### Planejamento e governança
 
-Responsável por definir o mínimo visual necessário para tornar a slice legível.
+1. `docs/game/production/BUILD_0_1_0_VERTICAL_SLICE.md`
+2. `docs/game/technical/ADR_001_GAME_STATE_AND_TENSION.md`
+3. Épico #71
+4. Issues #72 a #76
 
-Decisão: usar placeholders coerentes e substituir apenas o que impedir leitura, navegação ou identificação das ameaças. Arte final do restante dos dias não entra na slice.
+### Narrativa e design
 
-### Game QA and Balance
+1. `docs/game/design/BUILD_0_1_0_THREAT_MATRIX.md`
+2. `docs/game/narrative/BUILD_0_1_0_NARRATIVE_SCRIPT.md`
+3. `docs/game/art/BUILD_0_1_0_VISUAL_BRIEF.md`
 
-Responsável por transformar a slice em uma experiência testável.
+### QA
 
-Decisão: primeiro validar uma partida completa fora do Editor. Só depois iniciar rodadas de playtest e balanceamento.
+1. `docs/game/testing/BUILD_0_1_0_TEST_MATRIX.md`
 
-## Estado real identificado
+### Ferramentas Unity
 
-| Área | Estado | Evidência | Consequência |
-|---|---|---|---|
-| Framework de agentes | Atualizado na branch | Estrutura `.aiox-core` e squad adicionados | Pronto para orientar o trabalho |
-| Cenas no Build Settings | Bloqueado | Lista `m_Scenes` vazia | Não há build navegável configurada |
-| Transição entre períodos | Programada | `SceneTransitionManager` espera dez cenas | Código não prova integração |
-| Sistemas de gameplay | Parcialmente programados | Scripts de core, fantasmas, tensão e progressão existem | Precisa validação em cena e prefab |
-| Conteúdo de cinco dias | Não validado | Roadmap afirma avanço, mas não há build registrada | Percentuais antigos não são confiáveis |
-| Arte final | Incompleta | Issues de ônibus, rota, NPCs, materiais e animações abertas | Slice deve aceitar placeholders |
-| Áudio final | Incompleto | SFX, trilha, ambiente e voiceover abertos | Usar áudio temporário na slice |
-| QA | Não iniciado de forma válida | Issue de alpha depende de jogo completável | Testes precisam começar pela Build 0.1.0 |
-| Release | Não iniciado | Sem build Windows validada | Bloqueado até a slice funcionar |
+1. `VerticalSliceBuildValidator.cs`
+2. `VerticalSlicePlaceholderFlowBuilder.cs`
+3. `VerticalSliceSceneController.cs`
+4. `docs/game/production/VERTICAL_SLICE_UNITY_TOOLING.md`
 
-## Bloqueios priorizados
+### Gameplay e core
 
-### P0.1, cenas e Build Settings
+1. Onboarding progressivo de Emma.
+2. Prenúncio seguro de Thomas no rádio.
+3. Fonte única de estado.
+4. Semântica explícita de tensão e sanidade restante.
+5. Fluxo corrigido de vitória e finais.
 
-Criar e registrar as cenas mínimas da slice.
+## Estado das issues da Build 0.1.0
 
-1. `Bootstrap`
-2. `MainMenu`
-3. `Day1Morning`
-4. `Day1Night`
-5. `SliceEnding`
+| Issue | Pacote | Estado real |
+|---:|---|---|
+| #71 | Épico | Em andamento |
+| #72 | Fundação executável | Código preparado, aguarda execução na Unity |
+| #73 | Rota e paradas | Especificado, implementação não iniciada |
+| #74 | Emma, rádio, tensão e falha | Implementação parcial, aguarda integração em cena |
+| #75 | Lore, visual e áudio | Roteiro e brief concluídos, integração pendente |
+| #76 | QA e build | Matriz concluída, execução bloqueada pela build |
 
-### P0.2, fluxo executável
+## Bloqueio externo atual
 
-Garantir o caminho completo:
+As cenas, prefabs e outros assets Unity são versionados por Git LFS.
 
-`Bootstrap` → `MainMenu` → `Day1Morning` → `Day1Night` → `SliceEnding` → `MainMenu`
+O conector do GitHub consegue modificar scripts e documentação, mas não consegue abrir o Unity Editor para:
 
-### P0.3, fonte única de estado
+1. Importar e compilar os scripts C#.
+2. Executar o gerador de cenas.
+3. Salvar assets `.unity` e prefabs com referências do Inspector.
+4. Gerar o executável Windows.
+5. Executar o smoke test real.
 
-O projeto possui mais de um gerenciador de estado. A slice deve escolher uma única autoridade para estado de jogo, pausa, game over e conclusão.
+## Próxima ação dentro da Unity
 
-### P0.4, semântica de tensão e finais
+1. Fazer checkout da branch `agent/aiox-5-3-game-squad`.
+2. Abrir a pasta `game` no Unity 6.
+3. Aguardar a compilação.
+4. Corrigir qualquer erro de compilação encontrado.
+5. Executar `Bus Shift > Vertical Slice > Build Navigable Placeholder Flow`.
+6. Versionar as cinco cenas e o novo `EditorBuildSettings.asset`.
+7. Gerar uma Development Build para Windows.
+8. Executar a Fase A da matriz de QA.
 
-O valor chamado de sanidade cresce com tensão e dispara game over no máximo. A lógica dos finais precisa usar a mesma semântica, evitando tratar tensão alta como resultado positivo.
+## Gate para iniciar rota e paradas
 
-### P0.5, conclusão do Dia 1
+O pacote #73 só entra em implementação de cena depois que:
 
-A conclusão da noite precisa ir para um encerramento temporário da slice, não para um fluxo inexistente de cinco dias.
+1. As cinco cenas existem.
+2. O Build Settings está preenchido.
+3. O fluxo placeholder completa um ciclo fora do Editor.
+4. Não há crash ou erro P0 na fundação.
 
-### P0.6, build Windows
+## Resultado desta execução
 
-A slice somente será considerada integrada quando iniciar e terminar fora do Unity Editor.
+O squad foi utilizado para auditar, decidir, especificar e implementar a primeira camada do projeto.
 
-## Roadmap corrigido
-
-### Etapa 1, Build 0.1.0
-
-Objetivo: provar o loop completo do Dia 1 com placeholders.
-
-### Etapa 2, Core validado
-
-Objetivo: testar compreensão, tensão, contramedidas, dificuldade e ritmo.
-
-### Etapa 3, expansão para cinco dias
-
-Objetivo: reutilizar a arquitetura validada e adicionar progressão, fantasmas e variações.
-
-### Etapa 4, conteúdo final
-
-Objetivo: substituir placeholders por arte, animação, áudio e narrativa finais.
-
-### Etapa 5, alpha, performance, beta e release
-
-Objetivo: executar as fases já previstas somente quando existir um jogo completável.
-
-## Critério de saída da fase 0
-
-A fase 0 está concluída quando:
-
-1. O relatório está versionado.
-2. A Build 0.1.0 possui escopo fechado.
-3. O backlog da slice está criado.
-4. As tarefas fora da slice estão explicitamente bloqueadas.
-5. O próximo trabalho técnico é executável sem reinterpretar o repositório.
-
-## Handoff
-
-Próximo executor: `game-chief` com contribuição de todo o squad.
-
-Próxima tarefa: `plan-vertical-slice`.
+A branch agora contém uma direção coerente para terminar o jogo e código preparatório suficiente para produzir a primeira build navegável assim que for aberta na Unity.
