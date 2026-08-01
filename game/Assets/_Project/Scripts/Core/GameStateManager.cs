@@ -112,7 +112,7 @@ namespace BusShift.Core
                 return GameManager.Instance;
             }
 
-            return FindAnyObjectByType<GameManager>();
+            return UnityEngine.Object.FindAnyObjectByType<GameManager>();
         }
 
         private static void ForwardStateTransition(GameState previous, GameState next)
