@@ -10,6 +10,7 @@
 | Fase atual | 1, Vertical Slice |
 | Meta | Build 0.1.0, Dia 1 jogável |
 | Início | 1 de agosto de 2026 |
+| Última rodada | 2 de agosto de 2026 |
 
 ## Agentes invocados
 
@@ -61,8 +62,9 @@ A primeira entrega validável é a Build 0.1.0 do Dia 1.
 
 1. `docs/game/production/BUILD_0_1_0_VERTICAL_SLICE.md`
 2. `docs/game/technical/ADR_001_GAME_STATE_AND_TENSION.md`
-3. Épico #71
-4. Issues #72 a #76
+3. `docs/game/production/UNITY_EXECUTION_RUNBOOK_0_1_0.md`
+4. Épico #71
+5. Issues #72 a #76
 
 ### Narrativa e design
 
@@ -73,6 +75,7 @@ A primeira entrega validável é a Build 0.1.0 do Dia 1.
 ### QA
 
 1. `docs/game/testing/BUILD_0_1_0_TEST_MATRIX.md`
+2. Runbook com smoke test, severidade, gate e evidências da Development Build.
 
 ### Ferramentas Unity
 
@@ -94,11 +97,46 @@ A primeira entrega validável é a Build 0.1.0 do Dia 1.
 | Issue | Pacote | Estado real |
 |---:|---|---|
 | #71 | Épico | Em andamento |
-| #72 | Fundação executável | Código preparado, aguarda execução na Unity |
-| #73 | Rota e paradas | Especificado, implementação não iniciada |
-| #74 | Emma, rádio, tensão e falha | Implementação parcial, aguarda integração em cena |
+| #72 | Fundação executável | Código e runbook preparados, aguarda execução na Unity |
+| #73 | Rota e paradas | Especificado, bloqueado pelo gate da fundação |
+| #74 | Emma, rádio, tensão e falha | Implementação parcial, aguarda compilação e integração em cena |
 | #75 | Lore, visual e áudio | Roteiro e brief concluídos, integração pendente |
-| #76 | QA e build | Matriz concluída, execução bloqueada pela build |
+| #76 | QA e build | Matriz e runbook concluídos, execução bloqueada pela build |
+
+## Rodada de execução de 2 de agosto de 2026
+
+### Distribuição do squad
+
+| Agente | Ação executada ou determinada |
+|---|---|
+| `game-chief` | Revalidou o gate e interrompeu expansão de gameplay antes da comprovação na Unity |
+| `unity-gameplay-engineer` | Consolidou a sequência de compilação, materialização de cenas, Build Settings e build Windows |
+| `game-qa-balance` | Definiu smoke test, critérios P0 a P3 e evidências mínimas de saída |
+| `game-designer` | Manteve rota e paradas bloqueadas até o fluxo placeholder funcionar fora do Editor |
+| `lore-architect` | Preservou Emma como ameaça clara e Thomas apenas como prenúncio no Dia 1 |
+| `visual-art-director` | Limitou a próxima auditoria a assets realmente importados, sem antecipar polish |
+
+### CI do commit `38941ee07c1ae31622fa42c678398584d44f00fb`
+
+A execução principal do GitHub Actions foi concluída com uma única falha isolada:
+
+- `Jest Tests (Node.js 20)` falhou na etapa de testes.
+
+Os demais checks observados concluíram com sucesso, incluindo Jest em Node 18, TypeScript, ESLint, auditoria de segurança, validação de manifesto, smoke test do instalador e benchmarks SYNAPSE.
+
+O conector autenticado confirmou o job e a etapa com falha, mas não disponibilizou o texto detalhado do erro. Nenhuma correção especulativa foi aplicada. O problema permanece registrado como bloqueio automatizado até que o log completo ou uma reprodução confiável esteja disponível.
+
+### Decisão de engenharia
+
+Não adicionar novos sistemas de gameplay antes de cumprir simultaneamente:
+
+1. Compilação real na Unity 6.
+2. Materialização e revisão das cinco cenas.
+3. Smoke test no Play Mode.
+4. Development Build funcionando fora do Editor.
+5. Diagnóstico reproduzível do Jest em Node 20.
+
+Essa decisão evita aumentar a superfície de erro enquanto a integração real da Unity ainda não foi comprovada.
 
 ## Bloqueio externo atual
 
@@ -114,14 +152,20 @@ O conector do GitHub consegue modificar scripts e documentação, mas não conse
 
 ## Próxima ação dentro da Unity
 
+O procedimento completo está em `docs/game/production/UNITY_EXECUTION_RUNBOOK_0_1_0.md`.
+
+Sequência mínima:
+
 1. Fazer checkout da branch `agent/aiox-5-3-game-squad`.
-2. Abrir a pasta `game` no Unity 6.
-3. Aguardar a compilação.
-4. Corrigir qualquer erro de compilação encontrado.
+2. Executar `git lfs pull`.
+3. Abrir a pasta `game` no Unity 6.
+4. Aguardar a compilação e resolver erros reais.
 5. Executar `Bus Shift > Vertical Slice > Build Navigable Placeholder Flow`.
-6. Versionar as cinco cenas e o novo `EditorBuildSettings.asset`.
-7. Gerar uma Development Build para Windows.
-8. Executar a Fase A da matriz de QA.
+6. Executar `Bus Shift > Vertical Slice > Validate Build Readiness`.
+7. Testar o ciclo no Play Mode.
+8. Gerar e executar uma Development Build para Windows.
+9. Versionar apenas cenas, metas, Build Settings e correções mínimas revisadas.
+10. Registrar resultados nas issues #72 e #76.
 
 ## Gate para iniciar rota e paradas
 
@@ -130,10 +174,11 @@ O pacote #73 só entra em implementação de cena depois que:
 1. As cinco cenas existem.
 2. O Build Settings está preenchido.
 3. O fluxo placeholder completa um ciclo fora do Editor.
-4. Não há crash ou erro P0 na fundação.
+4. Não há crash ou erro P0/P1 na fundação.
+5. A compilação dos scripts foi comprovada na Unity 6.
 
 ## Resultado desta execução
 
-O squad foi utilizado para auditar, decidir, especificar e implementar a primeira camada do projeto.
+O squad foi efetivamente utilizado para revalidar o estado do PR, separar o bloqueio automatizado do bloqueio da Unity e produzir um procedimento operacional verificável para materializar a Build 0.1.0.
 
-A branch agora contém uma direção coerente para terminar o jogo e código preparatório suficiente para produzir a primeira build navegável assim que for aberta na Unity.
+A branch agora contém o runbook que transforma a próxima sessão na Unity em execução objetiva, com responsáveis, critérios de aceite, regra de interrupção e gate de saída. A vertical slice ainda não deve ser chamada de jogável até que esse runbook seja executado no Editor e na build Windows.
