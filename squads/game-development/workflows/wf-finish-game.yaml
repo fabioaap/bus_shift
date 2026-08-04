@@ -1,7 +1,7 @@
 workflow:
   id: wf-finish-game
   name: Finish Game
-  version: 0.1.0
+  version: 0.2.0
   description: >-
     Fluxo para levar um jogo do estado atual até uma versão publicável por meio de
     auditoria, vertical slices, integração, conteúdo, alpha, beta e release.
@@ -12,6 +12,8 @@ workflow:
     - Evidência em cada checkpoint
     - Uma fonte de verdade por sistema
     - Conteúdo final somente após validar o loop
+    - Auditar antes de comprar ou produzir assets
+    - Preservar vendor assets e criar derivados first-party
 
   phases:
     - id: phase-0
@@ -46,6 +48,30 @@ workflow:
         - Escopo fechado
         - Dependências resolvidas ou substituídas por placeholders
         - Checklist de saída definido
+
+    - id: phase-1-assets
+      name: Auditoria de Assets da Slice
+      owner: visual-art-director
+      task: tasks/audit-game-assets.md
+      contributors:
+        - unity-gameplay-engineer
+        - game-designer
+        - lore-architect
+        - game-qa-balance
+      outputs:
+        - Relatório de inventário e integridade
+        - Matriz reutilizar, adaptar, adquirir ou produzir
+        - Assets aprovados e caminhos exatos
+        - Backlog de produção e integração
+        - Registro de origem e licença
+      checkpoint:
+        - Git LFS completo
+        - Console baseline registrado
+        - Vendor assets preservados
+        - Bus 104 possui decisão baseada em inspeção
+        - Kit de cenário possui limites definidos
+        - Personagens mínimos possuem estratégia aprovada
+        - Nenhuma compra depende apenas de suposição
 
     - id: phase-2
       name: Integração da Slice
