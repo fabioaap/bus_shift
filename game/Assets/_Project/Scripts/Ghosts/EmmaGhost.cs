@@ -4,88 +4,85 @@ using UnityEngine;
 namespace BusShift.Ghosts
 {
     /// <summary>
-    /// Emma – "The Trickster"  ⚠️ CRITICAL — only 2 seconds to react!
+    /// Emma, "The Trickster".
     ///
-    /// Emma appears beside the driver (right side) and immediately triggers the attack
-    /// with a 2-second window. The player must activate PanelLock (SHIFT) before
-    /// the window expires or it is Game Over.
+    /// Emma appears beside the driver and reaches for the control panel. The player
+    /// must activate Panel Lock before the attack window expires.
     ///
-    /// Laugh intensity progresses automatically across the 2-second window:
-    ///   0 = soft "hihihi"  |  1 = medium  |  2 = full shriek
+    /// Day 1 uses a longer onboarding window so the first canonical encounter teaches
+    /// the countermeasure before the two second advanced difficulty is introduced.
     ///
-    /// <b>Observation mechanic:</b>
-    /// <list type="bullet">
-    ///   <item>
-    ///     If the player observes Emma <i>before</i> she fully manifests
-    ///     (<see cref="HasFullyManifested"/> == <c>false</c>) she vanishes but the
-    ///     player is penalised (−0.10 sanity / −10 pts on a 0–100 scale).
-    ///   </item>
-    ///   <item>
-    ///     Once fully manifested (<see cref="HasFullyManifested"/> == <c>true</c>),
-    ///     sustained observation causes Emma to retreat (+0.05 sanity / +5 pts).
-    ///   </item>
-    /// </list>
+    /// Observation remains contextual:
     ///
-    /// Wire-up:
-    ///   • Assign <see cref="_driverSeatRightPosition"/> in the Inspector (Transform near driver's right).
-    ///   • Call <see cref="Defeat"/> from your InputHandler when the player uses PanelLock / SHIFT.
-    ///   • Subscribe to <see cref="OnLaugh"/> to play audio clips per intensity level.
-    ///   • Subscribe to <see cref="GhostBase.OnAttackStarted"/> to show Emma's sprite/model.
-    ///   • Call <see cref="SetDayDifficulty"/> once per day from DayManager.
+    /// 1. Observing before full manifestation makes Emma vanish, but adds tension.
+    /// 2. Observing after full manifestation drives Emma back and reduces tension.
+    ///
+    /// Wire up:
+    ///
+    /// 1. Assign <see cref="_driverSeatRightPosition"/> near the driver's right side.
+    /// 2. Call <see cref="Defeat"/> when Panel Lock is activated.
+    /// 3. Subscribe to <see cref="OnLaugh"/> for escalating audio feedback.
+    /// 4. Subscribe to <see cref="GhostBase.OnAttackStarted"/> for manifestation feedback.
+    /// 5. Call <see cref="SetDayDifficulty"/> when a period begins.
     /// </summary>
     public class EmmaGhost : GhostBase
     {
-        // ── Inspector ─────────────────────────────────────────────────────────
-        [Header("Emma – The Trickster  ⚠️ CRITICAL: 2-second window")]
-        [Tooltip("Transform positioned to Emma's spawn point (driver's right side).")]
+        [Header("Emma, The Trickster")]
+        [Tooltip("Transform positioned at Emma's spawn point beside the driver.")]
         [SerializeField] private Transform _driverSeatRightPosition;
 
-        [Tooltip("Cooldown between appearances (seconds). Total gap = this + 2 s base delay.")]
-        [SerializeField] private float _baseCooldown = 18f; // ~20 s total with 2 s defeat delay
+        [Tooltip("Base cooldown between appearances. The GhostBase reset delay is added separately.")]
+        [SerializeField] private float _baseCooldown = 18f;
 
-        [Tooltip("Seconds after activation before Emma fully manifests and begins the attack window. " +
-                 "During this window observing Emma carries a sanity penalty instead of a reward.")]
-        [SerializeField] private float _manifestationDelay = 1.5f;
+        [Header("Day 1 onboarding")]
+        [Tooltip("Reaction time used by the first canonical encounter with Emma.")]
+        [SerializeField] [Min(2f)] private float _dayOneAttackWindow = 6f;
 
-        // ── Events ────────────────────────────────────────────────────────────
+        [Tooltip("Time Emma remains partially manifested before the Day 1 attack begins.")]
+        [SerializeField] [Min(0f)] private float _dayOneManifestationDelay = 2.5f;
+
+        [Header("Advanced difficulty")]
+        [Tooltip("Reaction time used from Day 2 onward.")]
+        [SerializeField] [Min(0.5f)] private float _standardAttackWindow = 2f;
+
+        [Tooltip("Manifestation delay used from Day 2 onward.")]
+        [SerializeField] [Min(0f)] private float _standardManifestationDelay = 1.5f;
+
         /// <summary>
-        /// Fired whenever Emma's laugh intensity steps up.
-        /// Values: 0 (soft "hihihi"), 1 (medium), 2 (intense shriek).
+        /// Fired whenever Emma's laugh intensity changes.
+        /// Values are 0 for soft, 1 for medium, and 2 for critical.
         /// </summary>
         public static event Action<int> OnLaugh;
 
-        // ── Runtime state ─────────────────────────────────────────────────────
-        private int _laughIntensity;
-
-        /// <summary>Current laugh intensity: 0 (soft), 1 (medium), 2 (intense).</summary>
-        public int LaughIntensity => _laughIntensity;
-
-        /// <summary>Counts down from <see cref="_manifestationDelay"/> to zero before BeginAttack.</summary>
-        private float _manifestationTimer;
-
         /// <summary>
-        /// <c>true</c> once Emma has fully manifested (i.e. the attack window has started).
-        /// Before this flag is set, observing Emma causes a sanity penalty; afterwards
-        /// sustained observation triggers a retreat and sanity reward.
+        /// Fired after the day profile changes. The argument is the active attack window.
+        /// UI and accessibility feedback can use this to remain synchronized with difficulty.
         /// </summary>
-        public bool HasFullyManifested { get; private set; }
+        public static event Action<float> OnAttackWindowChanged;
 
-        // ── Lifecycle ─────────────────────────────────────────────────────────
+        private int _laughIntensity;
+        private float _manifestationTimer;
+        private float _activeManifestationDelay;
+
+        public int LaughIntensity => _laughIntensity;
+        public bool HasFullyManifested { get; private set; }
+        public float CurrentAttackWindow => AttackWindow;
+        public float CurrentManifestationDelay => _activeManifestationDelay;
+
         private void Awake()
         {
-            GhostType      = GhostType.Emma;
-            AttackWindow   = 2f;          // ⚠️ Only 2 seconds!
-            AttackInterval = _baseCooldown;
+            GhostType = GhostType.Emma;
+            ApplyDifficultyProfile(1);
         }
 
         protected override void Update()
         {
-            base.Update(); // handles Idle countdown → Activate, Attacking countdown → GameOver
+            base.Update();
 
-            // Manifestation delay: tick down in Active state before beginning the attack.
             if (CurrentState == GhostState.Active)
             {
                 _manifestationTimer -= Time.deltaTime;
+
                 if (_manifestationTimer <= 0f)
                 {
                     HasFullyManifested = true;
@@ -93,100 +90,99 @@ namespace BusShift.Ghosts
                 }
             }
 
-            // Track laugh intensity progression during the attack window
             if (CurrentState == GhostState.Attacking)
+            {
                 UpdateLaughIntensity();
+            }
         }
 
-        // ── GhostBase abstract methods ────────────────────────────────────────
         protected override void OnActivate()
         {
-            // Snap Emma to the driver's right side
             if (_driverSeatRightPosition != null)
+            {
                 transform.position = _driverSeatRightPosition.position;
+                transform.rotation = _driverSeatRightPosition.rotation;
+            }
 
-            // Reset state for this appearance
-            _laughIntensity    = 0;
+            _laughIntensity = 0;
             HasFullyManifested = false;
-            _manifestationTimer = _manifestationDelay;
+            _manifestationTimer = _activeManifestationDelay;
             OnLaugh?.Invoke(_laughIntensity);
-
-            // Emma enters Active state with a short manifestation window before the attack fires.
-            // (BeginAttack is called by Update once _manifestationTimer expires.)
         }
 
         protected override void OnAttack()
         {
-            // The attack window (2 s) begins here.
-            // GhostBase.OnAttackStarted event signals listeners to show Emma's sprite.
+            // GhostBase starts the configured attack window and emits OnAttackStarted.
         }
 
         protected override void OnDefeated()
         {
-            // Emma vanishes; laughter and manifestation state reset.
-            _laughIntensity    = 0;
+            _laughIntensity = 0;
             HasFullyManifested = false;
-            // GhostBase.Defeat() schedules ResetToIdle after 2 s → AttackInterval cooldown.
+            _manifestationTimer = 0f;
         }
 
-        // ── Observation ───────────────────────────────────────────────────────
-        /// <summary>
-        /// Observation outcome depends on Emma's manifestation stage:
-        /// <list type="bullet">
-        ///   <item>
-        ///     <b>Not yet fully manifested:</b> Emma vanishes but frightens the driver.
-        ///     Sanity penalty: −0.10 (equivalent to −10 pts on a 0–100 normalised scale).
-        ///   </item>
-        ///   <item>
-        ///     <b>Already fully manifested:</b> Sustained observation drives Emma back.
-        ///     Sanity reward: +0.05 (equivalent to +5 pts on a 0–100 normalised scale).
-        ///   </item>
-        /// </list>
-        /// </summary>
         protected override void OnObservationComplete()
         {
             _observationTimer = 0f;
-            _isBeingObserved  = false;
+            _isBeingObserved = false;
 
             if (!HasFullyManifested)
             {
-                // Player caught Emma materialising — she vanishes but causes a jumpscare penalty.
                 Despawn();
                 BusShift.Core.GameManager.Instance?.SanitySystem?.AddTension(0.10f);
+                return;
             }
-            else
-            {
-                // Player stared down fully-manifested Emma — she retreats.
-                Despawn();
-                BusShift.Core.GameManager.Instance?.SanitySystem?.ReduceTension(0.05f);
-            }
+
+            Despawn();
+            BusShift.Core.GameManager.Instance?.SanitySystem?.ReduceTension(0.05f);
         }
 
-        // ── Laugh intensity ───────────────────────────────────────────────────
         private void UpdateLaughIntensity()
         {
-            // Divide the 2-second window into 3 equal segments (≈ 0.67 s each).
-            // _windowTimer counts down from AttackWindow → 0, so elapsed = AttackWindow - _windowTimer.
-            float elapsed      = AttackWindow - _windowTimer;
-            float segmentSize  = AttackWindow / 3f;
-            int   newIntensity = Mathf.Clamp(Mathf.FloorToInt(elapsed / segmentSize), 0, 2);
+            float safeAttackWindow = Mathf.Max(AttackWindow, 0.01f);
+            float elapsed = safeAttackWindow - _windowTimer;
+            float segmentSize = safeAttackWindow / 3f;
+            int newIntensity = Mathf.Clamp(
+                Mathf.FloorToInt(elapsed / segmentSize),
+                0,
+                2);
 
-            if (newIntensity != _laughIntensity)
+            if (newIntensity == _laughIntensity)
             {
-                _laughIntensity = newIntensity;
-                OnLaugh?.Invoke(_laughIntensity);
+                return;
             }
+
+            _laughIntensity = newIntensity;
+            OnLaugh?.Invoke(_laughIntensity);
         }
 
-        // ── Difficulty scaling ────────────────────────────────────────────────
         /// <summary>
-        /// Adjusts difficulty based on the current day (1-based).
-        /// Emma appears more frequently with each passing day.
+        /// Applies Emma's day based profile.
+        ///
+        /// Day 1 preserves the six second tutorial window required by Build 0.1.0.
+        /// Day 2 onward restores the intended two second advanced reaction window.
         /// </summary>
         public void SetDayDifficulty(int day)
         {
-            int dayIndex   = Mathf.Max(0, day - 1);
+            ApplyDifficultyProfile(Mathf.Max(1, day));
+        }
+
+        private void ApplyDifficultyProfile(int day)
+        {
+            int dayIndex = Mathf.Max(0, day - 1);
             AttackInterval = Mathf.Max(8f, _baseCooldown - (dayIndex * 2f));
+
+            bool isDayOne = day <= 1;
+            AttackWindow = isDayOne
+                ? Mathf.Max(2f, _dayOneAttackWindow)
+                : Mathf.Max(0.5f, _standardAttackWindow);
+
+            _activeManifestationDelay = isDayOne
+                ? Mathf.Max(0f, _dayOneManifestationDelay)
+                : Mathf.Max(0f, _standardManifestationDelay);
+
+            OnAttackWindowChanged?.Invoke(AttackWindow);
         }
     }
 }

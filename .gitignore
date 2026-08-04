@@ -338,3 +338,19 @@ scripts/glue/
 .claude/setup/
 docs/guides/aios-workflows/
 docs/guides/glue-script-guide.md
+
+# Dependencies (AIOX)
+node_modules
+
+# Build & Logs (AIOX)
+dist/
+build/
+
+# IDE & OS (AIOX)
+.idea/
+*.swp
+
+# AIOX Local (AIOX)
+.aiox-core/local/
+.claude/settings.local.json
+.aiox/install-log.txt

@@ -20,6 +20,10 @@ module.exports = [
       '**/build/**',
       '**/dist/**',
       '**/.next/**',
+      // AIOX 5.3 is installed framework code, validated by its own installer and doctor
+      '.aiox-core/**',
+      // Legacy installer source remains only for migration compatibility
+      'packages/installer/**',
       // Dashboard has its own ESLint config
       'apps/dashboard/**',
       '**/.aios-core/_legacy-v4.31.0/**',
@@ -86,6 +90,11 @@ module.exports = [
         clearInterval: 'readonly',
         setImmediate: 'readonly',
         global: 'readonly',
+        // Browser globals used by the narrative site
+        document: 'readonly',
+        window: 'readonly',
+        localStorage: 'readonly',
+        requestAnimationFrame: 'readonly',
         // Node.js 18+ globals
         fetch: 'readonly',
         AbortController: 'readonly',

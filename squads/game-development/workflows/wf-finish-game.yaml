@@ -1,0 +1,183 @@
+workflow:
+  id: wf-finish-game
+  name: Finish Game
+  version: 0.2.0
+  description: >-
+    Fluxo para levar um jogo do estado atual até uma versão publicável por meio de
+    auditoria, vertical slices, integração, conteúdo, alpha, beta e release.
+
+  principles:
+    - Build jogável antes de expansão
+    - Risco crítico antes de polish
+    - Evidência em cada checkpoint
+    - Uma fonte de verdade por sistema
+    - Conteúdo final somente após validar o loop
+    - Auditar antes de comprar ou produzir assets
+    - Preservar vendor assets e criar derivados first-party
+
+  phases:
+    - id: phase-0
+      name: Diagnóstico
+      owner: game-chief
+      task: tasks/audit-project.md
+      outputs:
+        - Relatório do estado real
+        - Mapa de bloqueios
+        - Backlog priorizado
+      checkpoint:
+        - Commit auditado identificado
+        - Estado executável conhecido
+        - Próxima pergunta de produto definida
+
+    - id: phase-1
+      name: Vertical Slice
+      owner: game-chief
+      task: tasks/plan-vertical-slice.md
+      contributors:
+        - game-designer
+        - unity-gameplay-engineer
+        - lore-architect
+        - visual-art-director
+        - game-qa-balance
+      outputs:
+        - Plano da build
+        - Especificações
+        - Lista de assets
+        - Plano de testes
+      checkpoint:
+        - Escopo fechado
+        - Dependências resolvidas ou substituídas por placeholders
+        - Checklist de saída definido
+
+    - id: phase-1-assets
+      name: Auditoria de Assets da Slice
+      owner: visual-art-director
+      task: tasks/audit-game-assets.md
+      contributors:
+        - unity-gameplay-engineer
+        - game-designer
+        - lore-architect
+        - game-qa-balance
+      outputs:
+        - Relatório de inventário e integridade
+        - Matriz reutilizar, adaptar, adquirir ou produzir
+        - Assets aprovados e caminhos exatos
+        - Backlog de produção e integração
+        - Registro de origem e licença
+      checkpoint:
+        - Git LFS completo
+        - Console baseline registrado
+        - Vendor assets preservados
+        - Bus 104 possui decisão baseada em inspeção
+        - Kit de cenário possui limites definidos
+        - Personagens mínimos possuem estratégia aprovada
+        - Nenhuma compra depende apenas de suposição
+
+    - id: phase-2
+      name: Integração da Slice
+      owner: unity-gameplay-engineer
+      task: tasks/implement-unity-feature.md
+      outputs:
+        - Cenas integradas
+        - Fluxo completo
+        - Build Windows
+      checkpoint:
+        - Build inicia fora do Editor
+        - Caminho principal completável
+        - Bugs P0 zerados
+
+    - id: phase-3
+      name: Validação do Core
+      owner: game-qa-balance
+      task: tasks/playtest-and-balance.md
+      outputs:
+        - Relatório de playtest
+        - Bugs priorizados
+        - Decisão sobre o core loop
+      checkpoint:
+        - Core loop compreensível
+        - Ameaças possuem contrajogo
+        - Dificuldade inicial validada
+
+    - id: phase-4
+      name: Produção de Conteúdo
+      owner: game-chief
+      contributors:
+        - lore-architect
+        - visual-art-director
+        - game-designer
+        - unity-gameplay-engineer
+      outputs:
+        - Dias e níveis completos
+        - Arte e animações finais
+        - Áudio e narrativa integrados
+      checkpoint:
+        - Conteúdo completo
+        - Todos os caminhos narrativos acessíveis
+        - Sem placeholder bloqueador
+
+    - id: phase-5
+      name: Alpha e Balanceamento
+      owner: game-qa-balance
+      task: tasks/playtest-and-balance.md
+      outputs:
+        - Dez ou mais partidas internas
+        - Correções P0
+        - Curva de dificuldade revisada
+      checkpoint:
+        - Jogo completável sem crash
+        - Save e progressão estáveis
+        - P0 zerados
+
+    - id: phase-6
+      name: Performance e Polish
+      owner: unity-gameplay-engineer
+      contributors:
+        - visual-art-director
+        - game-qa-balance
+      outputs:
+        - Profiling
+        - Otimizações
+        - Mix e UI finais
+      checkpoint:
+        - Meta de FPS medida
+        - Tempo de carregamento aceitável
+        - Sem vazamento conhecido
+
+    - id: phase-7
+      name: Beta
+      owner: game-qa-balance
+      outputs:
+        - Feedback externo
+        - Regressão completa
+        - Lista final de correções
+      checkpoint:
+        - P0 zerados
+        - P1 resolvidos ou formalmente aceitos
+        - Satisfação mínima definida atingida
+
+    - id: phase-8
+      name: Release
+      owner: game-chief
+      contributors:
+        - unity-gameplay-engineer
+        - game-qa-balance
+      outputs:
+        - Build final
+        - Installer ou pacote
+        - Manual e changelog
+        - Matriz de compatibilidade
+      checkpoint:
+        - Build validada em múltiplas configurações
+        - Licenças de assets revisadas
+        - Documentação atualizada
+        - Decisão de lançamento registrada
+
+  default_project_plan:
+    project: Bus Shift
+    immediate_goal: Build 0.1.0, vertical slice do Dia 1
+    blocked_until_slice:
+      - Expansão de marketing transmídia
+      - Novos fantasmas além do escopo aprovado
+      - Polish de conteúdo fora do Dia 1
+      - Otimização sem profiling
