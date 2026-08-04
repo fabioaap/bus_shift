@@ -1,6 +1,6 @@
 pack:
   name: game-development
-  version: 0.1.0
+  version: 0.2.0
   short-title: Game Development Squad
   description: >-
     Squad especializado em desenvolvimento de jogos, com foco em direção de produto,
@@ -88,6 +88,9 @@ handoff_policy:
   playable_evidence_required: true
   narrative_continuity_required: true
   art_direction_required_before_final_assets: true
+  asset_audit_required_before_acquisition: true
+  vendor_assets_immutable: true
+  asset_provenance_required: true
 
 settings:
   greeting: named
